@@ -337,6 +337,7 @@
 		F7650DDE1BE95BC600B97932 /* IFA_TextViewBorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7650D951BE95BC600B97932 /* IFA_TextViewBorder@2x.png */; };
 		F7650DE41BE95D1F00B97932 /* IFA_ODRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650DE01BE95D1F00B97932 /* IFA_ODRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650DE51BE95D1F00B97932 /* IFA_ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DE11BE95D1F00B97932 /* IFA_ODRefreshControl.m */; };
+		F7650DEC1BE95F5400B97932 /* IFAFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -689,6 +690,8 @@
 		F7650DE11BE95D1F00B97932 /* IFA_ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFA_ODRefreshControl.m; sourceTree = "<group>"; };
 		F7650DE21BE95D1F00B97932 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		F7650DE31BE95D1F00B97932 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		F7650DE91BE95E8700B97932 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IFAFoundation.framework; path = ../Carthage/Build/iOS/IFAFoundation.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -696,6 +699,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7650DEC1BE95F5400B97932 /* IFAFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +717,8 @@
 		F7156C001BE953A30009EFF4 = {
 			isa = PBXGroup;
 			children = (
+				F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */,
+				F7650DE91BE95E8700B97932 /* Cartfile */,
 				F7156C0C1BE953A30009EFF4 /* IFACoreUI */,
 				F7156C181BE953A30009EFF4 /* IFACoreUITests */,
 				F7156C0B1BE953A30009EFF4 /* Products */,

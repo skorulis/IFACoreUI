@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="IFACoreUI" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="IFACoreUI" TARGET_NAME="IFACoreUI" CONFIG_NAME="Debug" SCHEME_NAME="IFACoreUI" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <envs />
+    <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+      <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
