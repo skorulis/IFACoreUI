@@ -1,0 +1,46 @@
+//
+// Created by Marcelo Schroeder on 24/04/15.
+// Copyright (c) 2015 InfoAccent Pty Ltd. All rights reserved.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+
+#import <Foundation/Foundation.h>
+
+/**
+* This class manages observations regarding the keyboard's visibility.
+*/
+@interface IFAKeyboardVisibilityManager : NSObject
+
+/**
+* Returns YES if the keyboard is visible, otherwise NO.
+* Value returned is only valid after <startObservingKeyboard> is called.
+*/
+@property (nonatomic, readonly, getter = isKeyboardVisible) BOOL keyboardVisible;
+
+/**
+* Returns the keyboard's frame.
+* Value returned is only valid after <startObservingKeyboard> is called.
+*/
+@property(nonatomic, readonly) CGRect keyboardFrame;
+
+/**
+* Singleton's shared instance.
+*/
++ (instancetype)sharedInstance;
+
+/**
+* Starts observing the keyboard's visibility.
+*/
+- (void)startObservingKeyboard;
+@end
