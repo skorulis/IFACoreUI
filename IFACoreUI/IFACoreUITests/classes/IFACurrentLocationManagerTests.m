@@ -6,7 +6,7 @@
 //
 
 #import "IFACommonTests.h"
-#import "GustyKitCoreUI.h"
+@import IFACoreUI;
 #import "IFACoreUITestCase.h"
 
 //NOTE: these thresholds are relative to the default values defined in IFACurrentLocationManager.h

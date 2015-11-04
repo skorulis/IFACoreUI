@@ -7,7 +7,7 @@
 
 #import "IFACommonTests.h"
 #import "IFACoreUITestCase.h"
-#import "GustyKitCoreUI.h"
+@import IFACoreUI;
 #import "TestCoreDataEntity1.h"
 
 @interface IFASelectionManagerTests : IFACoreUITestCase <IFASelectionManagerDataSource>

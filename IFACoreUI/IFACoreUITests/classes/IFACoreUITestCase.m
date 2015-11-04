@@ -17,7 +17,7 @@
 
 #import "IFACommonTests.h"
 #import "IFACoreUITestCase.h"
-#import "GustyKitCoreUI.h"
+@import IFACoreUI;
 
 
 @implementation IFACoreUITestCase {

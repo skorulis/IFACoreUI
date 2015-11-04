@@ -18,7 +18,7 @@
 //
 
 #import "IFACommonTests.h"
-#import "GustyKit.h"
+@import IFACoreUI;
 #import "IFACoreUITestCase.h"
 
 @interface NSIndexPathTests : IFACoreUITestCase

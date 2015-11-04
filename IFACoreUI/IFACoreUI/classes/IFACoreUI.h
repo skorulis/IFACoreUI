@@ -168,3 +168,5 @@
 #import "IFAHelpViewController.h"
 #import "IFAHelpTarget.h"
 #import "IFAHudWrapperViewController.h"
+#import "NSMutableArray+IFACoreUI.h"
+

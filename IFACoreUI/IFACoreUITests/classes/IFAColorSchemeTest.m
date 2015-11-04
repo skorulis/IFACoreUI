@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-#import "GustyKit.h"
+@import IFACoreUI;
 #import "IFAColorSchemeTest.h"
 
 @implementation IFAColorSchemeTest

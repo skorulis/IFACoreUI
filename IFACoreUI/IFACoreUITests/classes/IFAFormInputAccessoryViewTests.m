@@ -18,7 +18,7 @@
 //
 
 #import "IFACommonTests.h"
-#import "GustyKitCoreUI.h"
+@import IFACoreUI;
 #import "IFACoreUITestCase.h"
 
 @interface IFAFormInputAccessoryView (Tests)

@@ -19,7 +19,7 @@
 //
 
 #import "NSDateTest.h"
-#import "GustyKit.h"
+@import IFACoreUI;
 
 @interface NSDateTest ()
 
