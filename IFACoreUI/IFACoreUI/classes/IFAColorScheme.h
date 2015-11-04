@@ -20,6 +20,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class UIColor;
+
 @interface IFAColorScheme : NSObject
 
 -(id)initWithColors:(NSArray*)a_colors;

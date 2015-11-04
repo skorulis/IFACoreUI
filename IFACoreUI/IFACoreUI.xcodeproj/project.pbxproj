@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F7156C151BE953A30009EFF4 /* IFACoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */; };
-		F7156C1A1BE953A30009EFF4 /* IFACoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7156C191BE953A30009EFF4 /* IFACoreUITests.m */; };
 		F7650C471BE95BBD00B97932 /* IFA_HPGrowingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650C481BE95BBD00B97932 /* IFA_HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B451BE95BBD00B97932 /* IFA_HPGrowingTextView.m */; };
 		F7650C491BE95BBD00B97932 /* IFA_HPTextViewInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B461BE95BBD00B97932 /* IFA_HPTextViewInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -338,6 +337,29 @@
 		F7650DE41BE95D1F00B97932 /* IFA_ODRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650DE01BE95D1F00B97932 /* IFA_ODRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650DE51BE95D1F00B97932 /* IFA_ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DE11BE95D1F00B97932 /* IFA_ODRefreshControl.m */; };
 		F7650DEC1BE95F5400B97932 /* IFAFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */; };
+		F7650E0F1BEA948900B97932 /* IFAColorSchemeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DEF1BEA948900B97932 /* IFAColorSchemeTest.m */; };
+		F7650E101BEA948900B97932 /* IFACoreUITestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF11BEA948900B97932 /* IFACoreUITestCase.m */; };
+		F7650E111BEA948900B97932 /* IFACurrentLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF21BEA948900B97932 /* IFACurrentLocationManagerTests.m */; };
+		F7650E121BEA948900B97932 /* IFADateRangeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF41BEA948900B97932 /* IFADateRangeTest.m */; };
+		F7650E131BEA948900B97932 /* IFAFormInputAccessoryViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF51BEA948900B97932 /* IFAFormInputAccessoryViewTests.m */; };
+		F7650E141BEA948900B97932 /* IFALocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF61BEA948900B97932 /* IFALocationManagerTests.m */; };
+		F7650E151BEA948900B97932 /* IFAPagingStateManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF71BEA948900B97932 /* IFAPagingStateManagerTests.m */; };
+		F7650E161BEA948900B97932 /* IFAPersistenceChangeDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF81BEA948900B97932 /* IFAPersistenceChangeDetectorTests.m */; };
+		F7650E171BEA948900B97932 /* IFAPersistenceManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF91BEA948900B97932 /* IFAPersistenceManagerTests.m */; };
+		F7650E181BEA948900B97932 /* IFAPersistentEntityChangeObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DFA1BEA948900B97932 /* IFAPersistentEntityChangeObserverTests.m */; };
+		F7650E191BEA948900B97932 /* IFASelectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DFB1BEA948900B97932 /* IFASelectionManagerTests.m */; };
+		F7650E1A1BEA948900B97932 /* IFASingleSelectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DFC1BEA948900B97932 /* IFASingleSelectionManagerTests.m */; };
+		F7650E1B1BEA948900B97932 /* NSDateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DFE1BEA948900B97932 /* NSDateTest.m */; };
+		F7650E1C1BEA948900B97932 /* NSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DFF1BEA948900B97932 /* NSDictionaryTests.m */; };
+		F7650E1D1BEA948900B97932 /* NSIndexPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E001BEA948900B97932 /* NSIndexPathTests.m */; };
+		F7650E1E1BEA948900B97932 /* NSMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E011BEA948900B97932 /* NSMutableArrayTests.m */; };
+		F7650E1F1BEA948900B97932 /* NSNumberFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E021BEA948900B97932 /* NSNumberFormatterTests.m */; };
+		F7650E201BEA948900B97932 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E031BEA948900B97932 /* NSStringTests.m */; };
+		F7650E211BEA948900B97932 /* TempTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E051BEA948900B97932 /* TempTest.m */; };
+		F7650E221BEA948900B97932 /* TestCoreDataEntity1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */; };
+		F7650E231BEA948900B97932 /* TestCoreDataEntity2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */; };
+		F7650E241BEA948900B97932 /* TestCoreDataEntity3.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */; };
+		F7650E251BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0D1BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,7 +376,6 @@
 		F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7156C0F1BE953A30009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7156C141BE953A30009EFF4 /* IFACoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7156C191BE953A30009EFF4 /* IFACoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFACoreUITests.m; sourceTree = "<group>"; };
 		F7156C1B1BE953A30009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFA_HPGrowingTextView.h; sourceTree = "<group>"; };
 		F7650B451BE95BBD00B97932 /* IFA_HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFA_HPGrowingTextView.m; sourceTree = "<group>"; };
@@ -692,6 +713,37 @@
 		F7650DE31BE95D1F00B97932 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
 		F7650DE91BE95E8700B97932 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 		F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IFAFoundation.framework; path = ../Carthage/Build/iOS/IFAFoundation.framework; sourceTree = "<group>"; };
+		F7650DEE1BEA948900B97932 /* IFAColorSchemeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAColorSchemeTest.h; sourceTree = "<group>"; };
+		F7650DEF1BEA948900B97932 /* IFAColorSchemeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAColorSchemeTest.m; sourceTree = "<group>"; };
+		F7650DF01BEA948900B97932 /* IFACoreUITestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFACoreUITestCase.h; sourceTree = "<group>"; };
+		F7650DF11BEA948900B97932 /* IFACoreUITestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACoreUITestCase.m; sourceTree = "<group>"; };
+		F7650DF21BEA948900B97932 /* IFACurrentLocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFACurrentLocationManagerTests.m; sourceTree = "<group>"; };
+		F7650DF31BEA948900B97932 /* IFADateRangeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFADateRangeTest.h; sourceTree = "<group>"; };
+		F7650DF41BEA948900B97932 /* IFADateRangeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFADateRangeTest.m; sourceTree = "<group>"; };
+		F7650DF51BEA948900B97932 /* IFAFormInputAccessoryViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAFormInputAccessoryViewTests.m; sourceTree = "<group>"; };
+		F7650DF61BEA948900B97932 /* IFALocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFALocationManagerTests.m; sourceTree = "<group>"; };
+		F7650DF71BEA948900B97932 /* IFAPagingStateManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPagingStateManagerTests.m; sourceTree = "<group>"; };
+		F7650DF81BEA948900B97932 /* IFAPersistenceChangeDetectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceChangeDetectorTests.m; sourceTree = "<group>"; };
+		F7650DF91BEA948900B97932 /* IFAPersistenceManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistenceManagerTests.m; sourceTree = "<group>"; };
+		F7650DFA1BEA948900B97932 /* IFAPersistentEntityChangeObserverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAPersistentEntityChangeObserverTests.m; sourceTree = "<group>"; };
+		F7650DFB1BEA948900B97932 /* IFASelectionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFASelectionManagerTests.m; sourceTree = "<group>"; };
+		F7650DFC1BEA948900B97932 /* IFASingleSelectionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFASingleSelectionManagerTests.m; sourceTree = "<group>"; };
+		F7650DFD1BEA948900B97932 /* NSDateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateTest.h; sourceTree = "<group>"; };
+		F7650DFE1BEA948900B97932 /* NSDateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTest.m; sourceTree = "<group>"; };
+		F7650DFF1BEA948900B97932 /* NSDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTests.m; sourceTree = "<group>"; };
+		F7650E001BEA948900B97932 /* NSIndexPathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSIndexPathTests.m; sourceTree = "<group>"; };
+		F7650E011BEA948900B97932 /* NSMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayTests.m; sourceTree = "<group>"; };
+		F7650E021BEA948900B97932 /* NSNumberFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberFormatterTests.m; sourceTree = "<group>"; };
+		F7650E031BEA948900B97932 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		F7650E041BEA948900B97932 /* TempTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempTest.h; sourceTree = "<group>"; };
+		F7650E051BEA948900B97932 /* TempTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempTest.m; sourceTree = "<group>"; };
+		F7650E061BEA948900B97932 /* TestCoreDataEntity1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity1.h; sourceTree = "<group>"; };
+		F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity1.m; sourceTree = "<group>"; };
+		F7650E081BEA948900B97932 /* TestCoreDataEntity2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity2.h; sourceTree = "<group>"; };
+		F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity2.m; sourceTree = "<group>"; };
+		F7650E0A1BEA948900B97932 /* TestCoreDataEntity3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity3.h; sourceTree = "<group>"; };
+		F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity3.m; sourceTree = "<group>"; };
+		F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GustyLibCoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -747,7 +799,8 @@
 		F7156C181BE953A30009EFF4 /* IFACoreUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F7156C191BE953A30009EFF4 /* IFACoreUITests.m */,
+				F7650DED1BEA948900B97932 /* classes */,
+				F7650E0C1BEA948900B97932 /* resources */,
 				F7156C1B1BE953A30009EFF4 /* Info.plist */,
 			);
 			path = IFACoreUITests;
@@ -1155,6 +1208,51 @@
 				F7650DE31BE95D1F00B97932 /* README.textile */,
 			);
 			path = ODRefreshControl;
+			sourceTree = "<group>";
+		};
+		F7650DED1BEA948900B97932 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7650DEE1BEA948900B97932 /* IFAColorSchemeTest.h */,
+				F7650DEF1BEA948900B97932 /* IFAColorSchemeTest.m */,
+				F7650DF01BEA948900B97932 /* IFACoreUITestCase.h */,
+				F7650DF11BEA948900B97932 /* IFACoreUITestCase.m */,
+				F7650DF21BEA948900B97932 /* IFACurrentLocationManagerTests.m */,
+				F7650DF31BEA948900B97932 /* IFADateRangeTest.h */,
+				F7650DF41BEA948900B97932 /* IFADateRangeTest.m */,
+				F7650DF51BEA948900B97932 /* IFAFormInputAccessoryViewTests.m */,
+				F7650DF61BEA948900B97932 /* IFALocationManagerTests.m */,
+				F7650DF71BEA948900B97932 /* IFAPagingStateManagerTests.m */,
+				F7650DF81BEA948900B97932 /* IFAPersistenceChangeDetectorTests.m */,
+				F7650DF91BEA948900B97932 /* IFAPersistenceManagerTests.m */,
+				F7650DFA1BEA948900B97932 /* IFAPersistentEntityChangeObserverTests.m */,
+				F7650DFB1BEA948900B97932 /* IFASelectionManagerTests.m */,
+				F7650DFC1BEA948900B97932 /* IFASingleSelectionManagerTests.m */,
+				F7650DFD1BEA948900B97932 /* NSDateTest.h */,
+				F7650DFE1BEA948900B97932 /* NSDateTest.m */,
+				F7650DFF1BEA948900B97932 /* NSDictionaryTests.m */,
+				F7650E001BEA948900B97932 /* NSIndexPathTests.m */,
+				F7650E011BEA948900B97932 /* NSMutableArrayTests.m */,
+				F7650E021BEA948900B97932 /* NSNumberFormatterTests.m */,
+				F7650E031BEA948900B97932 /* NSStringTests.m */,
+				F7650E041BEA948900B97932 /* TempTest.h */,
+				F7650E051BEA948900B97932 /* TempTest.m */,
+				F7650E061BEA948900B97932 /* TestCoreDataEntity1.h */,
+				F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */,
+				F7650E081BEA948900B97932 /* TestCoreDataEntity2.h */,
+				F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */,
+				F7650E0A1BEA948900B97932 /* TestCoreDataEntity3.h */,
+				F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		F7650E0C1BEA948900B97932 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7650E0D1BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1598,7 +1696,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7156C1A1BE953A30009EFF4 /* IFACoreUITests.m in Sources */,
+				F7650E1E1BEA948900B97932 /* NSMutableArrayTests.m in Sources */,
+				F7650E1A1BEA948900B97932 /* IFASingleSelectionManagerTests.m in Sources */,
+				F7650E241BEA948900B97932 /* TestCoreDataEntity3.m in Sources */,
+				F7650E101BEA948900B97932 /* IFACoreUITestCase.m in Sources */,
+				F7650E131BEA948900B97932 /* IFAFormInputAccessoryViewTests.m in Sources */,
+				F7650E161BEA948900B97932 /* IFAPersistenceChangeDetectorTests.m in Sources */,
+				F7650E141BEA948900B97932 /* IFALocationManagerTests.m in Sources */,
+				F7650E211BEA948900B97932 /* TempTest.m in Sources */,
+				F7650E1D1BEA948900B97932 /* NSIndexPathTests.m in Sources */,
+				F7650E191BEA948900B97932 /* IFASelectionManagerTests.m in Sources */,
+				F7650E151BEA948900B97932 /* IFAPagingStateManagerTests.m in Sources */,
+				F7650E251BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld in Sources */,
+				F7650E171BEA948900B97932 /* IFAPersistenceManagerTests.m in Sources */,
+				F7650E181BEA948900B97932 /* IFAPersistentEntityChangeObserverTests.m in Sources */,
+				F7650E1C1BEA948900B97932 /* NSDictionaryTests.m in Sources */,
+				F7650E231BEA948900B97932 /* TestCoreDataEntity2.m in Sources */,
+				F7650E121BEA948900B97932 /* IFADateRangeTest.m in Sources */,
+				F7650E1F1BEA948900B97932 /* NSNumberFormatterTests.m in Sources */,
+				F7650E111BEA948900B97932 /* IFACurrentLocationManagerTests.m in Sources */,
+				F7650E1B1BEA948900B97932 /* NSDateTest.m in Sources */,
+				F7650E0F1BEA948900B97932 /* IFAColorSchemeTest.m in Sources */,
+				F7650E221BEA948900B97932 /* TestCoreDataEntity1.m in Sources */,
+				F7650E201BEA948900B97932 /* NSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1636,6 +1756,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SOURCE_ROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1683,6 +1804,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SOURCE_ROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1784,6 +1906,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7650E0D1BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */,
+			);
+			currentVersion = F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */;
+			path = GustyKitCoreUITestsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F7156C011BE953A30009EFF4 /* Project object */;
 }

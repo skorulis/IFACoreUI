@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Kent Nguyen. All rights reserved.
 //
 
+@import UIKit;
+
 @protocol IFASemiModalViewDelegate;
 #define kSemiModalAnimationDuration   0.3
 

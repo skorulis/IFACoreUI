@@ -1,6 +1,9 @@
 //
-// Created by Marcelo Schroeder on 14/03/2014.
-// Copyright (c) 2014 InfoAccent Pty Limited. All rights reserved.
+//  TempTest.h
+//  Gusty
+//
+//  Created by Marcelo Schroeder on 24/09/11.
+//  Copyright 2011 InfoAccent Pty Limited. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -15,10 +18,9 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-@import UIKit;
+#import <XCTest/XCTest.h>
+#import "IFACoreUITestCase.h"
 
+@interface TempTest : IFACoreUITestCase
 
-@interface IFACustomLayoutSupport : NSObject <UILayoutSupport>
-- (id)initWithLength:(CGFloat)a_length;
 @end

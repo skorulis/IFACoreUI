@@ -410,11 +410,11 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
     objc_setAssociatedObject(self, &c_titleViewDefaultKey, a_titleViewDefault, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(ODRefreshControl*)ifa_refreshControl {
+-(IFA_ODRefreshControl*)ifa_refreshControl {
     return objc_getAssociatedObject(self, &c_refreshControlKey);
 }
 
--(void)setIfa_refreshControl:(ODRefreshControl*)a_refreshControl{
+-(void)setIfa_refreshControl:(IFA_ODRefreshControl*)a_refreshControl{
     objc_setAssociatedObject(self, &c_refreshControlKey, a_refreshControl, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -1265,7 +1265,7 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 
 -(void)ifa_showRefreshControl:(UIControl *)a_control inScrollView:(UIScrollView*)a_scrollView{
 //    NSLog(@"m_showRefreshControl - a_control: %@", [a_control description]);
-    CGFloat l_controlHeight = [a_control isKindOfClass:[ODRefreshControl class]] ? 44 : a_control.frame.size.height;
+    CGFloat l_controlHeight = [a_control isKindOfClass:[IFA_ODRefreshControl class]] ? 44 : a_control.frame.size.height;
     [a_scrollView setContentOffset:CGPointMake(0, -(l_controlHeight)) animated:YES];
 }
 

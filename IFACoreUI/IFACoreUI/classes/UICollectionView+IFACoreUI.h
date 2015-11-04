@@ -16,6 +16,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface UICollectionView (IFACoreUI)
 

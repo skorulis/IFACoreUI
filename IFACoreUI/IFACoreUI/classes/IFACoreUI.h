@@ -28,6 +28,7 @@
 #import <GLKit/GLKit.h>
 #import <AdSupport/AdSupport.h>
 #import <Accelerate/Accelerate.h>
+@import UIKit;
 
 /*************/
 /* 3rd party */
@@ -40,7 +41,7 @@
 #import "IFA_HPGrowingTextView.h"
 
 // GustyKit
-#import "IFAFoundation.h"
+@import IFAFoundation;
 
 #import "IFADefaultAppearanceTheme.h"
 #import "IFAAbstractFieldEditorViewController.h"

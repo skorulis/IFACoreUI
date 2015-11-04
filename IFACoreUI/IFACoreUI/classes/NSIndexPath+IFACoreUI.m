@@ -16,7 +16,7 @@
 //
 
 #import "NSIndexPath+IFACoreUI.h"
-
+@import UIKit;
 
 @implementation NSIndexPath (IFACoreUI)
 

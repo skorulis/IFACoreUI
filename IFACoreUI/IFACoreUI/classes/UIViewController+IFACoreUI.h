@@ -24,7 +24,7 @@
 
 @class IFAAsynchronousWorkManager;
 @class IFANavigationItemTitleView;
-@class ODRefreshControl;
+@class IFA_ODRefreshControl;
 
 @protocol IFAAppearanceTheme;
 @class IFAPassthroughView;
@@ -45,7 +45,7 @@
 @property (nonatomic, strong) NSString *ifa_subTitle;
 @property (nonatomic, strong) IFANavigationItemTitleView *ifa_titleViewDefault;
 @property (nonatomic, strong) IFANavigationItemTitleView *ifa_titleViewLandscapePhone;
-@property (nonatomic, strong) ODRefreshControl *ifa_refreshControl;
+@property (nonatomic, strong) IFA_ODRefreshControl *ifa_refreshControl;
 @property (nonatomic, readonly) BOOL ifa_hasViewAppeared;
 @property (nonatomic, strong) UIBarButtonItem *IFA_modalDismissalDoneBarButtonItem;
 

@@ -1,6 +1,6 @@
 //
-// Created by Marcelo Schroeder on 14/03/2014.
-// Copyright (c) 2014 InfoAccent Pty Limited. All rights reserved.
+// Created by Marcelo Schroeder on 18/03/15.
+// Copyright (c) 2015 InfoAccent Pty Ltd. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -15,10 +15,16 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-@import UIKit;
+#import "IFACommonTests.h"
 
+@class IFAPersistenceManager;
 
-@interface IFACustomLayoutSupport : NSObject <UILayoutSupport>
-- (id)initWithLength:(CGFloat)a_length;
+@interface IFACoreUITestCase : XCTestCase
+@property (nonatomic, strong) id asynchronousWorkManagerMock;
+@property(nonatomic, strong) id dispatchQueueManagerPartialMock;
+@property(nonatomic, strong) id dispatchQueueManagerClassMock;
+
+- (void)createInMemoryTestDatabaseWithPersistenceManager:(IFAPersistenceManager *)persistenceManager;
+
+- (void)createInMemoryTestDatabase;
 @end
