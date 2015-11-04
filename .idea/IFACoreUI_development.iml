@@ -341,6 +341,7 @@
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/resources/images/IFA_Icon_UserLocation@2x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/resources/images/IFA_TextViewBorder.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/resources/images/IFA_TextViewBorder@2x.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests/classes/DeleteMeTests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests/classes/IFAColorSchemeTest.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests/classes/IFAColorSchemeTest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests/classes/IFACoreUITestCase.h" isTestSource="false" />
@@ -381,255 +382,6 @@
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes" />
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/resources" />
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests" />
-    <content url="file://$MODULE_DIR$/Podfile">
-      <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/Pods">
-      <sourceFolder url="file://$MODULE_DIR$/Pods/IFATestingSupport/IFATestingSupport/IFATestingSupport/IFACommonTests.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/IFATestingSupport/IFATestingSupport/IFATestingSupport/OCMStubRecorder+IFACategory.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/IFATestingSupport/IFATestingSupport/IFATestingSupport/OCMStubRecorder+IFACategory.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/IFATestingSupport/IFATestingSupport/IFATestingSupport/XCTestCase+IFACategory.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/IFATestingSupport/IFATestingSupport/IFATestingSupport/XCTestCase+IFACategory.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCAssertThat.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCAssertThat.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseDescription.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseDescription.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCBaseMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCDescription.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCDiagnosingMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCDiagnosingMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCSelfDescribing.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCStringDescription.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/HCStringDescription.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCCollect.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCCollect.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCInvocationMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCInvocationMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCRequireNonNilObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCRequireNonNilObject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCWrapInMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/HCWrapInMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/NSInvocation+OCHamcrest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/NSInvocation+OCHamcrest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCBoolReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCBoolReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCCharReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCCharReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCDoubleReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCDoubleReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCFloatReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCFloatReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCIntReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCIntReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongLongReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongLongReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCLongReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCObjectReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCObjectReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnTypeHandlerChain.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnTypeHandlerChain.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnValueGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCReturnValueGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCShortReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCShortReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedCharReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedCharReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedIntReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedIntReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongLongReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongLongReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedShortReturnGetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/ReturnValueGetters/HCUnsignedShortReturnGetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureHandlers/HCTestFailureHandler.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureHandlers/HCTestFailureHandlerChain.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureHandlers/HCTestFailureHandlerChain.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCGenericTestFailureReporter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCGenericTestFailureReporter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCSenTestFailureReporter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCSenTestFailureReporter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailure.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailure.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporterChain.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCTestFailureReporterChain.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCXCTestFailureReporter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Core/Helpers/TestFailureReporters/HCXCTestFailureReporter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCEvery.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCEvery.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCHasCount.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCHasCount.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContaining.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContaining.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInAnyOrder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInAnyOrder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInOrder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInOrder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInRelativeOrder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionContainingInRelativeOrder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionOnlyContaining.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsCollectionOnlyContaining.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContaining.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContaining.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingEntries.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingEntries.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingKey.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingKey.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingValue.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsDictionaryContainingValue.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsEmptyCollection.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsEmptyCollection.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsIn.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Collection/HCIsIn.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCDescribedAs.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCDescribedAs.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCIs.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Decorator/HCIs.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAllOf.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAllOf.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAnyOf.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCAnyOf.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsAnything.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsAnything.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsNot.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Logical/HCIsNot.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsCloseTo.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsCloseTo.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsEqualToNumber.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsEqualToNumber.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsTrueFalse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCIsTrueFalse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCNumberAssert.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCNumberAssert.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCOrderingComparison.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Number/HCOrderingComparison.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCArgumentCaptor.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCArgumentCaptor.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCClassMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCClassMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCConformsToProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCConformsToProtocol.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasDescription.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasDescription.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasProperty.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCHasProperty.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsEqual.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsEqual.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsInstanceOf.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsInstanceOf.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsNil.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsNil.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsSame.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsSame.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsTypeOf.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCIsTypeOf.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCThrowsException.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Object/HCThrowsException.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualIgnoringCase.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualIgnoringCase.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualIgnoringWhiteSpace.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCIsEqualIgnoringWhiteSpace.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContains.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContains.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContainsInOrder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringContainsInOrder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringEndsWith.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringEndsWith.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringStartsWith.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCStringStartsWith.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCSubstringMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/Library/Text/HCSubstringMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCHamcrest/Source/OCHamcrest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSInvocation+OCMAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSInvocation+OCMAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSMethodSignature+OCMAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSMethodSignature+OCMAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSNotificationCenter+OCMAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSNotificationCenter+OCMAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSObject+OCMAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSObject+OCMAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSValue+OCMAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/NSValue+OCMAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCClassMockObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCClassMockObject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMArg.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMArg.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMArgAction.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMArgAction.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMBlockArgCaller.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMBlockArgCaller.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMBlockCaller.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMBlockCaller.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMBoxedReturnValueProvider.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMBoxedReturnValueProvider.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMConstraint.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMExceptionReturnValueProvider.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMExceptionReturnValueProvider.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMExpectationRecorder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMExpectationRecorder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMFunctions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMFunctions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMFunctionsPrivate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMIndirectReturnValueProvider.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMIndirectReturnValueProvider.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMInvocationExpectation.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMInvocationExpectation.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMInvocationMatcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMInvocationMatcher.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMInvocationStub.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMInvocationStub.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMLocation.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMLocation.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMMacroState.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMMacroState.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMNotificationPoster.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMNotificationPoster.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMObserverRecorder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMObserverRecorder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMock.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMockObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMockObject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMPassByRefSetter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMPassByRefSetter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMRealObjectForwarder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMRealObjectForwarder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMRecorder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMRecorder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMReturnValueProvider.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMReturnValueProvider.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMStubRecorder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMStubRecorder.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMVerifier.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCMVerifier.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCObserverMockObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCObserverMockObject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCPartialMockObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCPartialMockObject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCProtocolMockObject.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OCMock/Source/OCMock/OCProtocolMockObject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IFATestingSupport/IFATestingSupport-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IFATestingSupport/IFATestingSupport-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IFATestingSupport/IFATestingSupport.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCHamcrest/OCHamcrest-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCHamcrest/OCHamcrest-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCHamcrest/OCHamcrest.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCMock/OCMock-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCMock/OCMock-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OCMock/OCMock.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-resources.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.debug.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
-    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
@@ -724,8 +476,6 @@
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
           <root url="file://$MODULE_DIR$/Carthage/Build/iOS/IFAFoundation.framework/Headers" />
-          <root url="file://$MODULE_DIR$/Pods/Headers/Private" />
-          <root url="file://$MODULE_DIR$/Pods/Headers/Public" />
         </CLASSES>
         <SOURCES>
           <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers" />
@@ -817,8 +567,6 @@
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
           <root url="file://$MODULE_DIR$/Carthage/Build/iOS/IFAFoundation.framework/Headers" />
-          <root url="file://$MODULE_DIR$/Pods/Headers/Private" />
-          <root url="file://$MODULE_DIR$/Pods/Headers/Public" />
         </SOURCES>
       </library>
     </orderEntry>
