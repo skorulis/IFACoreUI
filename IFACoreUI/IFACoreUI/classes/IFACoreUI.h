@@ -39,6 +39,7 @@
 #import "IFA_ODRefreshControl.h"
 // GrowingTextView
 #import "IFA_HPGrowingTextView.h"
+#import "IFA_HPTextViewInternal.h"
 
 // GustyKit
 @import IFAFoundation;
