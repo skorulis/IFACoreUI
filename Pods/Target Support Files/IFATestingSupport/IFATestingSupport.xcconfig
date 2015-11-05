@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited)  "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 HC_SHORTHAND=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/IFATestingSupport" "${PODS_ROOT}/Headers/Public"
+OTHER_LDFLAGS = -framework "CoreGraphics" -framework "XCTest"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

@@ -1,0 +1,6 @@
+framework module IFATestingSupport {
+  umbrella header "IFATestingSupport-umbrella.h"
+
+  export *
+  module * { export * }
+}
