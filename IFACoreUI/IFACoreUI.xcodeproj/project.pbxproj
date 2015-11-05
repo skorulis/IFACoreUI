@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BBE4924C48D6EA3253833B8F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE1DA81544368F82F921219 /* Pods.framework */; };
+		F74ACC1C1BEBFD7A00C4B73E /* IFACoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */; };
 		F7650C471BE95BBD00B97932 /* IFA_HPGrowingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650C481BE95BBD00B97932 /* IFA_HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B451BE95BBD00B97932 /* IFA_HPGrowingTextView.m */; };
 		F7650C491BE95BBD00B97932 /* IFA_HPTextViewInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B461BE95BBD00B97932 /* IFA_HPTextViewInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -783,6 +784,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74ACC1C1BEBFD7A00C4B73E /* IFACoreUI.framework in Frameworks */,
 				BBE4924C48D6EA3253833B8F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
