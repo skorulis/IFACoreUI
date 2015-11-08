@@ -338,7 +338,6 @@
 		F7650DE41BE95D1F00B97932 /* IFA_ODRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650DE01BE95D1F00B97932 /* IFA_ODRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650DE51BE95D1F00B97932 /* IFA_ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DE11BE95D1F00B97932 /* IFA_ODRefreshControl.m */; };
 		F7650DEC1BE95F5400B97932 /* IFAFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */; };
-		F7650E451BEA9F1400B97932 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F7650E441BEA9F1400B97932 /* Podfile */; };
 		F7650E5C1BEAAD2600B97932 /* IFAFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7650E731BEAAE0A00B97932 /* IFACoreUITestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DF11BEA948900B97932 /* IFACoreUITestCase.m */; };
 		F7650E741BEAAE3B00B97932 /* IFASelectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650DFB1BEA948900B97932 /* IFASelectionManagerTests.m */; };
@@ -1599,7 +1598,6 @@
 				F7650DA11BE95BC600B97932 /* 271-ThreeColumn@2x.png in Resources */,
 				F7650DCA1BE95BC600B97932 /* IFA_Icon_DisclosureIndicatorRight@2x.png in Resources */,
 				F7650D9B1BE95BC600B97932 /* 191-ArrowHead-right@2x.png in Resources */,
-				F7650E451BEA9F1400B97932 /* Podfile in Resources */,
 				F7650DA01BE95BC600B97932 /* 271-ThreeColumn.png in Resources */,
 				F7650DCF1BE95BC600B97932 /* IFA_Icon_HudSuccess@2x.png in Resources */,
 				F7650DC41BE95BC600B97932 /* IFA_Icon_Close@2x.png in Resources */,
