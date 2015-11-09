@@ -395,6 +395,7 @@
 		F7156C0F1BE953A30009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7156C141BE953A30009EFF4 /* IFACoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7156C1B1BE953A30009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75C51701BF133FD0003174D /* IFACoreUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = IFACoreUI.podspec; path = ../IFACoreUI.podspec; sourceTree = "<group>"; };
 		F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFA_HPGrowingTextView.h; sourceTree = "<group>"; };
 		F7650B451BE95BBD00B97932 /* IFA_HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFA_HPGrowingTextView.m; sourceTree = "<group>"; };
 		F7650B461BE95BBD00B97932 /* IFA_HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFA_HPTextViewInternal.h; sourceTree = "<group>"; };
@@ -819,6 +820,7 @@
 				F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */,
 				F7650DE91BE95E8700B97932 /* Cartfile */,
 				F7650E441BEA9F1400B97932 /* Podfile */,
+				F75C51701BF133FD0003174D /* IFACoreUI.podspec */,
 				F7156C0C1BE953A30009EFF4 /* IFACoreUI */,
 				F7156C181BE953A30009EFF4 /* IFACoreUITests */,
 				F7156C0B1BE953A30009EFF4 /* Products */,

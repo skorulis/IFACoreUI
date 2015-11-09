@@ -374,6 +374,9 @@
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests/resources/GustyKitCoreUITestsModel.xcdatamodeld/GustyLibCoreUITestsModel.xcdatamodel" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/IFACoreUI.podspec">
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI.podspec" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/IFACoreUI.xcworkspace" />
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI" />
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI.xcodeproj" />
