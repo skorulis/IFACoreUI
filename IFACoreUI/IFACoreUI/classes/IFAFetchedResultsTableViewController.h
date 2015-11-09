@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+@import CoreData;
 #import "IFATableViewController.h"
 
 @protocol IFAFetchedResultsTableViewControllerDataSource;

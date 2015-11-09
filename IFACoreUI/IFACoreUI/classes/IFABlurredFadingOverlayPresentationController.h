@@ -16,6 +16,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IFAFadingOverlayPresentationController.h"
+#import "UIImage+IFACoreUI.h"
 
 /**
 * Presentation controller that presents content on top of a blurred presenting view controller.
