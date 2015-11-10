@@ -361,7 +361,7 @@
 		F7650E881BEBE60700B97932 /* TestCoreDataEntity1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */; };
 		F7650E891BEBE60700B97932 /* TestCoreDataEntity2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */; };
 		F7650E8A1BEBE60700B97932 /* TestCoreDataEntity3.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */; };
-		F7650E8B1BEBE61900B97932 /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0D1BEA948900B97932 /* IFACoreUITestsModel.xcdatamodeld */; };
+		F7E49F361BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7E49F341BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -762,13 +762,13 @@
 		F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity2.m; sourceTree = "<group>"; };
 		F7650E0A1BEA948900B97932 /* TestCoreDataEntity3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity3.h; sourceTree = "<group>"; };
 		F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity3.m; sourceTree = "<group>"; };
-		F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GustyLibCoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
 		F7650E441BEA9F1400B97932 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		F7650E4B1BEAA94D00B97932 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F7650E4D1BEAA95900B97932 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7650E4F1BEAA95F00B97932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7650E511BEAA96400B97932 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F7650E551BEAABB800B97932 /* IFAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IFAFoundation.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/IFAFoundation-bluqfceadfhxvgfwqxjrqmypubcx/Build/Products/Debug-iphoneos/IFAFoundation.framework"; sourceTree = "<group>"; };
+		F7E49F351BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFACoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1302,7 +1302,7 @@
 		F7650E0C1BEA948900B97932 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				F7650E0D1BEA948900B97932 /* IFACoreUITestsModel.xcdatamodeld */,
+				F7E49F341BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -1805,13 +1805,13 @@
 				F7650E8A1BEBE60700B97932 /* TestCoreDataEntity3.m in Sources */,
 				F7650E7A1BEBE60700B97932 /* IFAFormInputAccessoryViewTests.m in Sources */,
 				F7650E7C1BEBE60700B97932 /* IFAPagingStateManagerTests.m in Sources */,
+				F7E49F361BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld in Sources */,
 				F7650E731BEAAE0A00B97932 /* IFACoreUITestCase.m in Sources */,
 				F7650E7B1BEBE60700B97932 /* IFALocationManagerTests.m in Sources */,
 				F7650E871BEBE60700B97932 /* TempTest.m in Sources */,
 				F7650E831BEBE60700B97932 /* NSIndexPathTests.m in Sources */,
 				F7650E741BEAAE3B00B97932 /* IFASelectionManagerTests.m in Sources */,
 				F7650E7F1BEBE60700B97932 /* IFAPersistentEntityChangeObserverTests.m in Sources */,
-				F7650E8B1BEBE61900B97932 /* IFACoreUITestsModel.xcdatamodeld in Sources */,
 				F7650E7D1BEBE60700B97932 /* IFAPersistenceChangeDetectorTests.m in Sources */,
 				F7650E7E1BEBE60700B97932 /* IFAPersistenceManagerTests.m in Sources */,
 				F7650E821BEBE60700B97932 /* NSDictionaryTests.m in Sources */,
@@ -2025,12 +2025,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F7650E0D1BEA948900B97932 /* IFACoreUITestsModel.xcdatamodeld */ = {
+		F7E49F341BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */,
+				F7E49F351BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodel */,
 			);
-			currentVersion = F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */;
+			currentVersion = F7E49F351BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodel */;
 			path = IFACoreUITestsModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
