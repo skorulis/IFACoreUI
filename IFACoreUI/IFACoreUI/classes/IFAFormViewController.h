@@ -33,7 +33,7 @@
 
 /**
 * This view controller delivers a fully fledged form that allows viewing and editing of the object instance pointed by <object>.
-* It implements two-way binding between view and model (<object>) by using GustyKit's persistent entity configuration system.
+* It implements two-way binding between view and model (<object>) by using IFACoreUI's persistent entity configuration system.
 * This class optionally collaborates with a <IFAFormViewControllerDelegate> instance set in the <formViewControllerDelegate> property.
 */
 @interface IFAFormViewController : IFATableViewController <UIActionSheetDelegate, IFAFormInputAccessoryViewDataSource, IFAViewControllerDelegate, IFAHelpTarget>
@@ -160,7 +160,7 @@ parentFormViewController:(IFAFormViewController *)a_parentFormViewController;
 - (NSString *)titleForFooterInSection:(NSInteger)a_section;
 
 /**
-* Open the URL provided. This method only works if GustyAppKit is also integrated, otherwise it throws an exception.
+* Open the URL provided. This method only works if IFAAppUI is also integrated, otherwise it throws an exception.
 * @param a_url URL to be open.
 */
 - (void)openUrl:(NSURL *)a_url;

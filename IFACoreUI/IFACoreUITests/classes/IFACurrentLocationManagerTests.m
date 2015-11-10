@@ -180,7 +180,7 @@ static CLLocationAccuracy const k_horizontalAccuracyExceeded = 1001.0;
     self.underlyingLocationManagerMock = [OCMockObject niceMockForClass:[CLLocationManager class]];
     self.currentLocationManager = [[IFACurrentLocationManager alloc] initWithUnderlyingLocationManager:self.underlyingLocationManagerMock];
 
-    // GustyKit's location manager mock
+    // IFACoreUI's location manager mock
     id locationManagerMock = OCMClassMock([IFALocationManager class]);
     [OCMStub([locationManagerMock performLocationServicesChecksWithAlertPresenterViewController:[OCMArg any]]) ifa_andReturnBool:YES];
 

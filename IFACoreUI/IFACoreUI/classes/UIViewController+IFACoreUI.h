@@ -358,7 +358,7 @@ typedef NS_ENUM(NSUInteger, IFAViewControllerNotificationObserverRemovalTime) {
 * Convenience method for adding notification observers with automated removal.
 * The initial parameters are identical to the ones taken by addObserverForName:object:queue:usingBlock: from NSNotificationCenter.
 * The observer created will then be removed at the time indicated.
-* Observer removal automation only works with certain GustyKit classes or subclasses.
+* Observer removal automation only works with certain IFACoreUI classes or subclasses.
 * Currently these are the classes that support observer removal automation: IFACollectionViewController, IFAPageViewController, IFATableViewController and IFAViewController.
 * @param a_name The name of the notification for which to register the observer; that is, only notifications with this name are used to add the block to the operation queue. If you pass nil, the notification center doesn’t use a notification’s name to decide whether to add the block to the operation queue.
 * @param a_obj The object whose notifications you want to add the block to the operation queue. If you pass nil, the notification center doesn’t use a notification’s sender to decide whether to add the block to the operation queue.

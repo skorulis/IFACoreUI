@@ -50,7 +50,7 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
     if (self) {
         self.savesInMainThreadOnly = YES;
         self.IFA_childManagedObjectContexts = [NSMutableArray new];
-        self.threadDictionaryKeyManagedObjectContext = [NSString stringWithFormat:@"com.infoaccent.GustyKit.PersistenceManager.ManagedObjectContext.%@",
+        self.threadDictionaryKeyManagedObjectContext = [NSString stringWithFormat:@"com.infoaccent.IFACoreUI.PersistenceManager.ManagedObjectContext.%@",
                                                                                   [IFAUtils generateUuid]];
     }
     return self;

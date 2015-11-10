@@ -495,7 +495,7 @@ static UIImage *c_menuBarButtonItemImage = nil;
 withAlertPresenterViewController:(UIViewController *)a_alertPresenterViewController {
     BOOL success = NO;
     SEL aSelector = NSSelectorFromString(@"ifa_openWithAlertPresenterViewController:");
-    if ([a_url respondsToSelector:aSelector]) { // Selector only available when integrated with GustyAppKit
+    if ([a_url respondsToSelector:aSelector]) { // Selector only available when integrated with IFAAppUI
         NSInvocation *invocation = [NSInvocation
                 invocationWithMethodSignature:[a_url methodSignatureForSelector:aSelector]];
         invocation.target = a_url;
