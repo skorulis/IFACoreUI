@@ -1,6 +1,6 @@
 //
 //  GustyKitCore.h
-//  GustyKit
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 23/08/14.
 //  Copyright (c) 2014 InfoAccent Pty Limited. All rights reserved.

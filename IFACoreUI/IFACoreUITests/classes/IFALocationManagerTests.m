@@ -1,5 +1,5 @@
 //
-//  GustyKit - IFALocationManagerTests.m
+//  IFACoreUI - IFALocationManagerTests.m
 //  Copyright 2015 InfoAccent Pty Ltd. All rights reserved.
 //
 //  Created by: Marcelo Schroeder

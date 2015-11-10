@@ -1,5 +1,5 @@
 //
-//  GustyKit - NSDictionaryTests.m
+//  IFACoreUI - NSDictionaryTests.m
 //  Copyright 2014 InfoAccent Pty Ltd. All rights reserved.
 //
 //  Created by: Marcelo Schroeder

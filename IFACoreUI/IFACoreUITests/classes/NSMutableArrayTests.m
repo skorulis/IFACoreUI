@@ -1,5 +1,5 @@
 //
-//  GustyKit - NSMutableArrayTests.m
+//  IFACoreUI - NSMutableArrayTests.m
 //  Copyright 2014 InfoAccent Pty Ltd. All rights reserved.
 //
 //  Created by: Marcelo Schroeder
