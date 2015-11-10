@@ -1,0 +1,1134 @@
+BCSymbolMap Version: 1.0
+-[IFADateRange initWithStartTimestamp:endTimestamp:]
+-[IFADateRange initWithStartTimestamp:endTimestamp:exclusiveEnd:]
+-[IFADateRange duration]
+-[IFADateRange durationStringWithFormat:calendar:]
+-[IFADateRange ifa_displayValue]
+-[IFADateRange calculatedEndTimestamp]
+-[IFADateRange decimalHoursForCalendar:]
+-[IFADateRange decimalHoursStringForCalendar:]
+-[IFADateRange formattedDecimalHoursForCalendar:]
++[IFADateRange durationStringForStartDate:endDate:format:calendar:]
++[IFADateRange durationStringForInterval:format:calendar:]
++[IFADateRange decimalHoursForStartDate:endDate:calendar:]
++[IFADateRange decimalHoursForInterval:calendar:]
++[IFADateRange decimalHoursStringForStartDate:endDate:calendar:]
++[IFADateRange formattedDecimalHours:]
++[IFADateRange formattedDecimalHoursForInterval:calendar:]
+-[IFADateRange startTimestamp]
+-[IFADateRange setStartTimestamp:]
+-[IFADateRange endTimestamp]
+-[IFADateRange setEndTimestamp:]
+-[IFADateRange isExclusiveEnd]
+-[IFADateRange setExclusiveEnd:]
+-[IFADateRange .cxx_destruct]
+OBJC_METH_VAR_NAME_
+OBJC_SELECTOR_REFERENCES_
+OBJC_CLASSLIST_SUP_REFS_$_
+OBJC_METH_VAR_NAME_1
+OBJC_SELECTOR_REFERENCES_2
+OBJC_METH_VAR_NAME_3
+OBJC_SELECTOR_REFERENCES_4
+OBJC_METH_VAR_NAME_5
+OBJC_SELECTOR_REFERENCES_6
+OBJC_METH_VAR_NAME_7
+OBJC_SELECTOR_REFERENCES_8
+OBJC_METH_VAR_NAME_9
+OBJC_SELECTOR_REFERENCES_10
+OBJC_METH_VAR_NAME_11
+OBJC_SELECTOR_REFERENCES_12
+OBJC_METH_VAR_NAME_13
+OBJC_SELECTOR_REFERENCES_14
+OBJC_CLASSLIST_REFERENCES_$_
+OBJC_METH_VAR_NAME_15
+OBJC_SELECTOR_REFERENCES_16
+OBJC_CLASSLIST_REFERENCES_$_17
+OBJC_METH_VAR_NAME_18
+OBJC_SELECTOR_REFERENCES_19
+OBJC_METH_VAR_NAME_20
+OBJC_SELECTOR_REFERENCES_21
+.str
+_unnamed_cfstring_
+OBJC_CLASSLIST_REFERENCES_$_22
+OBJC_METH_VAR_NAME_23
+OBJC_SELECTOR_REFERENCES_24
+OBJC_METH_VAR_NAME_25
+OBJC_SELECTOR_REFERENCES_26
+OBJC_METH_VAR_NAME_27
+OBJC_SELECTOR_REFERENCES_28
+OBJC_CLASSLIST_REFERENCES_$_29
+.str30
+_unnamed_cfstring_31
+OBJC_METH_VAR_NAME_32
+OBJC_SELECTOR_REFERENCES_33
+OBJC_METH_VAR_NAME_34
+OBJC_SELECTOR_REFERENCES_35
+OBJC_METH_VAR_NAME_36
+OBJC_SELECTOR_REFERENCES_37
+OBJC_METH_VAR_NAME_38
+OBJC_SELECTOR_REFERENCES_39
+OBJC_METH_VAR_NAME_40
+OBJC_SELECTOR_REFERENCES_41
+OBJC_METH_VAR_NAME_42
+OBJC_SELECTOR_REFERENCES_43
+OBJC_METH_VAR_NAME_44
+OBJC_SELECTOR_REFERENCES_45
+OBJC_METH_VAR_NAME_46
+OBJC_SELECTOR_REFERENCES_47
+.str48
+_unnamed_cfstring_49
+.str50
+OBJC_METH_VAR_NAME_51
+OBJC_SELECTOR_REFERENCES_52
+.str53
+_unnamed_cfstring_54
+OBJC_CLASSLIST_REFERENCES_$_55
+OBJC_METH_VAR_NAME_56
+OBJC_SELECTOR_REFERENCES_57
+.str58
+_unnamed_cfstring_59
+OBJC_METH_VAR_NAME_60
+OBJC_SELECTOR_REFERENCES_61
+OBJC_METH_VAR_NAME_62
+OBJC_SELECTOR_REFERENCES_63
+OBJC_METH_VAR_NAME_64
+OBJC_SELECTOR_REFERENCES_65
+OBJC_METH_VAR_NAME_66
+OBJC_SELECTOR_REFERENCES_67
+OBJC_METH_VAR_NAME_68
+OBJC_SELECTOR_REFERENCES_69
+OBJC_METH_VAR_NAME_70
+OBJC_SELECTOR_REFERENCES_71
+OBJC_METH_VAR_NAME_72
+OBJC_SELECTOR_REFERENCES_73
+OBJC_CLASSLIST_REFERENCES_$_74
+OBJC_METH_VAR_NAME_75
+OBJC_SELECTOR_REFERENCES_76
+OBJC_METH_VAR_NAME_77
+OBJC_SELECTOR_REFERENCES_78
+OBJC_CLASSLIST_REFERENCES_$_79
+OBJC_METH_VAR_NAME_80
+OBJC_SELECTOR_REFERENCES_81
+OBJC_METH_VAR_NAME_82
+OBJC_SELECTOR_REFERENCES_83
+OBJC_CLASSLIST_REFERENCES_$_84
+OBJC_METH_VAR_NAME_85
+OBJC_SELECTOR_REFERENCES_86
+.str87
+_unnamed_cfstring_88
+.str89
+_unnamed_cfstring_90
+OBJC_METH_VAR_NAME_91
+OBJC_SELECTOR_REFERENCES_92
+.str93
+_unnamed_cfstring_94
+.str95
+_unnamed_cfstring_96
+OBJC_CLASSLIST_REFERENCES_$_97
+OBJC_METH_VAR_NAME_98
+OBJC_SELECTOR_REFERENCES_99
+.str100
+_unnamed_cfstring_101
+.str102
+_unnamed_cfstring_103
+.str104
+_unnamed_cfstring_105
+.str106
+_unnamed_cfstring_107
+.str108
+_unnamed_cfstring_109
+.str110
+_unnamed_cfstring_111
+OBJC_METH_VAR_NAME_112
+OBJC_SELECTOR_REFERENCES_113
+OBJC_METH_VAR_NAME_114
+OBJC_SELECTOR_REFERENCES_115
+.str116
+_unnamed_cfstring_117
+.str118
+_unnamed_cfstring_119
+.str120
+_unnamed_cfstring_121
+.str122
+_unnamed_cfstring_123
+.str124
+_unnamed_cfstring_125
+.str126
+_unnamed_cfstring_127
+.str128
+_unnamed_cfstring_129
+.str130
+_unnamed_cfstring_131
+.str132
+_unnamed_cfstring_133
+.str134
+_unnamed_cfstring_135
+OBJC_METH_VAR_NAME_136
+OBJC_SELECTOR_REFERENCES_137
+OBJC_METH_VAR_NAME_138
+OBJC_SELECTOR_REFERENCES_139
+OBJC_CLASSLIST_REFERENCES_$_140
+OBJC_METH_VAR_NAME_141
+OBJC_SELECTOR_REFERENCES_142
+OBJC_METH_VAR_NAME_143
+OBJC_SELECTOR_REFERENCES_144
+OBJC_METH_VAR_NAME_145
+OBJC_SELECTOR_REFERENCES_146
+OBJC_METH_VAR_NAME_147
+OBJC_SELECTOR_REFERENCES_148
+OBJC_METH_VAR_NAME_149
+OBJC_SELECTOR_REFERENCES_150
+.str151
+_unnamed_cfstring_152
+OBJC_METH_VAR_NAME_153
+OBJC_SELECTOR_REFERENCES_154
+OBJC_METH_VAR_NAME_155
+OBJC_SELECTOR_REFERENCES_156
+OBJC_METH_VAR_NAME_157
+OBJC_SELECTOR_REFERENCES_158
+OBJC_METH_VAR_NAME_159
+OBJC_SELECTOR_REFERENCES_160
+OBJC_IVAR_$_IFADateRange._startTimestamp
+OBJC_IVAR_$_IFADateRange._endTimestamp
+OBJC_IVAR_$_IFADateRange._exclusiveEnd
+OBJC_CLASS_NAME_
+OBJC_METH_VAR_TYPE_
+OBJC_METH_VAR_NAME_161
+OBJC_METH_VAR_TYPE_162
+OBJC_METH_VAR_TYPE_163
+OBJC_METH_VAR_TYPE_164
+OBJC_METH_VAR_TYPE_165
+OBJC_METH_VAR_NAME_166
+l_OBJC_$_CLASS_METHODS_IFADateRange
+l_OBJC_METACLASS_RO_$_IFADateRange
+OBJC_CLASS_NAME_167
+OBJC_METH_VAR_NAME_168
+OBJC_METH_VAR_TYPE_169
+OBJC_METH_VAR_TYPE_170
+OBJC_METH_VAR_NAME_171
+OBJC_METH_VAR_TYPE_172
+OBJC_METH_VAR_NAME_173
+OBJC_METH_VAR_TYPE_174
+OBJC_METH_VAR_NAME_175
+OBJC_METH_VAR_TYPE_176
+OBJC_METH_VAR_NAME_177
+OBJC_METH_VAR_NAME_178
+OBJC_METH_VAR_NAME_179
+OBJC_METH_VAR_NAME_180
+OBJC_METH_VAR_TYPE_181
+OBJC_METH_VAR_TYPE_182
+OBJC_METH_VAR_TYPE_183
+OBJC_METH_VAR_TYPE_184
+l_OBJC_$_INSTANCE_METHODS_IFADateRange
+OBJC_METH_VAR_NAME_185
+OBJC_METH_VAR_TYPE_186
+OBJC_METH_VAR_NAME_187
+OBJC_METH_VAR_TYPE_188
+OBJC_METH_VAR_NAME_189
+l_OBJC_$_INSTANCE_VARIABLES_IFADateRange
+OBJC_PROP_NAME_ATTR_
+OBJC_PROP_NAME_ATTR_190
+OBJC_PROP_NAME_ATTR_191
+OBJC_PROP_NAME_ATTR_192
+OBJC_PROP_NAME_ATTR_193
+OBJC_PROP_NAME_ATTR_194
+OBJC_PROP_NAME_ATTR_195
+OBJC_PROP_NAME_ATTR_196
+OBJC_PROP_NAME_ATTR_197
+OBJC_PROP_NAME_ATTR_198
+l_OBJC_$_PROP_LIST_IFADateRange
+l_OBJC_CLASS_RO_$_IFADateRange
+OBJC_LABEL_CLASS_$
+Apple LLVM version 7.0.0 (clang-700.1.76)
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/ModuleCache/2F3DF1PC57EXG/Darwin-MI6WZSG1PNOM.pcm
+Darwin
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/include
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/ModuleCache/2F3DF1PC57EXG/UIKit-2LM3EQU7VVY4O.pcm
+UIKit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/UIKit.framework
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/ModuleCache/2F3DF1PC57EXG/ObjectiveC-2CD0WTQVXITO7.pcm
+ObjectiveC
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/ModuleCache/2F3DF1PC57EXG/CoreGraphics-1YQ59ILDR3NYI.pcm
+CoreGraphics
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/ModuleCache/2F3DF1PC57EXG/Foundation-A3SOD99KJ0S9.pcm
+Foundation
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework
+-[IFADateRange .cxx_destruct]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFADateRange.m
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation
+-[IFADateRange setExclusiveEnd:]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFADateRange.h
+-[IFADateRange isExclusiveEnd]
+-[IFADateRange setEndTimestamp:]
+-[IFADateRange endTimestamp]
+-[IFADateRange setStartTimestamp:]
+-[IFADateRange startTimestamp]
++[IFADateRange formattedDecimalHoursForInterval:calendar:]
++[IFADateRange formattedDecimalHours:]
++[IFADateRange decimalHoursStringForStartDate:endDate:calendar:]
++[IFADateRange decimalHoursForInterval:calendar:]
++[IFADateRange decimalHoursForStartDate:endDate:calendar:]
++[IFADateRange durationStringForInterval:format:calendar:]
++[IFADateRange durationStringForStartDate:endDate:format:calendar:]
+-[IFADateRange formattedDecimalHoursForCalendar:]
+-[IFADateRange decimalHoursStringForCalendar:]
+-[IFADateRange decimalHoursForCalendar:]
+-[IFADateRange calculatedEndTimestamp]
+-[IFADateRange ifa_displayValue]
+-[IFADateRange durationStringWithFormat:calendar:]
+-[IFADateRange duration]
+-[IFADateRange initWithStartTimestamp:endTimestamp:exclusiveEnd:]
+-[IFADateRange initWithStartTimestamp:endTimestamp:]
+-[IFAZeroingWeakReferenceContainer initWithWeakReference:]
+-[IFAZeroingWeakReferenceContainer weakReference]
+-[IFAZeroingWeakReferenceContainer setWeakReference:]
+-[IFAZeroingWeakReferenceContainer .cxx_destruct]
+OBJC_IVAR_$_IFAZeroingWeakReferenceContainer._weakReference
+l_OBJC_METACLASS_RO_$_IFAZeroingWeakReferenceContainer
+OBJC_METH_VAR_NAME_4
+OBJC_METH_VAR_TYPE_5
+OBJC_METH_VAR_NAME_6
+OBJC_METH_VAR_TYPE_7
+OBJC_METH_VAR_TYPE_8
+l_OBJC_$_INSTANCE_METHODS_IFAZeroingWeakReferenceContainer
+OBJC_METH_VAR_TYPE_10
+l_OBJC_$_INSTANCE_VARIABLES_IFAZeroingWeakReferenceContainer
+OBJC_CLASS_NAME_11
+OBJC_PROP_NAME_ATTR_12
+l_OBJC_$_PROP_LIST_IFAZeroingWeakReferenceContainer
+l_OBJC_CLASS_RO_$_IFAZeroingWeakReferenceContainer
+-[IFAZeroingWeakReferenceContainer .cxx_destruct]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAZeroingWeakReferenceContainer.m
+-[IFAZeroingWeakReferenceContainer setWeakReference:]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAZeroingWeakReferenceContainer.h
+-[IFAZeroingWeakReferenceContainer weakReference]
+-[IFAZeroingWeakReferenceContainer initWithWeakReference:]
++[NSCalendar(IFAFoundation) ifa_setThreadSafeCalendarFirstWeekday:]
++[NSCalendar(IFAFoundation) ifa_setThreadSafeCalendarMinimumDaysInFirstWeek:]
++[NSCalendar(IFAFoundation) ifa_threadSafeCalendarFirstWeekday]
++[NSCalendar(IFAFoundation) ifa_threadSafeCalendarMinimumDaysInFirstWeek]
++[NSCalendar(IFAFoundation) ifa_threadSafeCalendar]
+c_firstWeekday
+c_minimumDaysInFirstWeek
+OBJC_CLASSLIST_REFERENCES_$_1
+OBJC_METH_VAR_NAME_2
+OBJC_SELECTOR_REFERENCES_3
+OBJC_SELECTOR_REFERENCES_5
+OBJC_SELECTOR_REFERENCES_7
+OBJC_METH_VAR_NAME_8
+OBJC_SELECTOR_REFERENCES_9
+OBJC_METH_VAR_NAME_10
+OBJC_SELECTOR_REFERENCES_11
+OBJC_METH_VAR_NAME_12
+OBJC_SELECTOR_REFERENCES_13
+OBJC_METH_VAR_NAME_14
+OBJC_SELECTOR_REFERENCES_15
+OBJC_METH_VAR_NAME_16
+OBJC_SELECTOR_REFERENCES_17
+OBJC_METH_VAR_NAME_21
+OBJC_METH_VAR_TYPE_22
+OBJC_METH_VAR_TYPE_24
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSCalendar_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSCalendar_$_IFAFoundation
+OBJC_LABEL_CATEGORY_$
++[NSCalendar(IFAFoundation) ifa_threadSafeCalendar]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSCalendar+IFAFoundation.m
++[NSCalendar(IFAFoundation) ifa_threadSafeCalendarMinimumDaysInFirstWeek]
++[NSCalendar(IFAFoundation) ifa_threadSafeCalendarFirstWeekday]
++[NSCalendar(IFAFoundation) ifa_setThreadSafeCalendarMinimumDaysInFirstWeek:]
++[NSCalendar(IFAFoundation) ifa_setThreadSafeCalendarFirstWeekday:]
+-[IFAPurgeableObject initWithObject:]
+-[IFAPurgeableObject beginContentAccess]
+-[IFAPurgeableObject endContentAccess]
+-[IFAPurgeableObject discardContentIfPossible]
+-[IFAPurgeableObject isContentDiscarded]
+-[IFAPurgeableObject obj]
+-[IFAPurgeableObject setObj:]
+-[IFAPurgeableObject .cxx_destruct]
+OBJC_IVAR_$_IFAPurgeableObject.contentAccessCount
+OBJC_IVAR_$_IFAPurgeableObject.contentDiscarded
+.str7
+OBJC_CLASSLIST_REFERENCES_$_8
+.str11
+_unnamed_cfstring_12
+.str13
+_unnamed_cfstring_14
+OBJC_METH_VAR_NAME_17
+OBJC_SELECTOR_REFERENCES_18
+OBJC_IVAR_$_IFAPurgeableObject._obj
+OBJC_METH_VAR_NAME_19
+OBJC_METH_VAR_TYPE_20
+OBJC_CLASS_NAME_22
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSDiscardableContent
+l_OBJC_$_PROTOCOL_METHOD_TYPES_NSDiscardableContent
+l_OBJC_PROTOCOL_$_NSDiscardableContent
+l_OBJC_LABEL_PROTOCOL_$_NSDiscardableContent
+l_OBJC_CLASS_PROTOCOLS_$_IFAPurgeableObject
+l_OBJC_METACLASS_RO_$_IFAPurgeableObject
+OBJC_CLASS_NAME_23
+OBJC_METH_VAR_NAME_24
+OBJC_METH_VAR_TYPE_25
+OBJC_METH_VAR_NAME_26
+OBJC_METH_VAR_TYPE_28
+OBJC_METH_VAR_TYPE_29
+l_OBJC_$_INSTANCE_METHODS_IFAPurgeableObject
+OBJC_METH_VAR_NAME_30
+OBJC_METH_VAR_TYPE_31
+OBJC_METH_VAR_TYPE_33
+OBJC_METH_VAR_TYPE_35
+l_OBJC_$_INSTANCE_VARIABLES_IFAPurgeableObject
+OBJC_PROP_NAME_ATTR_36
+l_OBJC_$_PROP_LIST_IFAPurgeableObject
+l_OBJC_CLASS_RO_$_IFAPurgeableObject
+-[IFAPurgeableObject .cxx_destruct]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAPurgeableObject.m
+-[IFAPurgeableObject setObj:]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAPurgeableObject.h
+-[IFAPurgeableObject obj]
+-[IFAPurgeableObject isContentDiscarded]
+-[IFAPurgeableObject discardContentIfPossible]
+-[IFAPurgeableObject endContentAccess]
+-[IFAPurgeableObject beginContentAccess]
+-[IFAPurgeableObject initWithObject:]
+-[NSData(IFAFoundation) ifa_hexString]
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSData_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSData_$_IFAFoundation
+-[NSData(IFAFoundation) ifa_hexString]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSData+IFAFoundation.m
+-[IFADynamicCache init]
+-[IFADynamicCache setObject:forKey:]
+-[IFADynamicCache cache:willEvictObject:]
++[IFADynamicCache sharedInstance]
+__33+[IFADynamicCache sharedInstance]_block_invoke
+__copy_helper_block_
+__destroy_helper_block_
+sharedInstance.c_dispatchOncePredicate
+sharedInstance.c_instance
+__block_descriptor_tmp
+OBJC_CLASS_NAME_7
+l_OBJC_$_CLASS_METHODS_IFADynamicCache
+OBJC_METH_VAR_TYPE_11
+OBJC_CLASS_NAME_12
+OBJC_METH_VAR_TYPE_14
+OBJC_METH_VAR_TYPE_16
+OBJC_METH_VAR_TYPE_19
+OBJC_METH_VAR_TYPE_21
+OBJC_METH_VAR_NAME_22
+OBJC_METH_VAR_TYPE_23
+OBJC_METH_VAR_TYPE_27
+OBJC_METH_VAR_NAME_28
+OBJC_METH_VAR_NAME_29
+OBJC_METH_VAR_TYPE_30
+OBJC_METH_VAR_NAME_31
+OBJC_METH_VAR_TYPE_32
+OBJC_METH_VAR_NAME_33
+OBJC_METH_VAR_NAME_37
+OBJC_METH_VAR_TYPE_38
+OBJC_METH_VAR_NAME_39
+OBJC_METH_VAR_TYPE_40
+OBJC_METH_VAR_NAME_41
+OBJC_METH_VAR_NAME_43
+OBJC_METH_VAR_TYPE_44
+OBJC_METH_VAR_NAME_45
+OBJC_CLASS_NAME_46
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+OBJC_PROP_NAME_ATTR_47
+OBJC_PROP_NAME_ATTR_48
+OBJC_PROP_NAME_ATTR_49
+OBJC_PROP_NAME_ATTR_50
+OBJC_PROP_NAME_ATTR_51
+OBJC_PROP_NAME_ATTR_52
+l_OBJC_$_PROP_LIST_NSObject
+l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_$_PROTOCOL_REFS_NSCacheDelegate
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSCacheDelegate
+l_OBJC_$_PROTOCOL_METHOD_TYPES_NSCacheDelegate
+l_OBJC_PROTOCOL_$_NSCacheDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSCacheDelegate
+l_OBJC_CLASS_PROTOCOLS_$_IFADynamicCache
+l_OBJC_METACLASS_RO_$_IFADynamicCache
+l_OBJC_$_INSTANCE_METHODS_IFADynamicCache
+l_OBJC_$_PROP_LIST_IFADynamicCache
+l_OBJC_CLASS_RO_$_IFADynamicCache
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/include/dispatch/once.h
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFADynamicCache.m
++[IFADynamicCache sharedInstance]
+-[IFADynamicCache cache:willEvictObject:]
+-[IFADynamicCache setObject:forKey:]
+-[IFADynamicCache init]
+-[IFADispatchQueueManager dispatchAsyncMainThreadBlock:]
+-[IFADispatchQueueManager dispatchAsyncMainThreadBlock:afterDelay:]
+-[IFADispatchQueueManager dispatchSyncMainThreadBlock:]
+-[IFADispatchQueueManager dispatchAsyncGlobalHighPriorityQueueBlock:]
+-[IFADispatchQueueManager dispatchAsyncGlobalDefaultPriorityQueueBlock:]
+-[IFADispatchQueueManager dispatchAsyncGlobalQueueBlock:priority:]
++[IFADispatchQueueManager createSerialDispatchQueueWithLabel:qualityOfServiceClass:]
+-[IFADispatchQueueManager coalescedPerformSelector:onTarget:]
++[IFADispatchQueueManager dispatchTimeForDelay:]
++[IFADispatchQueueManager sharedInstance]
+__41+[IFADispatchQueueManager sharedInstance]_block_invoke
+OBJC_SELECTOR_REFERENCES_23
+.str24
+OBJC_CLASS_NAME_25
+l_OBJC_$_CLASS_METHODS_IFADispatchQueueManager
+l_OBJC_METACLASS_RO_$_IFADispatchQueueManager
+OBJC_METH_VAR_NAME_35
+OBJC_METH_VAR_TYPE_37
+OBJC_METH_VAR_TYPE_39
+l_OBJC_$_INSTANCE_METHODS_IFADispatchQueueManager
+l_OBJC_CLASS_RO_$_IFADispatchQueueManager
+dispatch_get_main_queue
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/include/dispatch/queue.h
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFADispatchQueueManager.m
++[IFADispatchQueueManager sharedInstance]
++[IFADispatchQueueManager dispatchTimeForDelay:]
+-[IFADispatchQueueManager coalescedPerformSelector:onTarget:]
++[IFADispatchQueueManager createSerialDispatchQueueWithLabel:qualityOfServiceClass:]
+-[IFADispatchQueueManager dispatchAsyncGlobalQueueBlock:priority:]
+-[IFADispatchQueueManager dispatchAsyncGlobalDefaultPriorityQueueBlock:]
+-[IFADispatchQueueManager dispatchAsyncGlobalHighPriorityQueueBlock:]
+-[IFADispatchQueueManager dispatchSyncMainThreadBlock:]
+-[IFADispatchQueueManager dispatchAsyncMainThreadBlock:afterDelay:]
+-[IFADispatchQueueManager dispatchAsyncMainThreadBlock:]
+-[NSFileManager(IFAFoundation) ifa_removeItemAtURL:]
+-[NSFileManager(IFAFoundation) ifa_removeItemAtPath:]
+-[NSFileManager(IFAFoundation) ifa_temporaryDirectoryUrl]
+-[NSFileManager(IFAFoundation) ifa_urlForTemporaryFileNamed:]
+OBJC_METH_VAR_TYPE_18
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSFileManager_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSFileManager_$_IFAFoundation
+-[NSFileManager(IFAFoundation) ifa_urlForTemporaryFileNamed:]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSFileManager+IFAFoundation.m
+-[NSFileManager(IFAFoundation) ifa_temporaryDirectoryUrl]
+-[NSFileManager(IFAFoundation) ifa_removeItemAtPath:]
+-[NSFileManager(IFAFoundation) ifa_removeItemAtURL:]
+-[NSObject(IFAFoundation) ifa_coalescedPerformSelector:]
++[NSObject(IFAFoundation) ifa_classBundle]
+OBJC_CLASSLIST_REFERENCES_$_3
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_IFAFoundation
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSObject_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSObject_$_IFAFoundation
++[NSObject(IFAFoundation) ifa_classBundle]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSObject+IFAFoundation.m
+-[NSObject(IFAFoundation) ifa_coalescedPerformSelector:]
+l_OBJC_METACLASS_RO_$_IFAAssertionUtils
+l_OBJC_CLASS_RO_$_IFAAssertionUtils
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAAssertionUtils.m
++[NSDictionary(IFAFoundation) ifa_dictionaryFromObjects:groupedByPath:sortDescriptor:]
+.str10
+_unnamed_cfstring_11
+OBJC_CLASSLIST_REFERENCES_$_12
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSDictionary_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSDictionary_$_IFAFoundation
++[NSDictionary(IFAFoundation) ifa_dictionaryFromObjects:groupedByPath:sortDescriptor:]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSDictionary+IFAFoundation.m
++[NSNumberFormatter(IFAFoundation) IFA_configureAustralianPhoneNumberFormatter:]
++[NSNumberFormatter(IFAFoundation) IFA_createAustralianPhoneNumberFormattersIfRequired]
+__87+[NSNumberFormatter(IFAFoundation) IFA_createAustralianPhoneNumberFormattersIfRequired]_block_invoke
++[NSNumberFormatter(IFAFoundation) ifa_stringFromAustralianPhoneNumber:]
++[NSNumberFormatter(IFAFoundation) ifa_stringFromAustralianPhoneNumberString:]
+c_australianPhoneNumberFormatterLandLineWithoutAreaCode
+c_australianPhoneNumberFormatterLandLineWithAreaCode
+c_australianPhoneNumberFormatterMobileAndSpecialWithoutGrouping
+IFA_createAustralianPhoneNumberFormattersIfRequired.c_dispatchOncePredicate
+.str5
+_unnamed_cfstring_6
+.str15
+OBJC_SELECTOR_REFERENCES_25
+OBJC_CLASSLIST_REFERENCES_$_26
+.str27
+_unnamed_cfstring_28
+OBJC_SELECTOR_REFERENCES_30
+OBJC_SELECTOR_REFERENCES_32
+OBJC_SELECTOR_REFERENCES_34
+OBJC_CLASSLIST_REFERENCES_$_35
+OBJC_CLASS_NAME_40
+OBJC_METH_VAR_TYPE_41
+OBJC_METH_VAR_TYPE_42
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSNumberFormatter_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSNumberFormatter_$_IFAFoundation
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
++[NSNumberFormatter(IFAFoundation) ifa_stringFromAustralianPhoneNumberString:]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSNumberFormatter+IFAFoundation.m
++[NSNumberFormatter(IFAFoundation) ifa_stringFromAustralianPhoneNumber:]
++[NSNumberFormatter(IFAFoundation) IFA_createAustralianPhoneNumberFormattersIfRequired]
++[NSNumberFormatter(IFAFoundation) IFA_configureAustralianPhoneNumberFormatter:]
+-[NSDate(IFAFoundation) dayDateComponentsForDate:calendar:]
+-[NSDate(IFAFoundation) dayDateComponentsForCalendar:]
+-[NSDate(IFAFoundation) ifa_lastMidnightForCalendar:]
+-[NSDate(IFAFoundation) ifa_nextMidnightForCalendar:]
+-[NSDate(IFAFoundation) ifa_lastSecondForCalendar:]
+-[NSDate(IFAFoundation) ifa_isSameDay:calendar:]
+-[NSDate(IFAFoundation) ifa_isTodayForCalendar:]
+-[NSDate(IFAFoundation) ifa_isBetweenDate:andDate:]
+-[NSDate(IFAFoundation) ifa_fullDayRangeForCalendar:]
+-[NSDate(IFAFoundation) ifa_dateRangeForUnit:calendar:exclusiveEnd:]
+-[NSDate(IFAFoundation) ifa_dateRangeForUnit:calendar:]
+-[NSDate(IFAFoundation) ifa_formatAsDate]
+-[NSDate(IFAFoundation) ifa_formatAsDateWithRelativeDateFormatting:]
+-[NSDate(IFAFoundation) ifa_formatAsTime]
+-[NSDate(IFAFoundation) ifa_formatAsDateAndTime]
+-[NSDate(IFAFoundation) ifa_formatAsDateAndTimeWithRelativeDateFormatting:]
+-[NSDate(IFAFoundation) ifa_descriptionWithCurrentLocale]
+-[NSDate(IFAFoundation) ifa_addDays:calendar:]
+-[NSDate(IFAFoundation) ifa_withSecondPrecision]
++[NSDate(IFAFoundation) ifa_dateWithSecondPrecision]
++[NSDate(IFAFoundation) ifa_lastMidnightForCalendar:]
++[NSDate(IFAFoundation) ifa_isDate:betweenDate:andDate:]
++[NSDate(IFAFoundation) ifa_dateAndTimeFormatter]
++[NSDate(IFAFoundation) ifa_dateFormatter]
++[NSDate(IFAFoundation) ifa_timeFormatter]
++[NSDate(IFAFoundation) ifa_resetCachedFormatters]
+OBJC_SELECTOR_REFERENCES_20
+OBJC_CLASSLIST_REFERENCES_$_21
+OBJC_CLASSLIST_REFERENCES_$_31
+OBJC_METH_VAR_NAME_48
+OBJC_SELECTOR_REFERENCES_49
+OBJC_METH_VAR_NAME_50
+OBJC_SELECTOR_REFERENCES_51
+OBJC_METH_VAR_NAME_52
+OBJC_SELECTOR_REFERENCES_53
+OBJC_CLASSLIST_REFERENCES_$_54
+OBJC_METH_VAR_NAME_55
+OBJC_SELECTOR_REFERENCES_56
+OBJC_METH_VAR_NAME_57
+OBJC_SELECTOR_REFERENCES_58
+OBJC_METH_VAR_NAME_59
+OBJC_SELECTOR_REFERENCES_60
+OBJC_CLASSLIST_REFERENCES_$_61
+OBJC_CLASSLIST_REFERENCES_$_66
+OBJC_METH_VAR_NAME_67
+OBJC_SELECTOR_REFERENCES_68
+OBJC_CLASSLIST_REFERENCES_$_69
+OBJC_METH_VAR_NAME_74
+OBJC_SELECTOR_REFERENCES_75
+OBJC_METH_VAR_NAME_76
+OBJC_SELECTOR_REFERENCES_77
+OBJC_METH_VAR_NAME_78
+OBJC_SELECTOR_REFERENCES_79
+dateAndTimeFormatter
+OBJC_METH_VAR_NAME_87
+OBJC_SELECTOR_REFERENCES_88
+dateFormatter
+timeFormatter
+OBJC_METH_VAR_TYPE_89
+OBJC_METH_VAR_NAME_90
+OBJC_METH_VAR_TYPE_91
+OBJC_METH_VAR_NAME_92
+OBJC_METH_VAR_TYPE_93
+OBJC_METH_VAR_NAME_94
+OBJC_METH_VAR_NAME_95
+OBJC_METH_VAR_TYPE_96
+OBJC_METH_VAR_NAME_97
+OBJC_METH_VAR_TYPE_98
+OBJC_METH_VAR_NAME_99
+OBJC_METH_VAR_TYPE_100
+OBJC_METH_VAR_TYPE_101
+OBJC_METH_VAR_NAME_102
+OBJC_METH_VAR_NAME_103
+OBJC_METH_VAR_NAME_104
+OBJC_METH_VAR_NAME_105
+OBJC_METH_VAR_TYPE_106
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSDate_$_IFAFoundation
+OBJC_METH_VAR_NAME_107
+OBJC_METH_VAR_TYPE_108
+OBJC_METH_VAR_NAME_109
+OBJC_METH_VAR_TYPE_110
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSDate_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSDate_$_IFAFoundation
++[NSDate(IFAFoundation) ifa_resetCachedFormatters]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSDate+IFAFoundation.m
++[NSDate(IFAFoundation) ifa_timeFormatter]
++[NSDate(IFAFoundation) ifa_dateFormatter]
++[NSDate(IFAFoundation) ifa_dateAndTimeFormatter]
++[NSDate(IFAFoundation) ifa_isDate:betweenDate:andDate:]
++[NSDate(IFAFoundation) ifa_lastMidnightForCalendar:]
++[NSDate(IFAFoundation) ifa_dateWithSecondPrecision]
+-[NSDate(IFAFoundation) ifa_withSecondPrecision]
+-[NSDate(IFAFoundation) ifa_addDays:calendar:]
+-[NSDate(IFAFoundation) ifa_descriptionWithCurrentLocale]
+-[NSDate(IFAFoundation) ifa_formatAsDateAndTimeWithRelativeDateFormatting:]
+-[NSDate(IFAFoundation) ifa_formatAsDateAndTime]
+-[NSDate(IFAFoundation) ifa_formatAsTime]
+-[NSDate(IFAFoundation) ifa_formatAsDateWithRelativeDateFormatting:]
+-[NSDate(IFAFoundation) ifa_formatAsDate]
+-[NSDate(IFAFoundation) ifa_dateRangeForUnit:calendar:]
+-[NSDate(IFAFoundation) ifa_dateRangeForUnit:calendar:exclusiveEnd:]
+-[NSDate(IFAFoundation) ifa_fullDayRangeForCalendar:]
+-[NSDate(IFAFoundation) ifa_isBetweenDate:andDate:]
+-[NSDate(IFAFoundation) ifa_isTodayForCalendar:]
+-[NSDate(IFAFoundation) ifa_isSameDay:calendar:]
+-[NSDate(IFAFoundation) ifa_lastSecondForCalendar:]
+-[NSDate(IFAFoundation) ifa_nextMidnightForCalendar:]
+-[NSDate(IFAFoundation) ifa_lastMidnightForCalendar:]
+-[NSDate(IFAFoundation) dayDateComponentsForCalendar:]
+-[NSDate(IFAFoundation) dayDateComponentsForDate:calendar:]
+-[NSString(IFAFoundation) ifa_stringByKeepingCharactersInSet:]
+-[NSString(IFAFoundation) ifa_stringByRemovingNewLineCharacters]
+-[NSString(IFAFoundation) ifa_stringByTrimming]
+-[NSString(IFAFoundation) ifa_isEmpty]
+-[NSString(IFAFoundation) ifa_validateEmailAddress]
+-[NSString(IFAFoundation) ifa_stringByReplacingOccurrencesOfRegexPattern:usingBlock:]
+__85-[NSString(IFAFoundation) ifa_stringByReplacingOccurrencesOfRegexPattern:usingBlock:]_block_invoke
++[NSString(IFAFoundation) ifa_stringWithFormat:array:]
+-[NSString(IFAFoundation) ifa_characters]
+-[NSString(IFAFoundation) ifa_stringMatchingSet:]
+-[NSString(IFAFoundation) ifa_stringWithNumbersOnly]
+_unnamed_cfstring_16
+.str18
+_unnamed_cfstring_19
+OBJC_SELECTOR_REFERENCES_36
+.str37
+.str42
+_unnamed_cfstring_43
+OBJC_CLASSLIST_REFERENCES_$_48
+OBJC_METH_VAR_NAME_49
+OBJC_SELECTOR_REFERENCES_50
+OBJC_CLASSLIST_REFERENCES_$_53
+OBJC_METH_VAR_NAME_54
+OBJC_SELECTOR_REFERENCES_55
+OBJC_METH_VAR_NAME_58
+OBJC_SELECTOR_REFERENCES_59
+.str66
+_unnamed_cfstring_67
+OBJC_METH_VAR_NAME_73
+OBJC_METH_VAR_TYPE_74
+OBJC_METH_VAR_TYPE_76
+OBJC_METH_VAR_TYPE_79
+OBJC_METH_VAR_NAME_81
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSString_$_IFAFoundation
+OBJC_METH_VAR_TYPE_83
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSString_$_IFAFoundation
+l_OBJC_$_CATEGORY_NSString_$_IFAFoundation
+-[NSString(IFAFoundation) ifa_stringWithNumbersOnly]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/NSString+IFAFoundation.m
+-[NSString(IFAFoundation) ifa_stringMatchingSet:]
+-[NSString(IFAFoundation) ifa_characters]
++[NSString(IFAFoundation) ifa_stringWithFormat:array:]
+-[NSString(IFAFoundation) ifa_stringByReplacingOccurrencesOfRegexPattern:usingBlock:]
+-[NSString(IFAFoundation) ifa_validateEmailAddress]
+-[NSString(IFAFoundation) ifa_isEmpty]
+-[NSString(IFAFoundation) ifa_stringByTrimming]
+-[NSString(IFAFoundation) ifa_stringByRemovingNewLineCharacters]
+-[NSString(IFAFoundation) ifa_stringByKeepingCharactersInSet:]
+.str1
+_unnamed_cfstring_2
+l_OBJC_METACLASS_RO_$_IFAFoundationConstants
+l_OBJC_CLASS_RO_$_IFAFoundationConstants
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/include/objc
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAFoundationConstants.m
++[IFAUtils IFA_pListPathForName:bundle:]
++[IFAUtils getPlistAsArray:]
++[IFAUtils getPlistAsArray:bundle:]
++[IFAUtils getPlistAsDictionary:]
++[IFAUtils getPlistAsDictionary:bundle:]
++[IFAUtils getSetterNameFromPropertyName:]
++[IFAUtils logBooleanWithLabel:value:]
++[IFAUtils dispatchAsyncMainThreadBlock:]
++[IFAUtils dispatchAsyncMainThreadBlock:afterDelay:]
++[IFAUtils dispatchSyncMainThreadBlock:]
++[IFAUtils dispatchAsyncGlobalDefaultPriorityQueueBlock:]
++[IFAUtils dispatchAsyncGlobalHighPriorityQueueBlock:]
++[IFAUtils dispatchAsyncGlobalQueueBlock:priority:]
++[IFAUtils infoPList]
++[IFAUtils infoPListForBundle:]
++[IFAUtils appName]
++[IFAUtils appEdition]
++[IFAUtils appVersion]
++[IFAUtils appBuildNumber]
++[IFAUtils appNameAndEdition]
++[IFAUtils appVersionAndBuildNumber]
++[IFAUtils appFullName]
++[IFAUtils generateUuid]
++[IFAUtils forceCrash]
++[IFAUtils stringFromResource:type:]
++[IFAUtils stringFromResource:type:inBundle:]
++[IFAUtils toArrayIfRequiredFromObject:]
++[IFAUtils classForPropertyNamed:inClass:]
++[IFAUtils classForPropertyNamed:inClassNamed:]
++[IFAUtils deviceSupportsVibration]
++[IFAUtils nilOrEmptyForString:]
++[IFAUtils isProductionAps]
++[IFAUtils isIOS7OrGreater]
++[IFAUtils isIOS8OrGreater]
++[IFAUtils hardwareType]
++[IFAUtils encodeForUrlByAddingPercentEscapesWithOriginalString:]
++[IFAUtils encodeForUrlByAddingPercentEscapesIncludingReservedCharactersWithOriginalString:]
++[IFAUtils isRunningsTests]
+OBJC_CLASSLIST_REFERENCES_$_7
+OBJC_CLASSLIST_REFERENCES_$_14
+.str21
+_unnamed_cfstring_22
+OBJC_CLASSLIST_REFERENCES_$_23
+.str26
+_unnamed_cfstring_27
+OBJC_SELECTOR_REFERENCES_29
+.str32
+_unnamed_cfstring_33
+.str34
+_unnamed_cfstring_35
+.str38
+_unnamed_cfstring_39
+OBJC_CLASSLIST_REFERENCES_$_40
+OBJC_SELECTOR_REFERENCES_42
+OBJC_SELECTOR_REFERENCES_44
+OBJC_SELECTOR_REFERENCES_46
+OBJC_METH_VAR_NAME_47
+OBJC_SELECTOR_REFERENCES_48
+OBJC_METH_VAR_NAME_53
+OBJC_SELECTOR_REFERENCES_54
+.str57
+_unnamed_cfstring_58
+.str61
+_unnamed_cfstring_62
+OBJC_METH_VAR_NAME_63
+OBJC_SELECTOR_REFERENCES_64
+.str65
+_unnamed_cfstring_66
+.str67
+_unnamed_cfstring_68
+.str69
+_unnamed_cfstring_70
+OBJC_METH_VAR_NAME_71
+OBJC_SELECTOR_REFERENCES_72
+OBJC_CLASSLIST_REFERENCES_$_73
+OBJC_CLASSLIST_REFERENCES_$_76
+.str77
+_unnamed_cfstring_78
+OBJC_METH_VAR_NAME_79
+OBJC_SELECTOR_REFERENCES_80
+.str81
+_unnamed_cfstring_82
+OBJC_METH_VAR_NAME_83
+OBJC_SELECTOR_REFERENCES_84
+OBJC_METH_VAR_NAME_89
+OBJC_SELECTOR_REFERENCES_90
+.str91
+_unnamed_cfstring_92
+OBJC_SELECTOR_REFERENCES_95
+.str96
+_unnamed_cfstring_97
+OBJC_CLASSLIST_REFERENCES_$_98
+OBJC_SELECTOR_REFERENCES_100
+.str101
+_unnamed_cfstring_102
+OBJC_SELECTOR_REFERENCES_104
+OBJC_SELECTOR_REFERENCES_106
+OBJC_SELECTOR_REFERENCES_108
+OBJC_SELECTOR_REFERENCES_110
+OBJC_METH_VAR_NAME_111
+OBJC_SELECTOR_REFERENCES_112
+OBJC_METH_VAR_NAME_113
+OBJC_SELECTOR_REFERENCES_114
+OBJC_METH_VAR_NAME_115
+OBJC_SELECTOR_REFERENCES_116
+.str117
+_unnamed_cfstring_118
+.str119
+_unnamed_cfstring_120
+OBJC_METH_VAR_NAME_121
+OBJC_SELECTOR_REFERENCES_122
+OBJC_METH_VAR_NAME_123
+OBJC_SELECTOR_REFERENCES_124
+OBJC_METH_VAR_NAME_125
+OBJC_SELECTOR_REFERENCES_126
+OBJC_CLASSLIST_REFERENCES_$_127
+OBJC_METH_VAR_NAME_128
+OBJC_SELECTOR_REFERENCES_129
+OBJC_METH_VAR_NAME_130
+OBJC_SELECTOR_REFERENCES_131
+OBJC_METH_VAR_NAME_134
+OBJC_SELECTOR_REFERENCES_135
+OBJC_CLASSLIST_REFERENCES_$_136
+OBJC_METH_VAR_NAME_137
+OBJC_SELECTOR_REFERENCES_138
+OBJC_METH_VAR_NAME_139
+OBJC_SELECTOR_REFERENCES_140
+.str143
+_unnamed_cfstring_144
+.str145
+_unnamed_cfstring_146
+.str147
+_unnamed_cfstring_148
+OBJC_CLASSLIST_REFERENCES_$_151
+OBJC_METH_VAR_NAME_152
+OBJC_SELECTOR_REFERENCES_153
+.str154
+_unnamed_cfstring_155
+.str156
+_unnamed_cfstring_157
+.str158
+_unnamed_cfstring_159
+.str160
+_unnamed_cfstring_161
+OBJC_METH_VAR_NAME_162
+OBJC_SELECTOR_REFERENCES_163
+.str164
+_unnamed_cfstring_165
+OBJC_CLASSLIST_REFERENCES_$_166
+OBJC_METH_VAR_NAME_167
+OBJC_SELECTOR_REFERENCES_168
+OBJC_METH_VAR_NAME_169
+OBJC_SELECTOR_REFERENCES_170
+.str171
+_unnamed_cfstring_172
+OBJC_SELECTOR_REFERENCES_174
+OBJC_SELECTOR_REFERENCES_176
+.str177
+_unnamed_cfstring_178
+.str179
+_unnamed_cfstring_180
+OBJC_METH_VAR_NAME_181
+OBJC_METH_VAR_NAME_183
+OBJC_METH_VAR_NAME_184
+OBJC_METH_VAR_TYPE_187
+OBJC_METH_VAR_TYPE_189
+OBJC_METH_VAR_TYPE_190
+OBJC_METH_VAR_NAME_191
+OBJC_METH_VAR_NAME_192
+OBJC_METH_VAR_NAME_193
+OBJC_METH_VAR_TYPE_194
+OBJC_METH_VAR_NAME_195
+OBJC_METH_VAR_TYPE_196
+OBJC_METH_VAR_NAME_197
+OBJC_METH_VAR_TYPE_198
+OBJC_METH_VAR_NAME_199
+OBJC_METH_VAR_TYPE_200
+OBJC_METH_VAR_NAME_201
+OBJC_METH_VAR_TYPE_202
+OBJC_METH_VAR_NAME_203
+OBJC_METH_VAR_TYPE_204
+OBJC_METH_VAR_NAME_205
+OBJC_METH_VAR_NAME_206
+OBJC_METH_VAR_NAME_207
+OBJC_METH_VAR_NAME_208
+OBJC_METH_VAR_NAME_209
+OBJC_METH_VAR_NAME_210
+OBJC_METH_VAR_NAME_211
+l_OBJC_$_CLASS_METHODS_IFAUtils
+l_OBJC_METACLASS_RO_$_IFAUtils
+l_OBJC_CLASS_RO_$_IFAUtils
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/ModuleCache/2F3DF1PC57EXG/CoreFoundation-10I2D2XL7L7X9.pcm
+CoreFoundation
+CFBridgingRelease
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
++[IFAUtils isRunningsTests]
+/Users/mschroeder/myfiles/projects/Xcode/IFACoreUI/IFACoreUI_development/Carthage/Checkouts/IFAFoundation/IFAFoundation/IFAFoundation/classes/IFAUtils.m
++[IFAUtils encodeForUrlByAddingPercentEscapesIncludingReservedCharactersWithOriginalString:]
++[IFAUtils encodeForUrlByAddingPercentEscapesWithOriginalString:]
++[IFAUtils hardwareType]
++[IFAUtils isIOS8OrGreater]
++[IFAUtils isIOS7OrGreater]
++[IFAUtils isProductionAps]
++[IFAUtils nilOrEmptyForString:]
++[IFAUtils deviceSupportsVibration]
++[IFAUtils classForPropertyNamed:inClassNamed:]
++[IFAUtils classForPropertyNamed:inClass:]
++[IFAUtils toArrayIfRequiredFromObject:]
++[IFAUtils stringFromResource:type:inBundle:]
++[IFAUtils stringFromResource:type:]
++[IFAUtils forceCrash]
++[IFAUtils generateUuid]
++[IFAUtils appFullName]
++[IFAUtils appVersionAndBuildNumber]
++[IFAUtils appNameAndEdition]
++[IFAUtils appBuildNumber]
++[IFAUtils appVersion]
++[IFAUtils appEdition]
++[IFAUtils appName]
++[IFAUtils infoPListForBundle:]
++[IFAUtils infoPList]
++[IFAUtils dispatchAsyncGlobalQueueBlock:priority:]
++[IFAUtils dispatchAsyncGlobalHighPriorityQueueBlock:]
++[IFAUtils dispatchAsyncGlobalDefaultPriorityQueueBlock:]
++[IFAUtils dispatchSyncMainThreadBlock:]
++[IFAUtils dispatchAsyncMainThreadBlock:afterDelay:]
++[IFAUtils dispatchAsyncMainThreadBlock:]
++[IFAUtils logBooleanWithLabel:value:]
++[IFAUtils getSetterNameFromPropertyName:]
++[IFAUtils getPlistAsDictionary:bundle:]
++[IFAUtils getPlistAsDictionary:]
++[IFAUtils getPlistAsArray:bundle:]
++[IFAUtils getPlistAsArray:]
++[IFAUtils IFA_pListPathForName:bundle:]
+/Users/mschroeder/Library/Developer/Xcode/DerivedData/IFAFoundation-cjuubvxdjtvyhfaobhothcvvtihv/Build/Intermediates/IFAFoundation.build/Release-iphoneos/IFAFoundation.build/DerivedSources/IFAFoundation_vers.c
+Apple LLVM version 7.0.0 (clang-700.1.75)
+/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/org.llvm.clang.root/ModuleCache/1PKN476Z26K39/Foundation-E7AIY98HG4IO.pcm
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk/System/Library/Frameworks/Foundation.framework
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -miphoneos-version-min=4.3 -g -Wno-sign-conversion -fembed-bitcode -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Symbols/BuiltProducts -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -fgnu-inline-asm -fmodules -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/cf.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/cf.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-63/source/cf.m -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/cf.o -mlinker-version=253.3.2
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-63/source/cf.m
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-63
+_ZL15__ARCLite__loadv
+_ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+_ZL22add_image_hook_swiftV1PK11mach_headerl
+_ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+_ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
+_ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+_ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+_ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+_ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+_ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+_ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+_ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+_ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+_ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+_ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+_ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+_ZL32__arclite_object_getIndexedIvarsP11objc_object
+_ZL23__arclite_objc_getClassPKc
+_ZL27__arclite_objc_getMetaClassPKc
+_ZL31__arclite_objc_getRequiredClassPKc
+_ZL26__arclite_objc_lookUpClassPKc
+_ZL26__arclite_objc_getProtocolPKc
+_ZL23__arclite_class_getNameP10objc_class
+_ZL26__arclite_protocol_getNameP8Protocol
+_ZL37__arclite_objc_copyClassNamesForImagePKcPj
+_ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+_ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+_ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+_ZL14initialize_impP11objc_objectP13objc_selector
+_ZL18allocateMaybeSwiftP18glue_swift_class_tm
+_ZL22copySwiftV1MangledNamePKcb
+_ZL13demangledNamePKcb
+_ZL16scanMangledFieldRPKcS0_S1_Ri
+_ZL30arclite_uninitialized_functionv
+_ZL12cxxConstructP11objc_object
+_ZL20fixStringForCoreDataP11objc_object
+OBJC_METACLASS_$___ARCLite__
+_ZL24OBJC_CLASS_$___ARCLite__
+_ZL31OBJC_METACLASS_RO_$___ARCLite__
+_non_lazy_classes
+_ZL27OBJC_CLASS_RO_$___ARCLite__
+_ZL11_class_name
+_ZL32OBJC_$_CLASS_METHODS___ARCLite__
+_ZL17_load_method_name
+_ZL17_load_method_type
+OBJC_METH_VAR_TYPE_6
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS___ARCLiteKeyedSubscripting__
+l_OBJC_$_PROTOCOL_METHOD_TYPES___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+.str8
+_ZL30NSUndoManagerProxy_targetClass
+.str12
+_ZL29original_NSManagedObject_init
+_ZL40original_NSManagedObject_allocWithEntity
+_ZL35original_NSManagedObject_allocBatch
+_ZL25NSMutableDictionary_class
+.str19
+_ZL22NSConstantString_class
+.str20
+_ZL14NSString_class
+_ZL36original_NSKKMS_fastIndexForKnownKey
+_ZL27original_NSKKMS_indexForKey
+_ZL28original_NSKKsD_objectForKey
+_ZL34original_NSKKsD_removeObjectForKey
+_ZL32original_NSKKsD_setObject_forKey
+_ZL40original_NSKKsD_addEntriesFromDictionary
+_ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+_ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+.str31
+_ZL31original_objc_allocateClassPair
+.str33
+_ZL31original_object_getIndexedIvars
+_ZL22original_objc_getClass
+.str35
+_ZL26original_objc_getMetaClass
+.str36
+_ZL30original_objc_getRequiredClass
+_ZL25original_objc_lookUpClass
+_ZL25original_objc_getProtocol
+.str39
+_ZL22original_class_getName
+.str40
+_ZL25original_protocol_getName
+.str41
+_ZL36original_objc_copyClassNamesForImage
+.str46
+.str47
+.str49
+.str51
+.str52
+_ZL12demangleLock
+_ZL9Demangled
+.str54
+.str55
+.str56
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -fembed-bitcode -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Symbols/BuiltProducts -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -fgnu-inline-asm -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-63/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-63~53/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=253.3.2
+__arclite_NSKKsD_addEntriesFromDictionary
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-63/source/arclite.mm
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+fixStringForCoreData
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+cxxConstruct
+__arclite_NSManagedObject_init
+arclite_uninitialized_function
+replaceMethod
+__arclite_NSUndoManagerProxy_isKindOfClass
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+__arclite_objc_copyClassNamesForImage
+patch_t<const char *(Protocol *)>
+__arclite_protocol_getName
+patch_t<const char *(Class)>
+__isctype
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk/usr/include/ctype.h
+isdigit
+scanMangledField
+copySwiftV1DemangledName
+demangledName
+__arclite_class_getName
+patch_t<Protocol *(const char *)>
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+patch_t<Class (const char *)>
+copySwiftV1MangledName
+__arclite_objc_getClass
+patch_t<void *(id)>
+word_align
+__arclite_object_getIndexedIvars
+patch_t<Class (Class, const char *, unsigned long)>
+allocateMaybeSwift
+isSwift
+metaclass
+__arclite_objc_allocateClassPair
+patch_t<Class (Class, const objc_image_info *)>
+initialize_imp
+property_list_nth
+transcribeProperties
+transcribeProtocols
+method_list_nth
+transcribeMethods
+alignment
+max
+ivar_list_nth
+transcribeIvars
+fastFlags
+data
+ro
+__arclite_objc_readClassPair
+add_image_hook_swiftV1
+install_swiftV1
+install_ARC
+objc_collectingEnabled
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.Internal.sdk/usr/include/objc/objc-auto.h
+keyedGetter
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+addOrReplaceMethod
+install_dict_nil_value
+install_subscripting
+install_autoreleasepool
+__ARCLite__load

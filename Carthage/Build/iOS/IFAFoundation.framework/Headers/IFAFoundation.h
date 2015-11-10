@@ -1,6 +1,6 @@
 //
-//  GustyKitFoundation.h
-//  GustyKit
+//  IFAFoundation.h
+//  IFAFoundation
 //
 //  Created by Marcelo Schroeder on 16/01/2015.
 //  Copyright (c) 2015 InfoAccent Pty Ltd. All rights reserved.

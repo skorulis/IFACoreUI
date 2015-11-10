@@ -60,6 +60,7 @@
 		F7156BF01BE952FB0009EFF4 /* IFAFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFAFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7156BF51BE952FB0009EFF4 /* IFAFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFAFoundationTests.m; sourceTree = "<group>"; };
 		F7156BF71BE952FB0009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75C516F1BF1338B0003174D /* IFAFoundation.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = IFAFoundation.podspec; path = ../IFAFoundation.podspec; sourceTree = "<group>"; };
 		F7650AFF1BE9595700B97932 /* IFAFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAFoundation.h; sourceTree = "<group>"; };
 		F7650B001BE9595700B97932 /* IFAAssertionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAAssertionUtils.h; sourceTree = "<group>"; };
 		F7650B011BE9595700B97932 /* IFAAssertionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAAssertionUtils.m; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 		F7156BDC1BE952FB0009EFF4 = {
 			isa = PBXGroup;
 			children = (
+				F75C516F1BF1338B0003174D /* IFAFoundation.podspec */,
 				F7156BE81BE952FB0009EFF4 /* IFAFoundation */,
 				F7156BF41BE952FB0009EFF4 /* IFAFoundationTests */,
 				F7156BE71BE952FB0009EFF4 /* Products */,
@@ -372,6 +374,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -419,7 +422,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -442,6 +445,7 @@
 		F7156BFB1BE952FB0009EFF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -458,6 +462,7 @@
 		F7156BFC1BE952FB0009EFF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

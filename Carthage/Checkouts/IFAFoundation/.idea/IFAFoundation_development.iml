@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/.idea" />
     <content url="file://$MODULE_DIR$/IFAFoundation">
-      <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAFoundation.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAAssertionUtils.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAAssertionUtils.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFADateRange.h" isTestSource="false" />
@@ -12,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFADispatchQueueManager.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFADynamicCache.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFADynamicCache.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAFoundation.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAFoundationConstants.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAFoundationConstants.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/classes/IFAPurgeableObject.h" isTestSource="false" />
@@ -39,6 +39,9 @@
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundationTests/IFAFoundationTests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFAFoundation/IFAFoundationTests/Info.plist" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/IFAFoundation.podspec">
+      <sourceFolder url="file://$MODULE_DIR$/IFAFoundation.podspec" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/IFAFoundation.xcworkspace" />
     <content url="file://$MODULE_DIR$/IFAFoundation/IFAFoundation" />

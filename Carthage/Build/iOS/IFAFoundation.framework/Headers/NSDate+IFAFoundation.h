@@ -1,6 +1,6 @@
 //
 //  NSDate+IFACategory.h
-//  Gusty
+//  IFAFoundation
 //
 //  Created by Marcelo Schroeder on 20/09/10.
 //  Copyright 2010 InfoAccent Pty Limited. All rights reserved.

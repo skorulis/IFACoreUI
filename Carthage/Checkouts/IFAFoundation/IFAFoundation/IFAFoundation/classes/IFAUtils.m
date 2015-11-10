@@ -1,6 +1,6 @@
 //
 //  IFAUtils.m
-//  Gusty
+//  IFAFoundation
 //
 //  Created by Marcelo Schroeder on 14/08/09.
 //  Copyright 2009 InfoAccent Pty Limited. All rights reserved.
@@ -58,7 +58,7 @@
 + (void) logBooleanWithLabel:(NSString*)a_label value:(BOOL)a_value{
 	NSMutableString *l_label = [NSMutableString stringWithString:a_label];
 	[l_label appendString:@": %@"];
-	NSLog(l_label, a_value ? NSLocalizedStringFromTable(@"YES", @"GustyKitLocalizable", nil) : NSLocalizedStringFromTable(@"NO", @"GustyKitLocalizable", nil));
+	NSLog(l_label, a_value ? NSLocalizedStringFromTable(@"YES", @"IFALocalizable", nil) : NSLocalizedStringFromTable(@"NO", @"IFALocalizable", nil));
 }
 
 +(void)dispatchAsyncMainThreadBlock:(dispatch_block_t)a_block{
@@ -120,7 +120,7 @@
 }
 
 +(NSString*)appVersionAndBuildNumber{
-    return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ (build %@)", @"GustyKitLocalizable", @"<APP_VERSION> (build <BUILD_NUMBER>)"), [self appVersion], [IFAUtils appBuildNumber]];
+    return [NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ (build %@)", @"IFALocalizable", @"<APP_VERSION> (build <BUILD_NUMBER>)"), [self appVersion], [IFAUtils appBuildNumber]];
 }
 
 +(NSString*)appFullName{
