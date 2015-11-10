@@ -39,7 +39,7 @@
                           showSettingsOption:(BOOL)a_shouldShowSettingsOption
                      presenterViewController:(UIViewController *)a_presenterViewController {
     NSString *message = a_message;
-    NSString *title = NSLocalizedStringFromTable(@"Unable to obtain your location", @"GustyKitLocalizable", nil);
+    NSString *title = NSLocalizedStringFromTable(@"Unable to obtain your location", @"IFALocalizable", nil);
     NSMutableArray *l_alertActions = [NSMutableArray new];
     if (a_shouldShowSettingsOption) {
         [l_alertActions addObject:[UIAlertAction actionWithTitle:@"Cancel"
@@ -49,11 +49,11 @@
             [IFAUIUtils  openUrl:[NSURL URLWithString:UIApplicationOpenSettingsURLString]
 withAlertPresenterViewController:nil];
         };
-        [l_alertActions addObject:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Settings", @"GustyKitLocalizable", nil)
+        [l_alertActions addObject:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Settings", @"IFALocalizable", nil)
                                                            style:UIAlertActionStyleDefault
                                                          handler:settingsHandlerBlock]];
     } else {
-        [l_alertActions addObject:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Continue", @"GustyKitLocalizable", nil)
+        [l_alertActions addObject:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Continue", @"IFALocalizable", nil)
                                                            style:UIAlertActionStyleDefault
                                                          handler:nil]];
     }
@@ -98,7 +98,7 @@ withAlertPresenterViewController:nil];
 
 + (void)handleLocationFailureWithAlertPresenterViewController:(UIViewController *)a_alertPresenterViewController {
     if ([self performLocationServicesChecksWithAlertPresenterViewController:a_alertPresenterViewController]) {
-        NSString *message = NSLocalizedStringFromTable(@"Please check if your device has Internet connectivity.", @"GustyKitLocalizable", nil);
+        NSString *message = NSLocalizedStringFromTable(@"Please check if your device has Internet connectivity.", @"IFALocalizable", nil);
         [self showLocationServicesAlertWithMessage:message
                            presenterViewController:a_alertPresenterViewController];
     }
@@ -114,7 +114,7 @@ withAlertPresenterViewController:nil];
 + (BOOL)
 performLocationServicesChecksWithAlertPresenterViewController:(UIViewController *)a_alertPresenterViewController {
     if (![CLLocationManager locationServicesEnabled]) {
-        NSString *message = NSLocalizedStringFromTable(@"Location Services are currently disabled. Please enable them in the Privacy section of the Settings app.", @"GustyKitLocalizable", nil);
+        NSString *message = NSLocalizedStringFromTable(@"Location Services are currently disabled. Please enable them in the Privacy section of the Settings app.", @"IFALocalizable", nil);
         [self showLocationServicesAlertWithMessage:message
                            presenterViewController:a_alertPresenterViewController];
         return NO;
@@ -127,14 +127,14 @@ performLocationServicesChecksWithAlertPresenterViewController:(UIViewController 
             return YES;
         case kCLAuthorizationStatusRestricted:
         {
-            NSString *message = NSLocalizedStringFromTable(@"Your device is not authorised to use Location Services.", @"GustyKitLocalizable", nil);
+            NSString *message = NSLocalizedStringFromTable(@"Your device is not authorised to use Location Services.", @"IFALocalizable", nil);
             [self showLocationServicesAlertWithMessage:message
                                presenterViewController:a_alertPresenterViewController];
             return NO;
         }
         case kCLAuthorizationStatusDenied:
         {
-            NSString *message = NSLocalizedStringFromTable(@"Location access is currently disabled for this app. Please enable it in the Location section of Settings. Tap the Settings button below to open Settings.", @"GustyKitLocalizable", nil);
+            NSString *message = NSLocalizedStringFromTable(@"Location access is currently disabled for this app. Please enable it in the Location section of Settings. Tap the Settings button below to open Settings.", @"IFALocalizable", nil);
             [self showLocationServicesAlertWithMessage:message showSettingsOption:YES
                                presenterViewController:a_alertPresenterViewController];
             return NO;

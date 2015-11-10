@@ -146,7 +146,7 @@ static UIImage *c_menuBarButtonItemImage = nil;
 		{
 			NSString *l_title = [IFAUtils infoPList][@"IFASelectNoneButtonLabel"];
             if (!l_title) {
-                l_title = NSLocalizedStringFromTable(@"Select None", @"GustyKitLocalizable", nil);
+                l_title = NSLocalizedStringFromTable(@"Select None", @"IFALocalizable", nil);
             }
 			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:l_title style:UIBarButtonItemStylePlain
                                                             target:a_target action:a_action];
@@ -155,7 +155,7 @@ static UIImage *c_menuBarButtonItemImage = nil;
 		}
 		case IFABarButtonItemTypeSelectAll:
 		{
-			NSString *l_title = NSLocalizedStringFromTable(@"Select All", @"GustyKitLocalizable", nil);
+			NSString *l_title = NSLocalizedStringFromTable(@"Select All", @"IFALocalizable", nil);
 			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:l_title style:UIBarButtonItemStylePlain
                                                             target:a_target action:a_action];
 //			barButtonItem.accessibilityLabel = @"Select All Button";
@@ -174,12 +174,12 @@ static UIImage *c_menuBarButtonItemImage = nil;
 //			barButtonItem.accessibilityLabel = @"Next Page Button";
 			break;
 		case IFABarButtonItemTypeSelectNow:
-			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Now", @"GustyKitLocalizable", nil) style:UIBarButtonItemStylePlain
+			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Now", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain
                                                             target:a_target action:a_action];
 //			barButtonItem.accessibilityLabel = @"Now Button";
 			break;
 		case IFABarButtonItemTypeSelectToday:
-			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Today", @"GustyKitLocalizable", nil) style:UIBarButtonItemStylePlain
+			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Today", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain
                                                             target:a_target action:a_action];
 //			barButtonItem.accessibilityLabel = @"Today Button";
 			break;
@@ -194,12 +194,12 @@ static UIImage *c_menuBarButtonItemImage = nil;
 //			barButtonItem.accessibilityLabel = @"Refresh Button";
 			break;
 		case IFABarButtonItemTypeDismiss:
-			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Dismiss", @"GustyKitLocalizable", nil) style:UIBarButtonItemStylePlain
+			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Dismiss", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain
                                                             target:a_target action:a_action];
 //			barButtonItem.accessibilityLabel = @"Dismiss Button";
 			break;
 		case IFABarButtonItemTypeBack:
-			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Back", @"GustyKitLocalizable", nil) style:UIBarButtonItemStylePlain
+			barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Back", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain
                                                             target:a_target action:a_action];
 //			barButtonItem.accessibilityLabel = @"Back Button";
 			break;
@@ -304,11 +304,11 @@ static UIImage *c_menuBarButtonItemImage = nil;
 }
 
 + (NSString*)stringValueForBoolean:(BOOL)aBoolean{
-    return aBoolean ? NSLocalizedStringFromTable(@"yes", @"GustyKitLocalizable", nil) : NSLocalizedStringFromTable(@"no", @"GustyKitLocalizable", nil);
+    return aBoolean ? NSLocalizedStringFromTable(@"yes", @"IFALocalizable", nil) : NSLocalizedStringFromTable(@"no", @"IFALocalizable", nil);
 }
 
 + (NSString*)onOffStringValueForBoolean:(BOOL)aBoolean{
-    return aBoolean ? NSLocalizedStringFromTable(@"on", @"GustyKitLocalizable", nil) : NSLocalizedStringFromTable(@"off", @"GustyKitLocalizable", nil);
+    return aBoolean ? NSLocalizedStringFromTable(@"on", @"IFALocalizable", nil) : NSLocalizedStringFromTable(@"off", @"IFALocalizable", nil);
 }
 
 + (void)showAndHideUserActionConfirmationHudWithText:(NSString*)a_text{
@@ -326,7 +326,7 @@ static UIImage *c_menuBarButtonItemImage = nil;
 }
 
 + (void)showAndHideModeToggleConfirmationHudWithText:(NSString*)a_text on:(BOOL)a_on{
-    NSString *format = NSLocalizedStringWithDefaultValue(@"ModeState", @"GustyKitLocalizable", [NSBundle bundleForClass:[self class]], @"%@ %@", @"Example: <Adjustment mode> <off>");
+    NSString *format = NSLocalizedStringWithDefaultValue(@"ModeState", @"IFALocalizable", [NSBundle bundleForClass:[self class]], @"%@ %@", @"Example: <Adjustment mode> <off>");
     NSString *text = [NSString stringWithFormat:format,
                                                 a_text,
                                                 [IFAUIUtils onOffStringValueForBoolean:a_on]];
@@ -484,11 +484,11 @@ static UIImage *c_menuBarButtonItemImage = nil;
 }
 
 + (NSString *)saveButtonTitle {
-    return NSLocalizedStringFromTable(@"Save", @"GustyKitLocalizable", nil);
+    return NSLocalizedStringFromTable(@"Save", @"IFALocalizable", nil);
 }
 
 + (NSString *)cancelButtonTitle {
-    return NSLocalizedStringFromTable(@"Cancel", @"GustyKitLocalizable", nil);
+    return NSLocalizedStringFromTable(@"Cancel", @"IFALocalizable", nil);
 }
 
 + (BOOL)                 openUrl:(NSURL *)a_url
@@ -530,7 +530,7 @@ withAlertPresenterViewController:(UIViewController *)a_alertPresenterViewControl
                 completionHandler(success);
             }
             if (success && shouldShowSuccessfulDeletionHudConfirmation) {
-                [IFAUIUtils showAndHideUserActionConfirmationHudWithText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ deleted", @"GustyKitLocalizable", @"<ENTITY_LABEL> deleted"),
+                [IFAUIUtils showAndHideUserActionConfirmationHudWithText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ deleted", @"IFALocalizable", @"<ENTITY_LABEL> deleted"),
                                                                                                     [object ifa_entityLabel]]];
             }
         }
@@ -539,14 +539,14 @@ withAlertPresenterViewController:(UIViewController *)a_alertPresenterViewControl
     if (shouldAskForUserConfirmation || cascadeDeleteWarning) {
         NSString *entityLabelCapitalised = [object ifa_entityLabel];
         NSString *entityLabelLowercase = [entityLabelCapitalised lowercaseString];
-        NSMutableString *message = [NSMutableString stringWithFormat:NSLocalizedStringFromTable(@"Are you sure you want to delete %@ %@?", @"GustyKitLocalizable", @"Are you sure you want to delete <ENTITY_LABEL> <ENTITY_NAME>?"),
+        NSMutableString *message = [NSMutableString stringWithFormat:NSLocalizedStringFromTable(@"Are you sure you want to delete %@ %@?", @"IFALocalizable", @"Are you sure you want to delete <ENTITY_LABEL> <ENTITY_NAME>?"),
                                                                      entityLabelLowercase,
                                                                      object.ifa_displayValue];
         if (cascadeDeleteWarning) {
             [message appendString:@" "];
             [message appendString:cascadeDeleteWarning];
         }
-        NSString *destructiveActionButtonTitle = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Delete %@", @"GustyKitLocalizable", @"Delete <ENTITY_NAME>"),
+        NSString *destructiveActionButtonTitle = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Delete %@", @"IFALocalizable", @"Delete <ENTITY_NAME>"),
                                                                             entityLabelLowercase];
         [alertPresentingViewController ifa_presentAlertControllerWithTitle:nil
                                                                    message:message
@@ -585,7 +585,7 @@ withAlertPresenterViewController:(UIViewController *)a_alertPresenterViewControl
 
 + (void)presentAlertControllerWithTitle:(NSString *)a_title
                                 message:(NSString *)a_message {
-    UIAlertAction *continueAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Continue", @"GustyKitLocalizable", nil)
+    UIAlertAction *continueAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Continue", @"IFALocalizable", nil)
                                                              style:UIAlertActionStyleDefault
                                                            handler:nil];
     [self presentAlertControllerWithTitle:a_title

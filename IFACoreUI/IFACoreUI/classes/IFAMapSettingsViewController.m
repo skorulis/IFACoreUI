@@ -43,11 +43,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.mapTypeSegmentedControl setTitle:NSLocalizedStringFromTable(@"Standard", @"GustyKitLocalizable", nil)
+    [self.mapTypeSegmentedControl setTitle:NSLocalizedStringFromTable(@"Standard", @"IFALocalizable", nil)
                          forSegmentAtIndex:[self IFA_segmentIndexFromMapType:MKMapTypeStandard]];
-    [self.mapTypeSegmentedControl setTitle:NSLocalizedStringFromTable(@"Hybrid", @"GustyKitLocalizable", nil)
+    [self.mapTypeSegmentedControl setTitle:NSLocalizedStringFromTable(@"Hybrid", @"IFALocalizable", nil)
                          forSegmentAtIndex:[self IFA_segmentIndexFromMapType:MKMapTypeHybrid]];
-    [self.mapTypeSegmentedControl setTitle:NSLocalizedStringFromTable(@"Satellite", @"GustyKitLocalizable", nil)
+    [self.mapTypeSegmentedControl setTitle:NSLocalizedStringFromTable(@"Satellite", @"IFALocalizable", nil)
                          forSegmentAtIndex:[self IFA_segmentIndexFromMapType:MKMapTypeSatellite]];
     [self IFA_configureView];
 }

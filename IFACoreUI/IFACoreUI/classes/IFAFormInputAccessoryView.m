@@ -91,7 +91,7 @@
         self.IFA_tableView = a_tableView;
         NSBundle *l_bundle = [NSBundle bundleForClass:[self class]];
         [l_bundle loadNibNamed:@"IFAFormInputAccessoryContentView" owner:self options:nil];
-        self.doneBarButtonItem.title = NSLocalizedStringFromTable(@"Done", @"GustyKitLocalizable", nil);
+        self.doneBarButtonItem.title = NSLocalizedStringFromTable(@"Done", @"IFALocalizable", nil);
         [self addSubview:self.contentView];
         self.bounds = self.contentView.bounds;
         [self.contentView ifa_addLayoutConstraintsToFillSuperview];

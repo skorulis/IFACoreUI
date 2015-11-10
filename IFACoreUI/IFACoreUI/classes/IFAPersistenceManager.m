@@ -256,9 +256,9 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
             NSString *errorMessage;
             NSString *labelForKeys = [aManagedObject ifa_labelForKeys:uniqueKeyArray];
             if ([keysAndValues count]>1) {
-                errorMessage = [NSString stringWithFormat:NSLocalizedStringFromTable(@"This combination of %@ already exists.\n", @"GustyKitLocalizable", @"This combination of <FIELD_NAMES> already exists."), [labelForKeys lowercaseString]];
+                errorMessage = [NSString stringWithFormat:NSLocalizedStringFromTable(@"This combination of %@ already exists.\n", @"IFALocalizable", @"This combination of <FIELD_NAMES> already exists."), [labelForKeys lowercaseString]];
             } else {
-                errorMessage = [NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ already exists.\n", @"GustyKitLocalizable", @"<FIELD_NAME> already exists."), labelForKeys];
+                errorMessage = [NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ already exists.\n", @"IFALocalizable", @"<FIELD_NAME> already exists."), labelForKeys];
             }
 			NSError *detailError = [self newErrorWithCode:IFAErrorPersistenceDuplicateKey
 											  errorMessage:errorMessage];
@@ -336,14 +336,14 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
                                 if (![message ifa_isEmpty]) {
                                     [message appendString:@"\n"];
                                 }
-                                [message appendFormat:NSLocalizedStringFromTable(@"%@ is required.", @"GustyKitLocalizable", @"<FIELD_NAME> is required."), l_propertyLabel];
+                                [message appendFormat:NSLocalizedStringFromTable(@"%@ is required.", @"IFALocalizable", @"<FIELD_NAME> is required."), l_propertyLabel];
                                 break;
                             case NSValidationNumberTooSmallError:
                             case NSValidationNumberTooLargeError:
                                 if (![message ifa_isEmpty]) {
                                     [message appendString:@"\n"];
                                 }
-                                [message appendFormat:NSLocalizedStringFromTable(@"%@ is outside allowed range.", @"GustyKitLocalizable", @"<FIELD_NAME> is outside allowed range."), l_propertyLabel];
+                                [message appendFormat:NSLocalizedStringFromTable(@"%@ is outside allowed range.", @"IFALocalizable", @"<FIELD_NAME> is outside allowed range."), l_propertyLabel];
                                 break;
                             case NSValidationRelationshipDeniedDeleteError:
                                 [l_deleteDeniedPropertyLabels addObject:l_propertyLabel];
@@ -372,13 +372,13 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
         if (![message ifa_isEmpty]) {
             [message appendString:@"\n"];
         }
-        [message appendString:NSLocalizedStringFromTable(@"One or more associations exist with the following: ", @"GustyKitLocalizable", nil)];
+        [message appendString:NSLocalizedStringFromTable(@"One or more associations exist with the following: ", @"IFALocalizable", nil)];
         for (NSUInteger i=0; i<[l_deleteDeniedPropertyLabels count]; i++) {
             if (i>0) {
                 if (i+1==[l_deleteDeniedPropertyLabels count]) {
-                    [message appendString:NSLocalizedStringFromTable(@" and ", @"GustyKitLocalizable", @"final separator in a list of names")];
+                    [message appendString:NSLocalizedStringFromTable(@" and ", @"IFALocalizable", @"final separator in a list of names")];
                 }else{
-                    [message appendString:NSLocalizedStringFromTable(@", ", @"GustyKitLocalizable", @"separator in a list of names")];
+                    [message appendString:NSLocalizedStringFromTable(@", ", @"IFALocalizable", @"separator in a list of names")];
                 }
             }
             [message appendString:l_deleteDeniedPropertyLabels[i]];
@@ -391,7 +391,7 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
 - (void)handleCoreDataError:(NSError *)a_errorContainer withManagedObject:(NSManagedObject *)a_managedObject
                  alertTitle:(NSString *)a_alertTitle alertPresenter:(UIViewController *)a_alertPresenter{
 //    NSLog(@"Handling core data error: %@", [anErrorContainer description]);
-    NSString *title = a_alertTitle ? a_alertTitle : NSLocalizedStringFromTable(@"Validation Error", @"GustyKitLocalizable", nil);
+    NSString *title = a_alertTitle ? a_alertTitle : NSLocalizedStringFromTable(@"Validation Error", @"IFALocalizable", nil);
 	NSString *message = [self getMessageForErrorContainer:a_errorContainer withManagedObject:a_managedObject];
     [a_alertPresenter ifa_presentAlertControllerWithTitle:title message:message];
 }
@@ -429,7 +429,7 @@ static NSString *METADATA_KEY_SYSTEM_DB_TABLES_VERSION = @"systemDbTablesVersion
         
     }
 
-	[self handleCoreDataError:l_errorContainer withManagedObject:aManagedObject alertTitle:NSLocalizedStringFromTable(@"Deletion Not Allowed", @"GustyKitLocalizable", nil) alertPresenter:a_alertPresenter];
+	[self handleCoreDataError:l_errorContainer withManagedObject:aManagedObject alertTitle:NSLocalizedStringFromTable(@"Deletion Not Allowed", @"IFALocalizable", nil) alertPresenter:a_alertPresenter];
 	return NO;
 
 }

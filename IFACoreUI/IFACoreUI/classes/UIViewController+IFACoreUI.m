@@ -1514,7 +1514,7 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
         [IFAUIUtils      openUrl:[NSURL URLWithString:UIApplicationOpenSettingsURLString]
 withAlertPresenterViewController:nil];
     };
-    [l_alertActions addObject:[UIAlertAction actionWithTitle:a_settingsButtonTitle?:NSLocalizedStringFromTable(@"Settings", @"GustyKitLocalizable", nil)
+    [l_alertActions addObject:[UIAlertAction actionWithTitle:a_settingsButtonTitle?:NSLocalizedStringFromTable(@"Settings", @"IFALocalizable", nil)
                                                        style:UIAlertActionStyleDefault
                                                      handler:settingsHandlerBlock]];
     [self ifa_presentAlertControllerWithTitle:a_title
@@ -1532,7 +1532,7 @@ withAlertPresenterViewController:nil];
             a_actionBlock();
         }
     };
-    UIAlertAction *continueAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Continue", @"GustyKitLocalizable", nil)
+    UIAlertAction *continueAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Continue", @"IFALocalizable", nil)
                                                              style:UIAlertActionStyleDefault
                                                            handler:handler];
     [self ifa_presentAlertControllerWithTitle:a_title
@@ -1552,7 +1552,7 @@ withAlertPresenterViewController:nil];
                                                                a_actionBlock();
                                                            }
                                                        }];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Cancel", @"GustyKitLocalizable", nil)
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Cancel", @"IFALocalizable", nil)
                                                            style:UIAlertActionStyleCancel
                                                          handler:nil];
     [self ifa_presentAlertControllerWithTitle:a_title message:a_message
@@ -1577,7 +1577,7 @@ withAlertPresenterViewController:nil];
             a_cancelBlock();
         }
     };
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Cancel", @"GustyKitLocalizable", nil)
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Cancel", @"IFALocalizable", nil)
                                                            style:UIAlertActionStyleCancel
                                                          handler:cancelActionHandler];
     [self ifa_presentAlertControllerWithTitle:a_title message:a_message
