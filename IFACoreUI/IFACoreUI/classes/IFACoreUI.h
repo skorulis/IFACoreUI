@@ -1,5 +1,5 @@
 //
-//  GustyKitCore.h
+//  IFACoreUI.h
 //  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 23/08/14.
@@ -41,7 +41,6 @@
 #import "IFA_HPGrowingTextView.h"
 #import "IFA_HPTextViewInternal.h"
 
-// GustyKit
 @import IFAFoundation;
 
 #import "IFADefaultAppearanceTheme.h"

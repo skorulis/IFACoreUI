@@ -101,7 +101,7 @@
 }
 
 - (NSString *)localisedStringForKey:(NSString *)a_key {
-    return NSLocalizedStringFromTable(a_key, @"GustyKitEntityConfigLocalizable", nil);
+    return NSLocalizedStringFromTable(a_key, @"IFAEntityConfigLocalizable", nil);
 }
 
 - (NSDictionary *)formSectionDictionaryAtIndex:(NSInteger)a_sectionIndex
