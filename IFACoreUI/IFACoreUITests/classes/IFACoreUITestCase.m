@@ -30,7 +30,7 @@
     [persistenceManager configureWithDatabaseResourceName:nil
                        databaseResourceRelativeFolderPath:nil
                        databaseResourceAbsoluteFolderPath:nil
-                           managedObjectModelResourceName:@"GustyKitCoreUITestsModel"
+                           managedObjectModelResourceName:@"IFACoreUITestsModel"
                          managedObjectModelResourceBundle:[NSBundle bundleForClass:[self class]]
                                 managedObjectModelVersion:nil
                                               mergePolicy:nil

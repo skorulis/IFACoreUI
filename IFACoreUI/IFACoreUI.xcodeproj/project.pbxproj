@@ -361,7 +361,7 @@
 		F7650E881BEBE60700B97932 /* TestCoreDataEntity1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */; };
 		F7650E891BEBE60700B97932 /* TestCoreDataEntity2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */; };
 		F7650E8A1BEBE60700B97932 /* TestCoreDataEntity3.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */; };
-		F7650E8B1BEBE61900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0D1BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld */; };
+		F7650E8B1BEBE61900B97932 /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0D1BEA948900B97932 /* IFACoreUITestsModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1302,7 +1302,7 @@
 		F7650E0C1BEA948900B97932 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				F7650E0D1BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld */,
+				F7650E0D1BEA948900B97932 /* IFACoreUITestsModel.xcdatamodeld */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -1811,7 +1811,7 @@
 				F7650E831BEBE60700B97932 /* NSIndexPathTests.m in Sources */,
 				F7650E741BEAAE3B00B97932 /* IFASelectionManagerTests.m in Sources */,
 				F7650E7F1BEBE60700B97932 /* IFAPersistentEntityChangeObserverTests.m in Sources */,
-				F7650E8B1BEBE61900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld in Sources */,
+				F7650E8B1BEBE61900B97932 /* IFACoreUITestsModel.xcdatamodeld in Sources */,
 				F7650E7D1BEBE60700B97932 /* IFAPersistenceChangeDetectorTests.m in Sources */,
 				F7650E7E1BEBE60700B97932 /* IFAPersistenceManagerTests.m in Sources */,
 				F7650E821BEBE60700B97932 /* NSDictionaryTests.m in Sources */,
@@ -2025,13 +2025,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F7650E0D1BEA948900B97932 /* GustyKitCoreUITestsModel.xcdatamodeld */ = {
+		F7650E0D1BEA948900B97932 /* IFACoreUITestsModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */,
 			);
 			currentVersion = F7650E0E1BEA948900B97932 /* GustyLibCoreUITestsModel.xcdatamodel */;
-			path = GustyKitCoreUITestsModel.xcdatamodeld;
+			path = IFACoreUITestsModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
