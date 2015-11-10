@@ -1,6 +1,6 @@
 //
 //  IFAAppearanceThemeManager.m
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 1/08/12.
 //  Copyright (c) 2012 InfoAccent Pty Limited. All rights reserved.

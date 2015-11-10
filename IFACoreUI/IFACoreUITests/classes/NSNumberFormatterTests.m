@@ -1,5 +1,5 @@
 //
-//  Gusty - NSNumberFormatterTests.m
+//  IFACoreUI - NSNumberFormatterTests.m
 //  Copyright 2014 InfoAccent Pty Limited. All rights reserved.
 //
 //  Created by: Marcelo Schroeder

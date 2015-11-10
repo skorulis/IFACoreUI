@@ -1,6 +1,6 @@
 //
 //  IFAActionSheet.m
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 16/04/12.
 //  Copyright (c) 2012 InfoAccent Pty Limited. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  IFAMapAnnotation.m
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 27/04/11.
 //  Copyright 2011 InfoAccent Pty Limited. All rights reserved.

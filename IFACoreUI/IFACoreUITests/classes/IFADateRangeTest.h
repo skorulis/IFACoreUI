@@ -1,6 +1,6 @@
 //
 //  IFADateRangeTest.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 9/11/10.
 //  Copyright 2010 InfoAccent Pty Limited. All rights reserved.

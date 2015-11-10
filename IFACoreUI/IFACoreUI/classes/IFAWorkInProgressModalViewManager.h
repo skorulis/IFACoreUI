@@ -1,6 +1,6 @@
 //
 //  IFAWorkInProgressModalViewManager.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 18/04/11.
 //  Copyright 2010 InfoAccent Pty Limited. All rights reserved.

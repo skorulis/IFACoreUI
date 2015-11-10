@@ -1,6 +1,6 @@
 //
 //  IFACollectionViewController.m
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 20/12/12.
 //  Copyright (c) 2012 InfoAccent Pty Limited. All rights reserved.

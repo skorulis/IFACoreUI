@@ -1,6 +1,6 @@
 //
 //  UIWebView+IFACategory.m
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 19/10/12.
 //  Copyright (c) 2012 InfoAccent Pty Limited. All rights reserved.

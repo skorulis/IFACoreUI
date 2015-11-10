@@ -1,6 +1,6 @@
 //
 //  IFASelectionManager.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 14/07/11.
 //  Copyright 2011 InfoAccent Pty Limited. All rights reserved.

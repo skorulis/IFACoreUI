@@ -1,6 +1,6 @@
 //
 //  IFAPersistenceManager.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 11/06/10.
 //  Copyright 2010 InfoAccent Pty Limited. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  IFAEntityConfig.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 26/07/10.
 //  Copyright 2010 InfoAccent Pty Limited. All rights reserved.

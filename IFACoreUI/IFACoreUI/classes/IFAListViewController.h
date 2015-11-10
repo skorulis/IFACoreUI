@@ -1,6 +1,6 @@
 //
 //  IFAListViewController.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 22/07/10.
 //  Copyright 2009 InfoAccent Pty Limited. All rights reserved.

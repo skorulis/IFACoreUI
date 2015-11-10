@@ -1,6 +1,6 @@
 //
 //  IFALongTextEditorViewController.h
-//  Gusty
+//  IFACoreUI
 //
 //  Created by Marcelo Schroeder on 2/06/12.
 //  Copyright (c) 2012 InfoAccent Pty Limited. All rights reserved.
