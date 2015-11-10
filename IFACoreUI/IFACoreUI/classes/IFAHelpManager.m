@@ -134,7 +134,7 @@
 #pragma mark - Private
 
 -(NSString*)IFA_helpStringForKeyPath:(NSString*)a_keyPath{
-    NSString *l_string = NSLocalizedStringFromTable(a_keyPath, @"GustyKitHelpLocalizable", nil);
+    NSString *l_string = NSLocalizedStringFromTable(a_keyPath, @"IFAHelpLocalizable", nil);
     return [l_string isEqualToString:a_keyPath] ? nil : l_string;
 }
 
