@@ -126,13 +126,4 @@ typedef NS_ENUM(NSUInteger, IFADataType) {
     
 };
 
-typedef NS_ENUM(NSUInteger, IFAScrollPage) {
-    IFAScrollPageLeftFar,
-    IFAScrollPageLeftNear,
-    IFAScrollPageCentre,
-    IFAScrollPageRightNear,
-    IFAScrollPageRightFar,
-    IFAScrollPageInit,
-};
-
 @end
