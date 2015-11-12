@@ -88,7 +88,7 @@
             break;
             
         default:
-            NSAssert(NO, @"Unexpected section change type: %lu", (unsigned long)type);
+            // Does nothing
             break;
 
     }
@@ -137,7 +137,7 @@
             break;
 
         default:
-            NSAssert(NO, @"Unexpected object change type: %lu", (unsigned long)type);
+            // Does nothing
             break;
 
     }

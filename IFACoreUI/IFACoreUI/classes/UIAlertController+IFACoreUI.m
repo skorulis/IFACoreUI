@@ -16,6 +16,7 @@
 - (void)ifa_presentAnimated:(BOOL)animated
              withCompletion:(void (^)(void))completion {
     self.alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.view.tintColor = self.ifa_appearanceTheme.defaultTintColor;
 //    self.alertWindow.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.3];
     self.alertWindow.rootViewController = [[IFAViewController alloc] init];
     self.alertWindow.windowLevel = UIWindowLevelAlert + 1;  // Makes sure the alert is presented on top of any other alert already being presented

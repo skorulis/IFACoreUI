@@ -120,13 +120,21 @@ static const int k_horizontalMargin = 15;
     [self.formViewController.formInputAccessoryView notifyOfCurrentInputFieldIndexPath:self.indexPath];
 }
 
--(void)textFieldDidEndEditing:(UITextField *)textField{
+-(void)textFieldDidEndEditing:(UITextField *)textField {
 
 //    NSLog(@"textFieldDidEndEditing: %@", [textField description]);
 
+    if ([self.object isKindOfClass:[NSManagedObject class]]) {
+        NSManagedObject *managedObject = (NSManagedObject *) self.object;
+        if (!managedObject.managedObjectContext) {
+            return; // Bail out as the managed object context has been discarded
+        }
+    }
+
     if (!self.formViewController.textFieldCommitSuspended && [self valueChanged]) {
 
-        [self.object ifa_setValue:[self parsedValue] forProperty:self.propertyName];
+        [self.object ifa_setValue:[self parsedValue]
+                      forProperty:self.propertyName];
 //        NSLog(@"  value set: %@", [self.object valueForKey:self.propertyName]);
 
     }

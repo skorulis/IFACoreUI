@@ -955,7 +955,7 @@ IFA_tableViewCellSelectedBackgroundStyleForIndexPath:(NSIndexPath *)a_indexPath
     [a_cell.customAccessoryImageView sizeToFit];    // Make sure the size is available below
 
     // Update right label right constraint accordingly
-    CGFloat l_horizontalSpace = a_cell.leftLabelLeftConstraint.constant;
+    CGFloat l_horizontalSpace = a_cell.leftLabel.text ? a_cell.leftLabelLeftConstraint.constant : a_cell.leftAndRightLabelsSpacingConstraint.constant;
     BOOL l_areCustomAccessoryViewsHidden = a_cell.customAccessoryImageView.hidden && a_cell.customAccessoryButton.hidden;
     if (l_areCustomAccessoryViewsHidden) {
         a_cell.rightLabelRightConstraint.constant = l_horizontalSpace;
