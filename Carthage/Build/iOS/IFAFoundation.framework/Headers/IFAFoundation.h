@@ -25,6 +25,12 @@
 #import <objc/message.h>    // added so I could use objc_msgSend to get rid of ARC compiler warnings for performSelector method calls
 #import <sys/utsname.h>
 
+//! Project version number for IFAFoundation.
+FOUNDATION_EXPORT double IFAFoundationVersionNumber;
+
+//! Project version string for IFAFoundation.
+FOUNDATION_EXPORT const unsigned char IFAFoundationVersionString[];
+
 #import "IFAAssertionUtils.h"
 #import "IFADateRange.h"
 #import "IFADispatchQueueManager.h"
