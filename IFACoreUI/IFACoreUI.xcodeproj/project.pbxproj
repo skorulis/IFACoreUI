@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1073800C7653514A34D098DF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1073862A6C0B08612C9A2ED0 /* LICENSE */; };
 		BBE4924C48D6EA3253833B8F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE1DA81544368F82F921219 /* Pods.framework */; };
 		F74ACC1C1BEBFD7A00C4B73E /* IFACoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */; };
 		F7650C471BE95BBD00B97932 /* IFA_HPGrowingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -388,6 +389,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1073862A6C0B08612C9A2ED0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		55ADCDBD7C778CD217F69A50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE1DA81544368F82F921219 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314B4F86EBA089726B7C01C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -826,6 +828,7 @@
 				F7156C0B1BE953A30009EFF4 /* Products */,
 				12F7C8361C45532A514C5514 /* Frameworks */,
 				EFFCB94C5790AC441CA5C5A2 /* Pods */,
+				1073862A6C0B08612C9A2ED0 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1603,6 +1606,7 @@
 				F7650DA01BE95BC600B97932 /* 271-ThreeColumn.png in Resources */,
 				F7650DCF1BE95BC600B97932 /* IFA_Icon_HudSuccess@2x.png in Resources */,
 				F7650DC41BE95BC600B97932 /* IFA_Icon_Close@2x.png in Resources */,
+				1073800C7653514A34D098DF /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

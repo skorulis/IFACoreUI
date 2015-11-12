@@ -384,6 +384,9 @@
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes" />
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/resources" />
     <content url="file://$MODULE_DIR$/IFACoreUI/IFACoreUITests" />
+    <content url="file://$MODULE_DIR$/LICENSE">
+      <sourceFolder url="file://$MODULE_DIR$/LICENSE" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/Podfile">
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
     </content>
