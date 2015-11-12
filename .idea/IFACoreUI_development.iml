@@ -237,8 +237,8 @@
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIBarButtonItem+IFACoreUI.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIButton+IFACoreUI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIButton+IFACoreUI.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIButton+IFAHelp.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIButton+IFAHelp.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIButton+IFACoreUI_Help.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIButton+IFACoreUI_Help.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UICollectionView+IFACoreUI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UICollectionView+IFACoreUI.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIColor+IFACoreUI.h" isTestSource="false" />
@@ -257,14 +257,14 @@
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableView+IFACoreUI.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableViewCell+IFACoreUI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableViewCell+IFACoreUI.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableViewController+IFADynamicCellHeight.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableViewController+IFADynamicCellHeight.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableViewController+IFACoreUI_DynamicCellHeight.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UITableViewController+IFACoreUI_DynamicCellHeight.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIView+IFACoreUI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIView+IFACoreUI.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIViewController+IFACoreUI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIViewController+IFACoreUI.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIViewController+IFAHelp.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIViewController+IFAHelp.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIViewController+IFACoreUI_Help.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIViewController+IFACoreUI_Help.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIWebView+IFACoreUI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/UIWebView+IFACoreUI.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/Info.plist" isTestSource="false" />

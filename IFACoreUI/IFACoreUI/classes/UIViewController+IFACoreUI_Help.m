@@ -23,7 +23,7 @@ static char c_helpBarButtonItemKey;
 @property (nonatomic, strong) UIBarButtonItem *ifa_helpBarButtonItem;
 @end
 
-@implementation UIViewController (IFAHelp)
+@implementation UIViewController (IFACoreUI_Help)
 
 #pragma mark - Public
 

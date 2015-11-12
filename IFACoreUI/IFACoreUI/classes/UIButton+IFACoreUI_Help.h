@@ -18,6 +18,6 @@
 #import <Foundation/Foundation.h>
 #import "IFAHelpManager.h"
 
-@interface UIButton (IFAHelp)
+@interface UIButton (IFACoreUI_Help)
 @property (nonatomic, weak) UIViewController *ifa_helpTargetViewController;
 @end

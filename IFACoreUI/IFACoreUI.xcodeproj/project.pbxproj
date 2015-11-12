@@ -233,8 +233,8 @@
 		F7650D281BE95BBE00B97932 /* UIBarButtonItem+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C261BE95BBD00B97932 /* UIBarButtonItem+IFACoreUI.m */; };
 		F7650D291BE95BBE00B97932 /* UIButton+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C271BE95BBD00B97932 /* UIButton+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D2A1BE95BBE00B97932 /* UIButton+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C281BE95BBD00B97932 /* UIButton+IFACoreUI.m */; };
-		F7650D2B1BE95BBE00B97932 /* UIButton+IFAHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C291BE95BBD00B97932 /* UIButton+IFAHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7650D2C1BE95BBE00B97932 /* UIButton+IFAHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C2A1BE95BBD00B97932 /* UIButton+IFAHelp.m */; };
+		F7650D2B1BE95BBE00B97932 /* UIButton+IFACoreUI_Help.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C291BE95BBD00B97932 /* UIButton+IFACoreUI_Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7650D2C1BE95BBE00B97932 /* UIButton+IFACoreUI_Help.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C2A1BE95BBD00B97932 /* UIButton+IFACoreUI_Help.m */; };
 		F7650D2D1BE95BBE00B97932 /* UICollectionView+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C2B1BE95BBD00B97932 /* UICollectionView+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D2E1BE95BBE00B97932 /* UICollectionView+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C2C1BE95BBD00B97932 /* UICollectionView+IFACoreUI.m */; };
 		F7650D2F1BE95BBE00B97932 /* UIColor+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C2D1BE95BBD00B97932 /* UIColor+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -253,14 +253,14 @@
 		F7650D3C1BE95BBE00B97932 /* UITableView+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C3A1BE95BBD00B97932 /* UITableView+IFACoreUI.m */; };
 		F7650D3D1BE95BBE00B97932 /* UITableViewCell+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C3B1BE95BBD00B97932 /* UITableViewCell+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D3E1BE95BBE00B97932 /* UITableViewCell+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C3C1BE95BBD00B97932 /* UITableViewCell+IFACoreUI.m */; };
-		F7650D3F1BE95BBE00B97932 /* UITableViewController+IFADynamicCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C3D1BE95BBD00B97932 /* UITableViewController+IFADynamicCellHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7650D401BE95BBE00B97932 /* UITableViewController+IFADynamicCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C3E1BE95BBD00B97932 /* UITableViewController+IFADynamicCellHeight.m */; };
+		F7650D3F1BE95BBE00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C3D1BE95BBD00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7650D401BE95BBE00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C3E1BE95BBD00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.m */; };
 		F7650D411BE95BBE00B97932 /* UIView+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C3F1BE95BBD00B97932 /* UIView+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D421BE95BBE00B97932 /* UIView+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C401BE95BBD00B97932 /* UIView+IFACoreUI.m */; };
 		F7650D431BE95BBE00B97932 /* UIViewController+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C411BE95BBD00B97932 /* UIViewController+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D441BE95BBE00B97932 /* UIViewController+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C421BE95BBD00B97932 /* UIViewController+IFACoreUI.m */; };
-		F7650D451BE95BBE00B97932 /* UIViewController+IFAHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C431BE95BBD00B97932 /* UIViewController+IFAHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7650D461BE95BBE00B97932 /* UIViewController+IFAHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C441BE95BBD00B97932 /* UIViewController+IFAHelp.m */; };
+		F7650D451BE95BBE00B97932 /* UIViewController+IFACoreUI_Help.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C431BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7650D461BE95BBE00B97932 /* UIViewController+IFACoreUI_Help.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C441BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.m */; };
 		F7650D471BE95BBE00B97932 /* UIWebView+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C451BE95BBD00B97932 /* UIWebView+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D481BE95BBE00B97932 /* UIWebView+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C461BE95BBD00B97932 /* UIWebView+IFACoreUI.m */; };
 		F7650D961BE95BC600B97932 /* 056-PlusCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = F7650D4C1BE95BC600B97932 /* 056-PlusCircle.png */; };
@@ -623,8 +623,8 @@
 		F7650C261BE95BBD00B97932 /* UIBarButtonItem+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650C271BE95BBD00B97932 /* UIButton+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C281BE95BBD00B97932 /* UIButton+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IFACoreUI.m"; sourceTree = "<group>"; };
-		F7650C291BE95BBD00B97932 /* UIButton+IFAHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IFAHelp.h"; sourceTree = "<group>"; };
-		F7650C2A1BE95BBD00B97932 /* UIButton+IFAHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IFAHelp.m"; sourceTree = "<group>"; };
+		F7650C291BE95BBD00B97932 /* UIButton+IFACoreUI_Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IFACoreUI_Help.h"; sourceTree = "<group>"; };
+		F7650C2A1BE95BBD00B97932 /* UIButton+IFACoreUI_Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IFACoreUI_Help.m"; sourceTree = "<group>"; };
 		F7650C2B1BE95BBD00B97932 /* UICollectionView+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C2C1BE95BBD00B97932 /* UICollectionView+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650C2D1BE95BBD00B97932 /* UIColor+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+IFACoreUI.h"; sourceTree = "<group>"; };
@@ -643,14 +643,14 @@
 		F7650C3A1BE95BBD00B97932 /* UITableView+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650C3B1BE95BBD00B97932 /* UITableViewCell+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C3C1BE95BBD00B97932 /* UITableViewCell+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+IFACoreUI.m"; sourceTree = "<group>"; };
-		F7650C3D1BE95BBD00B97932 /* UITableViewController+IFADynamicCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+IFADynamicCellHeight.h"; sourceTree = "<group>"; };
-		F7650C3E1BE95BBD00B97932 /* UITableViewController+IFADynamicCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+IFADynamicCellHeight.m"; sourceTree = "<group>"; };
+		F7650C3D1BE95BBD00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+IFACoreUI_DynamicCellHeight.h"; sourceTree = "<group>"; };
+		F7650C3E1BE95BBD00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+IFACoreUI_DynamicCellHeight.m"; sourceTree = "<group>"; };
 		F7650C3F1BE95BBD00B97932 /* UIView+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C401BE95BBD00B97932 /* UIView+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650C411BE95BBD00B97932 /* UIViewController+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C421BE95BBD00B97932 /* UIViewController+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IFACoreUI.m"; sourceTree = "<group>"; };
-		F7650C431BE95BBD00B97932 /* UIViewController+IFAHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IFAHelp.h"; sourceTree = "<group>"; };
-		F7650C441BE95BBD00B97932 /* UIViewController+IFAHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IFAHelp.m"; sourceTree = "<group>"; };
+		F7650C431BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IFACoreUI_Help.h"; sourceTree = "<group>"; };
+		F7650C441BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IFACoreUI_Help.m"; sourceTree = "<group>"; };
 		F7650C451BE95BBD00B97932 /* UIWebView+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C461BE95BBD00B97932 /* UIWebView+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650D4C1BE95BC600B97932 /* 056-PlusCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "056-PlusCircle.png"; sourceTree = "<group>"; };
@@ -1080,8 +1080,8 @@
 				F7650C261BE95BBD00B97932 /* UIBarButtonItem+IFACoreUI.m */,
 				F7650C271BE95BBD00B97932 /* UIButton+IFACoreUI.h */,
 				F7650C281BE95BBD00B97932 /* UIButton+IFACoreUI.m */,
-				F7650C291BE95BBD00B97932 /* UIButton+IFAHelp.h */,
-				F7650C2A1BE95BBD00B97932 /* UIButton+IFAHelp.m */,
+				F7650C291BE95BBD00B97932 /* UIButton+IFACoreUI_Help.h */,
+				F7650C2A1BE95BBD00B97932 /* UIButton+IFACoreUI_Help.m */,
 				F7650C2B1BE95BBD00B97932 /* UICollectionView+IFACoreUI.h */,
 				F7650C2C1BE95BBD00B97932 /* UICollectionView+IFACoreUI.m */,
 				F7650C2D1BE95BBD00B97932 /* UIColor+IFACoreUI.h */,
@@ -1100,14 +1100,14 @@
 				F7650C3A1BE95BBD00B97932 /* UITableView+IFACoreUI.m */,
 				F7650C3B1BE95BBD00B97932 /* UITableViewCell+IFACoreUI.h */,
 				F7650C3C1BE95BBD00B97932 /* UITableViewCell+IFACoreUI.m */,
-				F7650C3D1BE95BBD00B97932 /* UITableViewController+IFADynamicCellHeight.h */,
-				F7650C3E1BE95BBD00B97932 /* UITableViewController+IFADynamicCellHeight.m */,
+				F7650C3D1BE95BBD00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.h */,
+				F7650C3E1BE95BBD00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.m */,
 				F7650C3F1BE95BBD00B97932 /* UIView+IFACoreUI.h */,
 				F7650C401BE95BBD00B97932 /* UIView+IFACoreUI.m */,
 				F7650C411BE95BBD00B97932 /* UIViewController+IFACoreUI.h */,
 				F7650C421BE95BBD00B97932 /* UIViewController+IFACoreUI.m */,
-				F7650C431BE95BBD00B97932 /* UIViewController+IFAHelp.h */,
-				F7650C441BE95BBD00B97932 /* UIViewController+IFAHelp.m */,
+				F7650C431BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.h */,
+				F7650C441BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.m */,
 				F7650C451BE95BBD00B97932 /* UIWebView+IFACoreUI.h */,
 				F7650C461BE95BBD00B97932 /* UIWebView+IFACoreUI.m */,
 			);
@@ -1345,7 +1345,7 @@
 				F7650D011BE95BBD00B97932 /* IFATableViewHeaderFooterView.h in Headers */,
 				F7650C5A1BE95BBD00B97932 /* IFAAppearanceTheme.h in Headers */,
 				F7650C541BE95BBD00B97932 /* IFAAbstractSelectionListViewController.h in Headers */,
-				F7650D3F1BE95BBE00B97932 /* UITableViewController+IFADynamicCellHeight.h in Headers */,
+				F7650D3F1BE95BBE00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.h in Headers */,
 				F7650C921BE95BBD00B97932 /* IFAFormSectionHeaderFooterView.h in Headers */,
 				F7650C651BE95BBD00B97932 /* IFACollectionViewCell.h in Headers */,
 				F7650CD81BE95BBD00B97932 /* IFAPersistentEntityChangeObserver.h in Headers */,
@@ -1367,7 +1367,7 @@
 				F7650CAD1BE95BBD00B97932 /* IFAKeyboardVisibilityManager.h in Headers */,
 				F7650D211BE95BBE00B97932 /* NSMutableArray+IFACoreUI.h in Headers */,
 				F7650C8C1BE95BBD00B97932 /* IFAFetchedResultsTableViewController.h in Headers */,
-				F7650D451BE95BBE00B97932 /* UIViewController+IFAHelp.h in Headers */,
+				F7650D451BE95BBE00B97932 /* UIViewController+IFACoreUI_Help.h in Headers */,
 				F7650CC91BE95BBD00B97932 /* IFANavigationListViewController.h in Headers */,
 				F7650D131BE95BBD00B97932 /* IFAViewControllerFadeTransitioning.h in Headers */,
 				F7650C741BE95BBD00B97932 /* IFACrashReportingUtils.h in Headers */,
@@ -1383,7 +1383,7 @@
 				F7650CA71BE95BBD00B97932 /* IFAHudView.h in Headers */,
 				F7650CD21BE95BBD00B97932 /* IFAPassthroughView.h in Headers */,
 				F7650CED1BE95BBD00B97932 /* IFASingleSelectionManager.h in Headers */,
-				F7650D2B1BE95BBE00B97932 /* UIButton+IFAHelp.h in Headers */,
+				F7650D2B1BE95BBE00B97932 /* UIButton+IFACoreUI_Help.h in Headers */,
 				F7650D0D1BE95BBD00B97932 /* IFAView.h in Headers */,
 				F7650D471BE95BBE00B97932 /* UIWebView+IFACoreUI.h in Headers */,
 				F7650D311BE95BBE00B97932 /* UIColor+IFACoreUI_WatchKit.h in Headers */,
@@ -1744,10 +1744,10 @@
 				F7650C7D1BE95BBD00B97932 /* IFADefaultAppearanceTheme.m in Sources */,
 				F7650D301BE95BBE00B97932 /* UIColor+IFACoreUI.m in Sources */,
 				F7650C641BE95BBD00B97932 /* IFACircleView.m in Sources */,
-				F7650D401BE95BBE00B97932 /* UITableViewController+IFADynamicCellHeight.m in Sources */,
+				F7650D401BE95BBE00B97932 /* UITableViewController+IFACoreUI_DynamicCellHeight.m in Sources */,
 				F7650C851BE95BBD00B97932 /* IFAEntityConfig.m in Sources */,
 				F7650D261BE95BBE00B97932 /* UIAlertController+IFACoreUI.m in Sources */,
-				F7650D2C1BE95BBE00B97932 /* UIButton+IFAHelp.m in Sources */,
+				F7650D2C1BE95BBE00B97932 /* UIButton+IFACoreUI_Help.m in Sources */,
 				F7650D2A1BE95BBE00B97932 /* UIButton+IFACoreUI.m in Sources */,
 				F7650D381BE95BBE00B97932 /* UIScrollView+IFACoreUI.m in Sources */,
 				F7650D3E1BE95BBE00B97932 /* UITableViewCell+IFACoreUI.m in Sources */,
@@ -1786,7 +1786,7 @@
 				F7650D0A1BE95BBD00B97932 /* IFAUIGlobal.m in Sources */,
 				F7650C9D1BE95BBD00B97932 /* IFAGridViewController.m in Sources */,
 				F7650D3A1BE95BBE00B97932 /* UIStoryboard+IFACoreUI.m in Sources */,
-				F7650D461BE95BBE00B97932 /* UIViewController+IFAHelp.m in Sources */,
+				F7650D461BE95BBE00B97932 /* UIViewController+IFACoreUI_Help.m in Sources */,
 				F7650D101BE95BBD00B97932 /* IFAViewController.m in Sources */,
 				F7650CF81BE95BBD00B97932 /* IFATabBarController.m in Sources */,
 				F7650C891BE95BBD00B97932 /* IFAFadingOverlayPresentationController.m in Sources */,

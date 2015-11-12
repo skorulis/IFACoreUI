@@ -21,7 +21,7 @@
 @property (nonatomic, strong) NSMutableDictionary *ifa_cachedCellHeights;
 @end
 
-@implementation UITableViewController (IFADynamicCellHeight)
+@implementation UITableViewController (IFACoreUI_DynamicCellHeight)
 
 static char c_dynamicCellHeightDelegateKey;
 static char c_cachedHeightsKey;

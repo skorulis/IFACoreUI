@@ -15,20 +15,11 @@
 //  limitations under the License.
 //
 
-#import "IFACoreUI.h"
+#import <Foundation/Foundation.h>
+#import "IFAHelpManager.h"
 
-static char c_helpTargetViewControllerKey;
+@interface UIViewController (IFACoreUI_Help)
 
-@implementation UIButton (IFAHelp)
-
-#pragma mark - IFAHelpTarget protocol
-
--(void)setIfa_helpTargetViewController:(UIViewController *)a_helpTargetViewController{
-    objc_setAssociatedObject(self, &c_helpTargetViewControllerKey, a_helpTargetViewController, OBJC_ASSOCIATION_ASSIGN);
-}
-
--(NSString *)ifa_helpTargetViewController {
-    return objc_getAssociatedObject(self, &c_helpTargetViewControllerKey);
-}
+@property (nonatomic, strong, readonly) UIBarButtonItem *ifa_helpBarButtonItem;
 
 @end

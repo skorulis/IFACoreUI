@@ -19,7 +19,7 @@
 
 @protocol IFATableViewControllerDynamicCellHeightDelegate;
 
-@interface UITableViewController (IFADynamicCellHeight)
+@interface UITableViewController (IFACoreUI_DynamicCellHeight)
 
 @property (nonatomic, weak) id<IFATableViewControllerDynamicCellHeightDelegate> ifa_dynamicCellHeightDelegate;
 
