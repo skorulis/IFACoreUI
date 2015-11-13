@@ -1,5 +1,5 @@
 //
-// Created by Marcelo Schroeder on 26/07/15.
+// Created by Marcelo Schroeder on 13/11/2015.
 // Copyright (c) 2015 InfoAccent Pty Ltd. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,16 +16,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface UIAlertController (IFACoreApp)
+#import "IFAViewController.h"
 
 /**
-* Presents the alert controller in a standalone manner.
-* A temporary top level window and view controller are specifically created for this purpose and disposed of when the alert is dismissed by the user.
-* @param animated Pass YES to animate the presentation; otherwise, pass NO.
-* @param completion A completion block to be executed after the view transition has been completed.
-*/
-- (void)ifa_presentAnimated:(BOOL)animated
-             withCompletion:(void (^)(void))completion;
-
+ * Container view controller for UIAlertController presentations.
+ * It allows for finer appearance control such as setting the correct status bar style depending on the presentation context.
+ */
+@interface IFAAlertContainerViewController : IFAViewController
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1073800C7653514A34D098DF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1073862A6C0B08612C9A2ED0 /* LICENSE */; };
+		107381B24D93FAD7E0298031 /* IFAAlertContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107382B94669F01368812EAA /* IFAAlertContainerViewController.m */; };
+		10738AC52DC25D5BF2E5EDB8 /* IFAAlertContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 107384428BEF6DEBAD7F15B9 /* IFAAlertContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE4924C48D6EA3253833B8F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE1DA81544368F82F921219 /* Pods.framework */; };
 		F74ACC1C1BEBFD7A00C4B73E /* IFACoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */; };
 		F7650C471BE95BBD00B97932 /* IFA_HPGrowingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -389,6 +391,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		107382B94669F01368812EAA /* IFAAlertContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAAlertContainerViewController.m; sourceTree = "<group>"; };
+		107384428BEF6DEBAD7F15B9 /* IFAAlertContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAAlertContainerViewController.h; sourceTree = "<group>"; };
 		1073862A6C0B08612C9A2ED0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		55ADCDBD7C778CD217F69A50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE1DA81544368F82F921219 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1113,6 +1117,8 @@
 				F7650C441BE95BBD00B97932 /* UIViewController+IFACoreUI_Help.m */,
 				F7650C451BE95BBD00B97932 /* UIWebView+IFACoreUI.h */,
 				F7650C461BE95BBD00B97932 /* UIWebView+IFACoreUI.m */,
+				107382B94669F01368812EAA /* IFAAlertContainerViewController.m */,
+				107384428BEF6DEBAD7F15B9 /* IFAAlertContainerViewController.h */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -1448,6 +1454,7 @@
 				F7650CC31BE95BBD00B97932 /* IFAMultipleSelectionListViewController.h in Headers */,
 				F7650C781BE95BBD00B97932 /* IFACustomLayoutSupport.h in Headers */,
 				F7650CF31BE95BBD00B97932 /* IFASwitchTableViewCell.h in Headers */,
+				10738AC52DC25D5BF2E5EDB8 /* IFAAlertContainerViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1797,6 +1804,7 @@
 				F7650D341BE95BBE00B97932 /* UIImage+IFACoreUI.m in Sources */,
 				F7650C531BE95BBD00B97932 /* IFAAbstractFieldEditorViewController.m in Sources */,
 				F7650CDD1BE95BBD00B97932 /* IFAPinAnnotationView.m in Sources */,
+				107381B24D93FAD7E0298031 /* IFAAlertContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

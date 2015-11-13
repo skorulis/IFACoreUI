@@ -25,6 +25,8 @@
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAAbstractSelectionListViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAActionSheet.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAActionSheet.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAAlertContainerViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAAlertContainerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAAnalyticsManager.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAAnalyticsManager.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IFACoreUI/IFACoreUI/classes/IFAAppearanceTheme.h" isTestSource="false" />
