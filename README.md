@@ -15,3 +15,8 @@ IFACoreUI can be integrated to your project via Cocoapods or Carthage.
 ## Latest API Documentation ##
 
 http://cocoadocs.org/docsets/IFACoreUI
+
+## 3rd Party Credits ##
+- [HPGrowingTextView](https://github.com/HansPinckaers/GrowingTextView)
+- [KNSemiModal](https://github.com/kentnguyen/KNSemiModalViewController)
+- [ODRefreshControl](https://github.com/Sephiroth87/ODRefreshControl)
