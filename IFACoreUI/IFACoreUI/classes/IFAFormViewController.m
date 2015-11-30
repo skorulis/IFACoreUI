@@ -394,7 +394,6 @@ static NSString *const k_sectionHeaderFooterReuseId = @"sectionHeaderFooter";
             break;
         case IFAEditorTypeSelectionList:
         {
-            NSAssert([self.object isKindOfClass:NSManagedObject.class], @"Selection list editor type not yet implemented for non-NSManagedObject instances");
             NSManagedObject *managedObject = (NSManagedObject *) self.object;
             Class selectionViewControllerClass;
             NSString *propertyEntityName = [self entityNameForProperty:propertyName];
@@ -846,6 +845,18 @@ static NSString *const k_sectionHeaderFooterReuseId = @"sectionHeaderFooter";
     return placeholderText;
 }
 
+- (IFAEditorType)IFA_editorTypeForRelationshipPropertyNamed:(NSString *)propertyName {
+    NSString *entityName = [[IFAPersistenceManager sharedInstance].entityConfig entityNameForProperty:propertyName
+                                                                                             inObject:self.object];
+    IFAEditorType editorType = [[IFAPersistenceManager sharedInstance].entityConfig fieldEditorForEntity:entityName];
+    if (editorType == (IFAEditorType) NSNotFound) {
+        // Attempt to infer editor type from target entity
+        return [[IFAPersistenceManager sharedInstance] isSystemEntityForEntity:entityName] ? IFAEditorTypePicker : IFAEditorTypeSelectionList;
+    } else {
+        return editorType;
+    }
+}
+
 #pragma mark - Public
 
 - (id)initWithObject:(NSObject *)a_object readOnlyMode:(BOOL)a_readOnlyMode createMode:(BOOL)a_createMode
@@ -1172,15 +1183,7 @@ parentFormViewController:(IFAFormViewController *)a_parentFormViewController {
         } else if ([[IFAPersistenceManager sharedInstance].entityConfig isRelationshipForProperty:propertyName
                                                                                   inManagedObject:(NSManagedObject *) self.object]) {
 
-            NSString *entityName = [[IFAPersistenceManager sharedInstance].entityConfig entityNameForProperty:propertyName
-                                                                                                     inObject:self.object];
-            IFAEditorType editorType = [[IFAPersistenceManager sharedInstance].entityConfig fieldEditorForEntity:entityName];
-            if (editorType == (IFAEditorType) NSNotFound) {
-                // Attempt to infer editor type from target entity
-                return [[IFAPersistenceManager sharedInstance] isSystemEntityForEntity:entityName] ? IFAEditorTypePicker : IFAEditorTypeSelectionList;
-            } else {
-                return editorType;
-            }
+            return [self IFA_editorTypeForRelationshipPropertyNamed:propertyName];
 
         } else {
 
@@ -1189,6 +1192,20 @@ parentFormViewController:(IFAFormViewController *)a_parentFormViewController {
         }
 
     } else {
+
+        if ([l_propertyDescription hasPrefix:@"T@\""]) {
+
+            NSArray *components = [l_propertyDescription componentsSeparatedByString:@"\""];
+            if (components.count >= 2) {
+                NSString *className = components[1];
+                BOOL isPersistentEntity = [[IFAPersistenceManager sharedInstance].entityConfig dictionaryForEntity:className] != nil;
+                if (isPersistentEntity) {
+                    // It's a persistent entity property on a non-persistent object
+                    return [self IFA_editorTypeForRelationshipPropertyNamed:propertyName];
+                }
+            }
+
+        }
 
         return IFAEditorTypeText;
 
