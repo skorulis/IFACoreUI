@@ -436,6 +436,26 @@
 
 }
 
+- (void)    tableView:(UITableView *)tableView
+willDisplayHeaderView:(UIView *)view
+           forSection:(NSInteger)section {
+    if ([self.ifa_appearanceTheme respondsToSelector:@selector(setAppearanceOnWillDisplayHeaderView:forSection:viewController:)]) {
+        [self.ifa_appearanceTheme setAppearanceOnWillDisplayHeaderView:view
+                                                            forSection:section
+                                                        viewController:self];
+    }
+}
+
+- (void)    tableView:(UITableView *)tableView
+willDisplayFooterView:(UIView *)view
+           forSection:(NSInteger)section {
+    if ([self.ifa_appearanceTheme respondsToSelector:@selector(setAppearanceOnWillDisplayFooterView:forSection:viewController:)]) {
+        [self.ifa_appearanceTheme setAppearanceOnWillDisplayFooterView:view
+                                                            forSection:section
+                                                        viewController:self];
+    }
+}
+
 // Not having this may produce incorrect cell heights (added with support for dynamic type)
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSNumber *heightNumber = self.IFA_cellHeightCacheByIndexPath[indexPath.ifa_tableViewKey];
