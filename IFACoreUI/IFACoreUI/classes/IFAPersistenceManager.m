@@ -1733,10 +1733,11 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 }
 
 - (NSArray <NSManagedObject *> *)syncEntityNamed:(NSString *)entityName
-           withSourceObjects:(NSArray *)sourceObjects
-              keyPathMapping:(NSDictionary *)keyPathMapping
-             sourceIdKeyPath:(NSString *)sourceIdKeyPath
-             targetIdKeyPath:(NSString *)targetIdKeyPath {
+                               withSourceObjects:(NSArray *)sourceObjects
+                                  keyPathMapping:(NSDictionary *)keyPathMapping
+                                 sourceIdKeyPath:(NSString *)sourceIdKeyPath
+                                 targetIdKeyPath:(NSString *)targetIdKeyPath
+                                    mappingBlock:(void (^)(id sourceObject, NSManagedObject *targetManagedObject))mappingBlock {
     NSMutableArray <NSManagedObject *> *synchronisedObjects = [NSMutableArray new];
     for (id sourceObject in sourceObjects) {
         id sharedId = [sourceObject valueForKeyPath:sourceIdKeyPath];
@@ -1751,6 +1752,9 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
             id sharedValue = [sourceObject valueForKeyPath:sourcePropertyName];
             [managedObject setValue:sharedValue
                          forKeyPath:keyPathMapping[sourcePropertyName]];
+        }
+        if (mappingBlock) {
+            mappingBlock(sourceObject, managedObject);
         }
         [synchronisedObjects addObject:managedObject];
     }

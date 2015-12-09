@@ -128,7 +128,8 @@
                                                                                                          withSourceObjects:@[syncSource1, syncSource2, syncSource3]
                                                                                                             keyPathMapping:@{@"property1" : @"attribute1", @"property2" : @"attribute2"}
                                                                                                            sourceIdKeyPath:@"property1"
-                                                                                                           targetIdKeyPath:@"attribute1"];
+                                                                                                           targetIdKeyPath:@"attribute1"
+                                                                                                              mappingBlock:nil];
 
     // Then
     [self.persistenceManager save];
