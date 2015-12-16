@@ -1,1 +1,2 @@
-git "https://github.com/marcelo-schroeder/IFAFoundation.git"
+#git "https://github.com/marcelo-schroeder/IFAFoundation.git"
+git "https://github.com/marcelo-schroeder/IFAFoundation.git" "development"
