@@ -743,7 +743,6 @@
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
-          <root url="file://$MODULE_DIR$/Carthage/Build/iOS/IFAFoundation.framework/Headers" />
           <root url="file://$MODULE_DIR$/Pods/Headers/Private" />
         </CLASSES>
         <SOURCES>
@@ -835,7 +834,6 @@
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
-          <root url="file://$MODULE_DIR$/Carthage/Build/iOS/IFAFoundation.framework/Headers" />
           <root url="file://$MODULE_DIR$/Pods/Headers/Private" />
         </SOURCES>
       </library>
