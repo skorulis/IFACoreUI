@@ -397,6 +397,7 @@
 		55ADCDBD7C778CD217F69A50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE1DA81544368F82F921219 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314B4F86EBA089726B7C01C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F70DCCF11C458F180073028E /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../fastlane; sourceTree = "<group>"; };
 		F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7156C0F1BE953A30009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7156C141BE953A30009EFF4 /* IFACoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFACoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -833,6 +834,7 @@
 				12F7C8361C45532A514C5514 /* Frameworks */,
 				EFFCB94C5790AC441CA5C5A2 /* Pods */,
 				1073862A6C0B08612C9A2ED0 /* LICENSE */,
+				F70DCCF11C458F180073028E /* fastlane */,
 			);
 			sourceTree = "<group>";
 		};
