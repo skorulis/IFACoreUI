@@ -1,4 +1,4 @@
-app_identifier "com.infoaccent.IFAAppUI" # The bundle identifier of your app
+app_identifier "com.infoaccent.IFACoreUI" # The bundle identifier of your app
 apple_id "marcelo.schroeder@infoaccent.com" # Your Apple email address
 
 # You can uncomment any of the lines below and add your own
