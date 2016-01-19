@@ -775,6 +775,7 @@
 		F7650E4F1BEAA95F00B97932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7650E511BEAA96400B97932 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F7650E551BEAABB800B97932 /* IFAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IFAFoundation.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/IFAFoundation-bluqfceadfhxvgfwqxjrqmypubcx/Build/Products/Debug-iphoneos/IFAFoundation.framework"; sourceTree = "<group>"; };
+		F77FF8221C4ED6D900343884 /* ReleaseNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ReleaseNotes.txt; path = ../ReleaseNotes.txt; sourceTree = "<group>"; };
 		F7E49F351BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFACoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -824,6 +825,7 @@
 		F7156C001BE953A30009EFF4 = {
 			isa = PBXGroup;
 			children = (
+				F77FF8221C4ED6D900343884 /* ReleaseNotes.txt */,
 				F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */,
 				F7650DE91BE95E8700B97932 /* Cartfile */,
 				F7650E441BEA9F1400B97932 /* Podfile */,
