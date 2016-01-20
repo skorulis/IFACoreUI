@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.author            = { 'Marcelo Schroeder' => 'marcelo.schroeder@infoaccent.com' }
     s.platform          = :ios, '8.0'
     s.requires_arc      = true
-    s.source            = { :git => 'https://github.com/marcelo-schroeder/IFACoreUI.git', :tag => "#{s.version}" }
+    s.source            = { :git => 'https://github.com/marcelo-schroeder/IFACoreUI.git', :tag => 'v' +  s.version.to_s }
     s.source_files      = 'IFACoreUI/IFACoreUI/classes/**/*.{h,m}'
     s.resource          = 'IFACoreUI/IFACoreUI/resources/**/*.*'
     s.dependency 'IFAFoundation'
