@@ -769,7 +769,6 @@
 		F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity2.m; sourceTree = "<group>"; };
 		F7650E0A1BEA948900B97932 /* TestCoreDataEntity3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity3.h; sourceTree = "<group>"; };
 		F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity3.m; sourceTree = "<group>"; };
-		F7650E441BEA9F1400B97932 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		F7650E4B1BEAA94D00B97932 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F7650E4D1BEAA95900B97932 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7650E4F1BEAA95F00B97932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -828,7 +827,6 @@
 				F77FF8221C4ED6D900343884 /* ReleaseNotes.txt */,
 				F7650DEB1BE95F5400B97932 /* IFAFoundation.framework */,
 				F7650DE91BE95E8700B97932 /* Cartfile */,
-				F7650E441BEA9F1400B97932 /* Podfile */,
 				F75C51701BF133FD0003174D /* IFACoreUI.podspec */,
 				F7156C0C1BE953A30009EFF4 /* IFACoreUI */,
 				F7156C181BE953A30009EFF4 /* IFACoreUITests */,
