@@ -4,6 +4,9 @@ xcodeproj 'IFACoreUI/IFACoreUI.xcodeproj'
 link_with 'IFACoreUITests'
 use_frameworks!
 
+pod 'IFAFoundation', :git => 'https://github.com/marcelo-schroeder/IFAFoundation.git', :branch => 'development'
+# pod 'IFAFoundation', :path => '/Users/mschroeder/myfiles/projects/Xcode/IFAFoundation/IFAFoundation_development'
+
 # Tests dependencies
 pod 'IFATestingSupport'
 #pod 'IFATestingSupport', :git => 'https://github.com/marcelo-schroeder/IFATestingSupport.git', :tag => 'v0.1.1'

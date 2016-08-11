@@ -1,4 +1,5 @@
 PODS:
+  - IFAFoundation (1.0.10)
   - IFATestingSupport (1.0.3):
     - OCHamcrest (~> 4)
     - OCMock (~> 3)
@@ -6,11 +7,24 @@ PODS:
   - OCMock (3.2)
 
 DEPENDENCIES:
+  - IFAFoundation (from `https://github.com/marcelo-schroeder/IFAFoundation.git`,
+    branch `development`)
   - IFATestingSupport
   - OCHamcrest
   - OCMock
 
+EXTERNAL SOURCES:
+  IFAFoundation:
+    :branch: development
+    :git: https://github.com/marcelo-schroeder/IFAFoundation.git
+
+CHECKOUT OPTIONS:
+  IFAFoundation:
+    :commit: c29c705bb749b7663bb1fe3128a0bb004e1b7505
+    :git: https://github.com/marcelo-schroeder/IFAFoundation.git
+
 SPEC CHECKSUMS:
+  IFAFoundation: 8f1df14903d581b5001d14e6bacb6bc35497b774
   IFATestingSupport: 6558e25b6d4bac3fc11caec7ffe05e6e4bfbca77
   OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
   OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb

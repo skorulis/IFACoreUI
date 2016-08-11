@@ -3,6 +3,5 @@ import_from_git(url: 'https://github.com/marcelo-schroeder/IFAFastfile.git')
 platform :ios do
     override_lane :updateDependencies do
         cocoapods
-        carthage
     end
 end
