@@ -1181,11 +1181,15 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 //}
 
 // iOS 5 (the next method is for iOS 6 or greater)
--(BOOL)ifa_shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+-(BOOL)ifa_shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    if ([self.ifa_appearanceTheme respondsToSelector:@selector(shouldAutorotateToInterfaceOrientation:forViewController:)]) {
+        return [self.ifa_appearanceTheme shouldAutorotateToInterfaceOrientation:toInterfaceOrientation
+                                                              forViewController:self];
+    }
     BOOL l_shouldAutorotate;
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         l_shouldAutorotate = YES;
-    }else{
+    } else {
         l_shouldAutorotate = toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown;
     }
     if (l_shouldAutorotate) {
@@ -1198,6 +1202,9 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 
 // iOS 6 or greater (the previous method is for iOS 5)
 -(UIInterfaceOrientationMask)ifa_supportedInterfaceOrientations {
+    if ([self.ifa_appearanceTheme respondsToSelector:@selector(supportedInterfaceOrientationsForViewController:)]) {
+        return [self.ifa_appearanceTheme supportedInterfaceOrientationsForViewController:self];
+    }
     if ([IFAUIGlobal sharedInstance].semiModalViewController) {
         if ([IFAUIGlobal sharedInstance].semiModalViewPresentedInLandscapeInterfaceOrientation) {
             return UIInterfaceOrientationMaskLandscape;

@@ -162,4 +162,9 @@ typedef NS_ENUM(NSUInteger, IFABarButtonItemSpacingBarType) {
                                   forSection:(NSInteger)a_section
                               viewController:(IFATableViewController *)a_tableViewController;
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+                             forViewController:(UIViewController *)viewController;
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientationsForViewController:(UIViewController *)viewController;
+
 @end
