@@ -39,9 +39,6 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "IFAPersistenceManagerTests">
-               </Test>
-               <Test
                   Identifier = "IFAPersistentEntityChangeObserverTests">
                </Test>
                <Test
