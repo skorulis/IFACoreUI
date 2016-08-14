@@ -39,6 +39,30 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "IFAColorSchemeTest">
+               </Test>
+               <Test
+                  Identifier = "IFACoreUITestCase">
+               </Test>
+               <Test
+                  Identifier = "IFACurrentLocationManagerTests">
+               </Test>
+               <Test
+                  Identifier = "IFADateRangeTest">
+               </Test>
+               <Test
+                  Identifier = "IFAFormInputAccessoryViewTests">
+               </Test>
+               <Test
+                  Identifier = "IFALocationManagerTests">
+               </Test>
+               <Test
+                  Identifier = "IFAPagingStateManagerTests">
+               </Test>
+               <Test
+                  Identifier = "IFAPersistenceChangeDetectorTests">
+               </Test>
+               <Test
                   Identifier = "IFAPersistentEntityChangeObserverTests">
                </Test>
                <Test
@@ -46,6 +70,27 @@
                </Test>
                <Test
                   Identifier = "IFASingleSelectionManagerTests">
+               </Test>
+               <Test
+                  Identifier = "NSDateTest">
+               </Test>
+               <Test
+                  Identifier = "NSDictionaryTests">
+               </Test>
+               <Test
+                  Identifier = "NSIndexPathTests">
+               </Test>
+               <Test
+                  Identifier = "NSMutableArrayTests">
+               </Test>
+               <Test
+                  Identifier = "NSNumberFormatterTests">
+               </Test>
+               <Test
+                  Identifier = "NSStringTests">
+               </Test>
+               <Test
+                  Identifier = "TempTest">
                </Test>
             </SkippedTests>
          </TestableReference>
