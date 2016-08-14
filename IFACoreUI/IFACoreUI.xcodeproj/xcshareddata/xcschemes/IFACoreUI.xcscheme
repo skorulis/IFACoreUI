@@ -41,6 +41,9 @@
                <Test
                   Identifier = "IFAPersistenceManagerTests">
                </Test>
+               <Test
+                  Identifier = "IFAPersistentEntityChangeObserverTests">
+               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>
