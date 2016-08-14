@@ -17,8 +17,11 @@
 //  limitations under the License.
 //
 
-#import "IFACommonTests.h"
 @import IFACoreUI;
+#import <OCMock/OCMStubRecorder.h>
+#import <OCMock/OCMArg.h>
+#import <OCMock/OCMockObject.h>
+#import <IFATestingSupport/IFACommonTests.h>
 #import "IFACoreUITestCase.h"
 
 @interface IFAFormInputAccessoryView (Tests)
@@ -36,6 +39,7 @@
 @property(nonatomic, strong) id p_mockPreviousBarButtonItem;
 @property(nonatomic, strong) id p_mockNextBarButtonItem;
 @property(nonatomic, strong) id p_mockResponder;
+@property(nonatomic) id barButtonItemMock;
 @end
 
 @implementation IFAFormInputAccessoryViewTests{
@@ -61,6 +65,11 @@
     [self m_createMockObjects];
     [self m_createSystemUnderTestAndSetMockObjects];
     [self m_configureMockObjects];
+}
+
+- (void)tearDown {
+    [super tearDown];
+    [self.barButtonItemMock stopMocking];
 }
 
 - (void)testThatInterfaceBuilderOutletConnectionsAreInPlace{
@@ -327,6 +336,10 @@
     self.p_mockPreviousBarButtonItem = [OCMockObject niceMockForClass:[UIBarButtonItem class]];
     self.p_mockNextBarButtonItem = [OCMockObject niceMockForClass:[UIBarButtonItem class]];
     self.p_mockResponder = [OCMockObject mockForClass:[UIResponder class]];
+
+    // The below prevents a crash when initiliasing IFADefaultAppearanceTheme
+    self.barButtonItemMock = [OCMockObject mockForClass:[UIBarButtonItem class]];
+    [[[self.barButtonItemMock stub] andReturn:nil] appearanceWhenContainedIn:[OCMArg any], nil];
 }
 
 - (void)m_configureMockResponder {
