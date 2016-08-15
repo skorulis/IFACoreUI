@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   IFAFoundation:
-    :commit: c29c705bb749b7663bb1fe3128a0bb004e1b7505
+    :commit: b25c68ea4d8f772bbf775425e32e941139359b9e
     :git: https://github.com/marcelo-schroeder/IFAFoundation.git
 
 SPEC CHECKSUMS:
