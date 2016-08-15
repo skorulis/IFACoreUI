@@ -1,5 +1,5 @@
 app_identifier "com.infoaccent.IFACoreUI" # The bundle identifier of your app
-apple_id "marcelo.schroeder@infoaccent.com" # Your Apple email address
+apple_id "continuous.integration@infoaccent.com" # Your Apple email address
 
 # You can uncomment any of the lines below and add your own
 # team selection in case you're in multiple teams
