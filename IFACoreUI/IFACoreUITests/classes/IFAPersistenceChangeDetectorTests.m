@@ -22,8 +22,6 @@
 #import "TestCoreDataEntity1.h"
 #import "TestCoreDataEntity2.h"
 
-@interface
-
 @interface IFAPersistenceChangeDetectorTests : IFACoreUITestCase
 @property(nonatomic) IFAPersistenceChangeDetector *persistenceChangeDetector;
 @end
