@@ -22,6 +22,8 @@
 #import "TestCoreDataEntity1.h"
 #import "TestCoreDataEntity2.h"
 
+@interface
+
 @interface IFAPersistenceChangeDetectorTests : IFACoreUITestCase
 @property(nonatomic) IFAPersistenceChangeDetector *persistenceChangeDetector;
 @end
@@ -172,20 +174,22 @@
     [notificationCenterMock stopMocking];
 }
 
-//- (void)testThatSettingEnabledToNoWillRemoveObserverIfObserverHasNotBeenRemovedBefore{
-//    // given
-//    self.persistenceChangeDetector.enabled = YES;
-//    id notificationCenterMock = OCMClassMock([NSNotificationCenter class]);
-//    OCMExpect([notificationCenterMock removeObserver:self.persistenceChangeDetector
-//                                                name:IFANotificationPersistentEntityChange
-//                                              object:nil]);
-//    OCMStub([notificationCenterMock defaultCenter]).andReturn(notificationCenterMock);
-//    // when
-//    self.persistenceChangeDetector.enabled = NO;
-//    // then
-//    OCMVerifyAll(notificationCenterMock);
-//    [notificationCenterMock stopMocking];
-//}
+- (void)testThatSettingEnabledToNoWillRemoveObserverIfObserverHasNotBeenRemovedBefore{
+    // given
+    self.persistenceChangeDetector.enabled = YES;
+    id notificationCenterMock = OCMClassMock([NSNotificationCenter class]);
+    OCMExpect([notificationCenterMock removeObserver:self.persistenceChangeDetector
+                                                name:IFANotificationPersistentEntityChange
+                                              object:nil]);
+    OCMStub([notificationCenterMock defaultCenter]).andReturn(notificationCenterMock);
+    // when
+    self.persistenceChangeDetector.enabled = NO;
+    // then
+    OCMVerifyAll(notificationCenterMock);
+    [notificationCenterMock stopMocking];
+    [[NSNotificationCenter defaultCenter] removeObserver:self.persistenceChangeDetector
+                                                    name:IFANotificationPersistentEntityChange
+                                                  object:nil];}
 
 - (void)testThatSettingEnabledToNoWillNotRemoveObserverIfObserverHasBeenRemovedBefore {
     // given
