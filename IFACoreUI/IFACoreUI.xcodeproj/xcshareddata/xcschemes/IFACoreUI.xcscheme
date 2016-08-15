@@ -37,11 +37,6 @@
                BlueprintName = "IFACoreUITests"
                ReferencedContainer = "container:IFACoreUI.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "IFAPersistenceChangeDetectorTests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
