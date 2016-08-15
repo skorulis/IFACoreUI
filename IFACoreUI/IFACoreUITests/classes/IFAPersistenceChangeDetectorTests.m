@@ -172,39 +172,39 @@
 //    [notificationCenterMock stopMocking];
 //}
 
-- (void)testThatSettingEnabledToNoWillRemoveObserverIfObserverHasNotBeenRemovedBefore{
-    // given
-    self.persistenceChangeDetector.enabled = YES;
-    id notificationCenterMock = OCMClassMock([NSNotificationCenter class]);
-    OCMExpect([notificationCenterMock removeObserver:self.persistenceChangeDetector
-                                                name:IFANotificationPersistentEntityChange
-                                              object:nil]);
-    OCMStub([notificationCenterMock defaultCenter]).andReturn(notificationCenterMock);
-    // when
-    self.persistenceChangeDetector.enabled = NO;
-    // then
-    OCMVerifyAll(notificationCenterMock);
-    [notificationCenterMock stopMocking];
-}
+//- (void)testThatSettingEnabledToNoWillRemoveObserverIfObserverHasNotBeenRemovedBefore{
+//    // given
+//    self.persistenceChangeDetector.enabled = YES;
+//    id notificationCenterMock = OCMClassMock([NSNotificationCenter class]);
+//    OCMExpect([notificationCenterMock removeObserver:self.persistenceChangeDetector
+//                                                name:IFANotificationPersistentEntityChange
+//                                              object:nil]);
+//    OCMStub([notificationCenterMock defaultCenter]).andReturn(notificationCenterMock);
+//    // when
+//    self.persistenceChangeDetector.enabled = NO;
+//    // then
+//    OCMVerifyAll(notificationCenterMock);
+//    [notificationCenterMock stopMocking];
+//}
 
-- (void)testThatSettingEnabledToNoWillNotRemoveObserverIfObserverHasBeenRemovedBefore {
-    // given
-    self.persistenceChangeDetector.enabled = YES;
-    id notificationCenterMock = OCMClassMock([NSNotificationCenter class]);
-    OCMExpect([notificationCenterMock removeObserver:self.persistenceChangeDetector
-                                                name:IFANotificationPersistentEntityChange
-                                              object:nil]);
-    [[notificationCenterMock reject] removeObserver:self.persistenceChangeDetector
-                                               name:IFANotificationPersistentEntityChange
-                                             object:nil];
-    OCMStub([notificationCenterMock defaultCenter]).andReturn(notificationCenterMock);
-    self.persistenceChangeDetector.enabled = NO;
-    // when
-    self.persistenceChangeDetector.enabled = NO;
-    // then
-    OCMVerifyAll(notificationCenterMock);
-    [notificationCenterMock stopMocking];
-}
+//- (void)testThatSettingEnabledToNoWillNotRemoveObserverIfObserverHasBeenRemovedBefore {
+//    // given
+//    self.persistenceChangeDetector.enabled = YES;
+//    id notificationCenterMock = OCMClassMock([NSNotificationCenter class]);
+//    OCMExpect([notificationCenterMock removeObserver:self.persistenceChangeDetector
+//                                                name:IFANotificationPersistentEntityChange
+//                                              object:nil]);
+//    [[notificationCenterMock reject] removeObserver:self.persistenceChangeDetector
+//                                               name:IFANotificationPersistentEntityChange
+//                                             object:nil];
+//    OCMStub([notificationCenterMock defaultCenter]).andReturn(notificationCenterMock);
+//    self.persistenceChangeDetector.enabled = NO;
+//    // when
+//    self.persistenceChangeDetector.enabled = NO;
+//    // then
+//    OCMVerifyAll(notificationCenterMock);
+//    [notificationCenterMock stopMocking];
+//}
 
 // This test was causing crashes somewhere else for some reason
 //- (void)testThatDeallocWillRemoveObserver{
