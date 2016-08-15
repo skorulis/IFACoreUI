@@ -301,6 +301,7 @@
 
 - (void)tearDown {
     [super tearDown];
+    self.persistenceChangeDetector.enabled = NO;
     self.persistenceChangeDetector = nil;
 }
 
