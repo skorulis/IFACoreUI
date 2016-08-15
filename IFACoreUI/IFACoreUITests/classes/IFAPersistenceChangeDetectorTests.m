@@ -185,6 +185,7 @@
     // then
     OCMVerifyAll(notificationCenterMock);
     [notificationCenterMock stopMocking];
+    // Now remove the observer for real (to prevent crashes and hangs in other tests)
     [[NSNotificationCenter defaultCenter] removeObserver:self.persistenceChangeDetector
                                                     name:IFANotificationPersistentEntityChange
                                                   object:nil];}
@@ -208,7 +209,7 @@
     [notificationCenterMock stopMocking];
 }
 
-// This test was causing crashes somewhere else for some reason
+// This test was causing crashes somewhere else for some reason (UPDATE: probably because the observer was not being removed for real)
 //- (void)testThatDeallocWillRemoveObserver{
 //    // given
 //    self.persistenceChangeDetector.enabled = YES;
