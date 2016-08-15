@@ -19,3 +19,16 @@ target :IFACoreUI do
   end
 
 end
+
+post_install do |installer_representation|
+  installer_representation.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+
+      # Restrict to extension API's only - Cocoapods is somehow coming to the conclusion that this should be set to NO, so this reverts that setting.
+      if target.name == 'IFAFoundation'
+        config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'YES'
+      end
+
+    end
+  end
+end

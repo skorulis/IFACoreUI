@@ -185,7 +185,7 @@
 }
 
 - (void)IFA_updatePickersVisibilityState{
-    self.IFA_datePicker.hidden = !self.IFA_segmentedControl.selectedSegmentIndex==0;
+    self.IFA_datePicker.hidden = !(self.IFA_segmentedControl.selectedSegmentIndex==0);
     self.IFA_timePicker.hidden = !self.IFA_datePicker.hidden;
 }
 
