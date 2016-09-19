@@ -8,19 +8,19 @@ PODS:
 
 DEPENDENCIES:
   - IFAFoundation (from `https://github.com/marcelo-schroeder/IFAFoundation.git`,
-    branch `development`)
+    branch `dev_iOS10`)
   - IFATestingSupport
   - OCHamcrest
   - OCMock
 
 EXTERNAL SOURCES:
   IFAFoundation:
-    :branch: development
+    :branch: dev_iOS10
     :git: https://github.com/marcelo-schroeder/IFAFoundation.git
 
 CHECKOUT OPTIONS:
   IFAFoundation:
-    :commit: b25c68ea4d8f772bbf775425e32e941139359b9e
+    :commit: 3109a5315dc78c3d83b06c21f847b2a38576b06e
     :git: https://github.com/marcelo-schroeder/IFAFoundation.git
 
 SPEC CHECKSUMS:
