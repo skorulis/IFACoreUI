@@ -386,7 +386,7 @@
 
 - (NSIndexPath*)indexPathForObject:(NSObject *)a_object {
     if (self.fetchedResultsController) {
-        return [self.fetchedResultsController indexPathForObject:a_object];
+        return [self.fetchedResultsController indexPathForObject:(id)a_object];
     }else{
         for (NSUInteger l_section = 0; l_section < [self.sectionsWithRows count]; l_section++) {
             NSUInteger l_row = [(self.sectionsWithRows)[l_section] indexOfObject:a_object];

@@ -23,7 +23,7 @@
 //static UIPopoverArrowDirection  const k_arrowDirectionWithoutKeyboard   = UIPopoverArrowDirectionAny;
 //static UIPopoverArrowDirection  const k_arrowDirectionWithoutKeyboard   = UIPopoverArrowDirectionUp | UIPopoverArrowDirectionDown;
 //static UIPopoverArrowDirection  const k_arrowDirectionWithKeyboard      = UIPopoverArrowDirectionLeft | UIPopoverArrowDirectionRight;
-static BOOL                     const k_animated                        = YES;
+//static BOOL                     const k_animated                        = YES;
 
 static char c_presenterKey;
 static char c_delegateKey;

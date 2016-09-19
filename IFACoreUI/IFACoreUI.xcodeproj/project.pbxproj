@@ -23,8 +23,6 @@
 		F7650C531BE95BBD00B97932 /* IFAAbstractFieldEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B511BE95BBD00B97932 /* IFAAbstractFieldEditorViewController.m */; };
 		F7650C541BE95BBD00B97932 /* IFAAbstractSelectionListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B521BE95BBD00B97932 /* IFAAbstractSelectionListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650C551BE95BBD00B97932 /* IFAAbstractSelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B531BE95BBD00B97932 /* IFAAbstractSelectionListViewController.m */; };
-		F7650C561BE95BBD00B97932 /* IFAActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B541BE95BBD00B97932 /* IFAActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7650C571BE95BBD00B97932 /* IFAActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B551BE95BBD00B97932 /* IFAActionSheet.m */; };
 		F7650C581BE95BBD00B97932 /* IFAAnalyticsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B561BE95BBD00B97932 /* IFAAnalyticsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650C591BE95BBD00B97932 /* IFAAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B571BE95BBD00B97932 /* IFAAnalyticsManager.m */; };
 		F7650C5A1BE95BBD00B97932 /* IFAAppearanceTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B581BE95BBD00B97932 /* IFAAppearanceTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -417,8 +415,6 @@
 		F7650B511BE95BBD00B97932 /* IFAAbstractFieldEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAAbstractFieldEditorViewController.m; sourceTree = "<group>"; };
 		F7650B521BE95BBD00B97932 /* IFAAbstractSelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAAbstractSelectionListViewController.h; sourceTree = "<group>"; };
 		F7650B531BE95BBD00B97932 /* IFAAbstractSelectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAAbstractSelectionListViewController.m; sourceTree = "<group>"; };
-		F7650B541BE95BBD00B97932 /* IFAActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAActionSheet.h; sourceTree = "<group>"; };
-		F7650B551BE95BBD00B97932 /* IFAActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAActionSheet.m; sourceTree = "<group>"; };
 		F7650B561BE95BBD00B97932 /* IFAAnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAAnalyticsManager.h; sourceTree = "<group>"; };
 		F7650B571BE95BBD00B97932 /* IFAAnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAAnalyticsManager.m; sourceTree = "<group>"; };
 		F7650B581BE95BBD00B97932 /* IFAAppearanceTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAAppearanceTheme.h; sourceTree = "<group>"; };
@@ -878,8 +874,6 @@
 				F7650B511BE95BBD00B97932 /* IFAAbstractFieldEditorViewController.m */,
 				F7650B521BE95BBD00B97932 /* IFAAbstractSelectionListViewController.h */,
 				F7650B531BE95BBD00B97932 /* IFAAbstractSelectionListViewController.m */,
-				F7650B541BE95BBD00B97932 /* IFAActionSheet.h */,
-				F7650B551BE95BBD00B97932 /* IFAActionSheet.m */,
 				F7650B561BE95BBD00B97932 /* IFAAnalyticsManager.h */,
 				F7650B571BE95BBD00B97932 /* IFAAnalyticsManager.m */,
 				F7650B581BE95BBD00B97932 /* IFAAppearanceTheme.h */,
@@ -1450,7 +1444,6 @@
 				F7650CBB1BE95BBD00B97932 /* IFAMapViewController.h in Headers */,
 				F7650CCB1BE95BBD00B97932 /* IFAOperation.h in Headers */,
 				F7650C6F1BE95BBD00B97932 /* IFAContextSwitchingManager.h in Headers */,
-				F7650C561BE95BBD00B97932 /* IFAActionSheet.h in Headers */,
 				F7650C9C1BE95BBD00B97932 /* IFAGridViewController.h in Headers */,
 				F7650C711BE95BBD00B97932 /* IFAContextSwitchTarget.h in Headers */,
 				F7650D331BE95BBE00B97932 /* UIImage+IFACoreUI.h in Headers */,
@@ -1762,7 +1755,6 @@
 				F7650C911BE95BBD00B97932 /* IFAFormNumberFieldTableViewCell.m in Sources */,
 				F7650CB61BE95BBD00B97932 /* IFALongTextEditorViewController.m in Sources */,
 				F7650CAC1BE95BBD00B97932 /* IFAHudWrapperViewController.m in Sources */,
-				F7650C571BE95BBD00B97932 /* IFAActionSheet.m in Sources */,
 				F7650D061BE95BBD00B97932 /* IFATextViewController.m in Sources */,
 				F7650C8B1BE95BBD00B97932 /* IFAFadingOverlayViewControllerTransitioningDelegate.m in Sources */,
 				F7650C871BE95BBD00B97932 /* IFAEnumerationEntity.m in Sources */,

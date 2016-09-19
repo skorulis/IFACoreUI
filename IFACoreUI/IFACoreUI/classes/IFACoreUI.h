@@ -51,7 +51,6 @@ FOUNDATION_EXPORT const unsigned char IFACoreUIVersionString[];
 #import "IFADefaultAppearanceTheme.h"
 #import "IFAAbstractFieldEditorViewController.h"
 #import "IFAAbstractSelectionListViewController.h"
-#import "IFAActionSheet.h"
 #import "IFAAppearanceTheme.h"
 #import "IFAAppearanceThemeManager.h"
 #import "IFAAsynchronousWorkManager.h"
