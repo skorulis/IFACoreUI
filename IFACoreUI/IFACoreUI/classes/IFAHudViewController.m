@@ -20,6 +20,7 @@
 @interface IFAHudViewController ()
 @property (nonatomic, strong) IFAHudView *hudView;
 @property(nonatomic, strong) UIWindow *IFA_window;
+@property (nonatomic) UIStatusBarStyle IFA_preferredStatusBarStyle;
 @end
 
 @implementation IFAHudViewController {
@@ -193,6 +194,13 @@
                                                        completion:completion];
 }
 
+- (void)setPreferredStatusBarStyle:(UIStatusBarStyle)preferredStatusBarStyle {
+    if (self.IFA_preferredStatusBarStyle != preferredStatusBarStyle) {
+        self.IFA_preferredStatusBarStyle = preferredStatusBarStyle;
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
 #pragma mark - Overrides
 
 - (void)ifa_commonInit {
@@ -200,7 +208,7 @@
     self.modal = YES;
     self.presentationAnimationDuration = 0.3;
     self.dismissalAnimationDuration = 1;
-    self.preferredStatusBarStyle = UIStatusBarStyleDefault;
+    self.IFA_preferredStatusBarStyle = UIStatusBarStyleDefault;
 }
 
 - (void)viewDidLoad {
@@ -236,6 +244,10 @@
 - (BOOL)ifa_manageToolbar {
     // Do not interfere with toolbar management
     return NO;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return self.IFA_preferredStatusBarStyle;
 }
 
 #pragma mark - Private
