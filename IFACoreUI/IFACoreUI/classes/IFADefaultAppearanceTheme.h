@@ -28,12 +28,12 @@
 @interface IFADefaultAppearanceTheme : NSObject <IFAAppearanceTheme>
 
 @property (nonatomic, strong) UINavigationBar *navigationBarAppearance;
-@property (nonatomic, strong) UINavigationBar *popoverNavigationBarAppearance;
+//@property (nonatomic, strong) UINavigationBar *popoverNavigationBarAppearance;
 @property (nonatomic, strong) UIBarButtonItem *barButtonItemAppearance;
 @property (nonatomic, strong) UIBarButtonItem *navigationBarButtonItemAppearance;
 @property (nonatomic, strong) UIBarButtonItem *toolbarButtonItemAppearance;
 @property (nonatomic, strong) UIToolbar *toolbarAppearance;
-@property (nonatomic, strong) UIToolbar *popoverToolbarAppearance;
+//@property (nonatomic, strong) UIToolbar *popoverToolbarAppearance;
 @property (nonatomic, strong) UITabBar *tabBarAppearance;
 @property (nonatomic, strong) UITabBarItem *tabBarItemAppearance;
 @property (nonatomic, strong) UISearchBar *searchBarAppearance;

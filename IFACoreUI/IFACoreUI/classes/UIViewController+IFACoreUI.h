@@ -30,7 +30,8 @@
 @class IFAPassthroughView;
 @protocol IFAViewControllerDelegate;
 
-@interface UIViewController (IFACoreUI) <IFAPresenter, UIPopoverControllerDelegate>
+@interface UIViewController (IFACoreUI) <IFAPresenter>
+//@interface UIViewController (IFACoreUI) <IFAPresenter, UIPopoverControllerDelegate>
 
 @property (nonatomic, readonly) BOOL ifa_presentedAsModal;
 @property (nonatomic, readonly) BOOL ifa_isMasterViewController;
@@ -40,8 +41,8 @@
 @property (nonatomic, readonly) IFAAsynchronousWorkManager *ifa_asynchronousWorkManager;
 @property (nonatomic, weak) id<IFAPresenter> ifa_presenter;
 @property (nonatomic, weak) id<IFAViewControllerDelegate> ifa_delegate;
-@property (nonatomic, strong, readonly) UIPopoverController *ifa_activePopoverController;
-@property (nonatomic, strong, readonly) UIBarButtonItem *ifa_activePopoverControllerBarButtonItem;
+//@property (nonatomic, strong, readonly) UIPopoverController *ifa_activePopoverController;
+//@property (nonatomic, strong, readonly) UIBarButtonItem *ifa_activePopoverControllerBarButtonItem;
 @property (nonatomic, strong) NSString *ifa_subTitle;
 @property (nonatomic, strong) IFANavigationItemTitleView *ifa_titleViewDefault;
 @property (nonatomic, strong) IFANavigationItemTitleView *ifa_titleViewLandscapePhone;
@@ -140,7 +141,7 @@
 
 + (BOOL)ifa_isStoryboardDeviceSpecific;
 
-+ (UIViewController *)ifa_popoverControllerPresenter;
+//+ (UIViewController *)ifa_popoverControllerPresenter;
 
 /**
 * @returns Thread safe calendar.
@@ -233,8 +234,8 @@
 
 -(BOOL)ifa_hasFixedSize;
 
-// This callback can be used to customise, for instance, the popover controller's passthroughViews array
-- (void)ifa_didPresentPopoverController:(UIPopoverController *)a_popoverController;
+//// This callback can be used to customise, for instance, the popover controller's passthroughViews array
+//- (void)ifa_didPresentPopoverController:(UIPopoverController *)a_popoverController;
 
 -(void)ifa_presentModalFormViewController:(UIViewController*)a_viewController;
 
@@ -264,9 +265,9 @@
                        transitionStyle:(UIModalTransitionStyle)a_transitionStyle
                    shouldAddDoneButton:(BOOL)a_shouldAddDoneButton customSize:(CGSize)a_customSize;
 
-/* Presenting popover controllers */
--(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromBarButtonItem:(UIBarButtonItem *)a_fromBarButtonItem;
--(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromRect:(CGRect)a_fromRect inView:(UIView *)a_view;
+///* Presenting popover controllers */
+//-(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromBarButtonItem:(UIBarButtonItem *)a_fromBarButtonItem;
+//-(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromRect:(CGRect)a_fromRect inView:(UIView *)a_view;
 
 /* Presenting view controller methods */
 - (void)ifa_dismissModalViewControllerWithChangesMade:(BOOL)a_changesMade data:(id)a_data;
@@ -285,7 +286,7 @@
 -(void)ifa_didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
 //-(void)ifa_dismissMenuPopoverController;
 //-(void)ifa_dismissMenuPopoverControllerWithAnimation:(BOOL)a_animated;
--(void)ifa_resetActivePopoverController;
+//-(void)ifa_resetActivePopoverController;
 
 -(void)ifa_addLeftBarButtonItem:(UIBarButtonItem*)a_barButtonItem;
 -(void)ifa_insertLeftBarButtonItem:(UIBarButtonItem *)a_barButtonItem atIndex:(NSUInteger)a_index;
@@ -305,7 +306,7 @@
 
 //-(void)ifa_releaseView;
 
-- (UIPopoverArrowDirection)ifa_permittedPopoverArrowDirectionForViewController:(UIViewController *)a_viewController;
+//- (UIPopoverArrowDirection)ifa_permittedPopoverArrowDirectionForViewController:(UIViewController *)a_viewController;
 
 // Message "beginRefreshing" to self.ifa_refreshControl but does not show control
 -(void)ifa_beginRefreshingWithScrollView:(UIScrollView*)a_scrollView;
@@ -313,7 +314,7 @@
 -(void)ifa_beginRefreshingWithScrollView:(UIScrollView *)a_scrollView showControl:(BOOL)a_shouldShowControl;
 -(void)ifa_showRefreshControl:(UIControl *)a_control inScrollView:(UIScrollView*)a_scrollView;
 
--(UIPopoverController*)ifa_newPopoverControllerWithContentViewController:(UIViewController*)a_contentViewController;
+//-(UIPopoverController*)ifa_newPopoverControllerWithContentViewController:(UIViewController*)a_contentViewController;
 
 /* to be overriden by subclasses */
 

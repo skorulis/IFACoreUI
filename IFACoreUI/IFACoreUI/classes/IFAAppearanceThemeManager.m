@@ -184,9 +184,9 @@
         [self.loadedAppearanceTheme willReloadUi];
     }
 
-    // Dismiss activity view controller popover
-    [[IFAUIGlobal sharedInstance].popoverControllerPresenter ifa_dismissModalViewControllerWithChangesMade:NO
-                                                                                                                 data:nil ];
+//    // Dismiss activity view controller popover
+//    [[IFAUIGlobal sharedInstance].popoverControllerPresenter ifa_dismissModalViewControllerWithChangesMade:NO
+//                                                                                                                 data:nil ];
 
 //    // Dismiss popover menu if using the custom split view controller
 //    [IFAUIUtils dismissSplitViewControllerPopover];

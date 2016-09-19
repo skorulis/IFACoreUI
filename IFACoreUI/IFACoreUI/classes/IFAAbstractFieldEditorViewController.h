@@ -23,7 +23,8 @@
 
 @protocol IFAPresenter;
 
-@interface IFAAbstractFieldEditorViewController : IFAViewController <UIPopoverControllerDelegate, IFASemiModalViewDelegate> {
+@interface IFAAbstractFieldEditorViewController : IFAViewController <IFASemiModalViewDelegate> {
+//@interface IFAAbstractFieldEditorViewController : IFAViewController <UIPopoverControllerDelegate, IFASemiModalViewDelegate> {
 }
 
 @property (nonatomic) BOOL useButtonForDismissal;

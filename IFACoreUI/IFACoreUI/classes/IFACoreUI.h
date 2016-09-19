@@ -120,7 +120,7 @@ FOUNDATION_EXPORT const unsigned char IFACoreUIVersionString[];
 #import "UICollectionView+IFACoreUI.h"
 #import "UIColor+IFACoreUI.h"
 #import "UIImage+IFACoreUI.h"
-#import "UIPopoverController+IFACoreUI.h"
+//#import "UIPopoverController+IFACoreUI.h"
 #import "UIScrollView+IFACoreUI.h"
 #import "UIStoryboard+IFACoreUI.h"
 #import "UITableView+IFACoreUI.h"

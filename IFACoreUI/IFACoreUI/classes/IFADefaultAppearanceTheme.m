@@ -548,14 +548,14 @@ IFA_tableViewCellSelectedBackgroundStyleForIndexPath:(NSIndexPath *)a_indexPath
     }
 }
 
--(void)setAppearanceForPopoverController:(UIPopoverController*)a_popoverController{
-    if ([a_popoverController.contentViewController isKindOfClass:[UINavigationController class]]) {
-        Class l_backgroundViewClass = NSClassFromString([IFAUtils infoPList][@"IFAPopoverControllerBackgroundViewClass"]);
-        if (l_backgroundViewClass) {
-            a_popoverController.popoverBackgroundViewClass = l_backgroundViewClass;
-        }
-    }
-}
+//-(void)setAppearanceForPopoverController:(UIPopoverController*)a_popoverController{
+//    if ([a_popoverController.contentViewController isKindOfClass:[UINavigationController class]]) {
+//        Class l_backgroundViewClass = NSClassFromString([IFAUtils infoPList][@"IFAPopoverControllerBackgroundViewClass"]);
+//        if (l_backgroundViewClass) {
+//            a_popoverController.popoverBackgroundViewClass = l_backgroundViewClass;
+//        }
+//    }
+//}
 
 - (void)setAppearanceOnPrepareForReuseForTableViewCell:(UITableViewCell *)a_cell {
     [self setTextAppearanceForSelectedContentSizeCategoryInObject:a_cell];
@@ -1032,12 +1032,12 @@ IFA_tableViewCellSelectedBackgroundStyleForIndexPath:(NSIndexPath *)a_indexPath
     self = [super init];
     if (self) {
         self.navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[self navigationControllerClass], nil];
-        self.popoverNavigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[UIPopoverController class], [self navigationControllerClass], nil];
+//        self.popoverNavigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[UIPopoverController class], [self navigationControllerClass], nil];
         self.barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[self navigationControllerClass], nil];
         self.navigationBarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], [self navigationControllerClass], nil];
         self.toolbarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UIToolbar class], [self navigationControllerClass], nil];
         self.toolbarAppearance = [UIToolbar appearanceWhenContainedIn:[self navigationControllerClass], nil];
-        self.popoverToolbarAppearance = [UIToolbar appearanceWhenContainedIn:[UIPopoverController class], [self navigationControllerClass], nil];
+//        self.popoverToolbarAppearance = [UIToolbar appearanceWhenContainedIn:[UIPopoverController class], [self navigationControllerClass], nil];
         self.tabBarAppearance = [UITabBar appearanceWhenContainedIn:[self navigationControllerClass], nil];
         self.tabBarItemAppearance = [UITabBarItem appearanceWhenContainedIn:[self navigationControllerClass], nil];
         self.searchBarAppearance = [UISearchBar appearanceWhenContainedIn:[self navigationControllerClass], nil];

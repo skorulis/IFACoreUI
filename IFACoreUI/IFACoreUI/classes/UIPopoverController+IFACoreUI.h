@@ -20,6 +20,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * IMPORTANT: This class has been removed from the project due to API deprecations and a replacement has not been created yet.
+ */
 @interface UIPopoverController (IFACoreUI)
 
 @property (nonatomic, readonly) NSUInteger ifa_borderThickness;

@@ -21,14 +21,14 @@
 #import "IFACoreUI.h"
 
 //static UIPopoverArrowDirection  const k_arrowDirectionWithoutKeyboard   = UIPopoverArrowDirectionAny;
-static UIPopoverArrowDirection  const k_arrowDirectionWithoutKeyboard   = UIPopoverArrowDirectionUp | UIPopoverArrowDirectionDown;
-static UIPopoverArrowDirection  const k_arrowDirectionWithKeyboard      = UIPopoverArrowDirectionLeft | UIPopoverArrowDirectionRight;
+//static UIPopoverArrowDirection  const k_arrowDirectionWithoutKeyboard   = UIPopoverArrowDirectionUp | UIPopoverArrowDirectionDown;
+//static UIPopoverArrowDirection  const k_arrowDirectionWithKeyboard      = UIPopoverArrowDirectionLeft | UIPopoverArrowDirectionRight;
 static BOOL                     const k_animated                        = YES;
 
 static char c_presenterKey;
 static char c_delegateKey;
-static char c_activePopoverControllerKey;
-static char c_activePopoverControllerBarButtonItemKey;
+//static char c_activePopoverControllerKey;
+//static char c_activePopoverControllerBarButtonItemKey;
 static char c_subTitleKey;
 static char c_slidingMenuBarButtonItemKey;
 static char c_titleViewDefaultKey;
@@ -45,12 +45,12 @@ static char c_toolbarUpdatedBeforeViewAppearedKey;
 static char c_previousVisibleViewControllerKey;
 static char c_sessionCompletionNotifiedKey;
 
-static UIViewController *c_popoverControllerPresenter;
+//static UIViewController *c_popoverControllerPresenter;
 
 @interface UIViewController (IFACoreUI_Private)
 
-@property (nonatomic, strong) UIPopoverController *ifa_activePopoverController;
-@property (nonatomic, strong) UIBarButtonItem *ifa_activePopoverControllerBarButtonItem;
+//@property (nonatomic, strong) UIPopoverController *ifa_activePopoverController;
+//@property (nonatomic, strong) UIBarButtonItem *ifa_activePopoverControllerBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *IFA_slidingMenuBarButtonItem;
 @property (nonatomic) BOOL ifa_changesMadeByPresentedViewController;
 @property (nonatomic, strong) IFAPassthroughView *IFA_keyboardPassthroughView;
@@ -115,33 +115,33 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 //        NSLog(@"  a_viewController.view.frame: %@", NSStringFromCGRect(a_viewController.view.frame));
     }
 
-    if ([IFAUIUtils isIPad]) { // If iPad present controller in a popover
+//    if ([IFAUIUtils isIPad]) { // If iPad present controller in a popover
 
-        // Instantiate and configure popover controller
-        UIPopoverController *l_popoverController = [self ifa_newPopoverControllerWithContentViewController:l_viewController];
+//        // Instantiate and configure popover controller
+//        UIPopoverController *l_popoverController = [self ifa_newPopoverControllerWithContentViewController:l_viewController];
 
-        // Set the delegate
-        if ([a_viewController conformsToProtocol:@protocol(UIPopoverControllerDelegate)]) {
-            l_popoverController.delegate = (id <UIPopoverControllerDelegate>) a_viewController;
-        }
+//        // Set the delegate
+//        if ([a_viewController conformsToProtocol:@protocol(UIPopoverControllerDelegate)]) {
+//            l_popoverController.delegate = (id <UIPopoverControllerDelegate>) a_viewController;
+//        }
 
-        // Set the content size
-        if ([a_viewController isKindOfClass:[IFAAbstractFieldEditorViewController class]]) {
-            // Popover controllers "merge" the navigation bar from the navigation controller with its border at the top.
-            // Therefore we need to reduce the content height by that amount otherwise a small gap is shown at the bottom of the popover view.
-            // The same goes for the toolbar when it exists.
-            CGFloat l_newHeight = l_viewController.view.frame.size.height - (l_popoverController.ifa_borderThickness * (a_viewController.ifa_needsToolbar ? 2 : 1));
-            l_popoverController.popoverContentSize = CGSizeMake(l_viewController.view.frame.size.width, l_newHeight);
-        }
+//        // Set the content size
+//        if ([a_viewController isKindOfClass:[IFAAbstractFieldEditorViewController class]]) {
+//            // Popover controllers "merge" the navigation bar from the navigation controller with its border at the top.
+//            // Therefore we need to reduce the content height by that amount otherwise a small gap is shown at the bottom of the popover view.
+//            // The same goes for the toolbar when it exists.
+//            CGFloat l_newHeight = l_viewController.view.frame.size.height - (l_popoverController.ifa_borderThickness * (a_viewController.ifa_needsToolbar ? 2 : 1));
+//            l_popoverController.popoverContentSize = CGSizeMake(l_viewController.view.frame.size.width, l_newHeight);
+//        }
 
-        // Present popover controller
-        if (a_fromBarButtonItem) {
-            [self ifa_presentPopoverController:l_popoverController fromBarButtonItem:a_fromBarButtonItem];
-        } else {
-            [self ifa_presentPopoverController:l_popoverController fromRect:a_fromRect inView:a_view];
-        }
+//        // Present popover controller
+//        if (a_fromBarButtonItem) {
+//            [self ifa_presentPopoverController:l_popoverController fromBarButtonItem:a_fromBarButtonItem];
+//        } else {
+//            [self ifa_presentPopoverController:l_popoverController fromRect:a_fromRect inView:a_view];
+//        }
 
-    } else { // If not iPad present as modal
+//    } else { // If not iPad present as modal
 
         if ([a_viewController ifa_hasFixedSize]) {
             if ([a_viewController conformsToProtocol:@protocol(IFASemiModalViewDelegate)]) {
@@ -159,7 +159,7 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
             }
         }
 
-    }
+//    }
 
 }
 
@@ -176,33 +176,33 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 //    }
 //}
 
--(void)setIfa_activePopoverController:(UIPopoverController*)a_activePopoverController{
-    objc_setAssociatedObject(self, &c_activePopoverControllerKey, a_activePopoverController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
+//-(void)setIfa_activePopoverController:(UIPopoverController*)a_activePopoverController{
+//    objc_setAssociatedObject(self, &c_activePopoverControllerKey, a_activePopoverController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
 
--(void)setIfa_activePopoverControllerBarButtonItem:(UIBarButtonItem*)a_activePopoverControllerBarButtonItem{
-    objc_setAssociatedObject(self, &c_activePopoverControllerBarButtonItemKey, a_activePopoverControllerBarButtonItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
+//-(void)setIfa_activePopoverControllerBarButtonItem:(UIBarButtonItem*)a_activePopoverControllerBarButtonItem{
+//    objc_setAssociatedObject(self, &c_activePopoverControllerBarButtonItemKey, a_activePopoverControllerBarButtonItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
 
--(void)IFA_setActivePopoverController:(UIPopoverController *)a_popoverController
-                            presenter:(UIViewController *)a_presenter barButtonItem:(UIBarButtonItem*)a_barButtonItem{
-//    NSLog(@"a_popoverController.popoverContentSize: %@", NSStringFromCGSize(a_popoverController.popoverContentSize));
-//    NSLog(@"a_popoverController.contentViewController.view.frame.size: %@", NSStringFromCGSize(a_popoverController.contentViewController.view.frame.size));
-    self.ifa_activePopoverController = a_popoverController;
-    c_popoverControllerPresenter = a_presenter;
-    self.ifa_activePopoverControllerBarButtonItem = a_barButtonItem;
-}
+//-(void)IFA_setActivePopoverController:(UIPopoverController *)a_popoverController
+//                            presenter:(UIViewController *)a_presenter barButtonItem:(UIBarButtonItem*)a_barButtonItem{
+////    NSLog(@"a_popoverController.popoverContentSize: %@", NSStringFromCGSize(a_popoverController.popoverContentSize));
+////    NSLog(@"a_popoverController.contentViewController.view.frame.size: %@", NSStringFromCGSize(a_popoverController.contentViewController.view.frame.size));
+//    self.ifa_activePopoverController = a_popoverController;
+//    c_popoverControllerPresenter = a_presenter;
+//    self.ifa_activePopoverControllerBarButtonItem = a_barButtonItem;
+//}
 
--(void)IFA_resizePopoverContent {
-    UIPopoverController *l_popoverController = self.ifa_activePopoverController;
-    UIViewController *l_contentViewController = l_popoverController.contentViewController;
-    BOOL l_hasFixedSize =  [l_contentViewController isKindOfClass:[UINavigationController class]] ? [((UINavigationController *) l_contentViewController).topViewController ifa_hasFixedSize] : [l_contentViewController ifa_hasFixedSize];
-    CGSize l_contentViewControllerSize = l_contentViewController.view.frame.size;
-    if (l_hasFixedSize) {
-        l_popoverController.popoverContentSize = l_contentViewControllerSize;
-//        NSLog(@"l_popoverController.popoverContentSize: %@", NSStringFromCGSize(l_popoverController.popoverContentSize));
-    }
-}
+//-(void)IFA_resizePopoverContent {
+//    UIPopoverController *l_popoverController = self.ifa_activePopoverController;
+//    UIViewController *l_contentViewController = l_popoverController.contentViewController;
+//    BOOL l_hasFixedSize =  [l_contentViewController isKindOfClass:[UINavigationController class]] ? [((UINavigationController *) l_contentViewController).topViewController ifa_hasFixedSize] : [l_contentViewController ifa_hasFixedSize];
+//    CGSize l_contentViewControllerSize = l_contentViewController.view.frame.size;
+//    if (l_hasFixedSize) {
+//        l_popoverController.popoverContentSize = l_contentViewControllerSize;
+////        NSLog(@"l_popoverController.popoverContentSize: %@", NSStringFromCGSize(l_popoverController.popoverContentSize));
+//    }
+//}
 
 -(void)IFA_onMenuBarButtonItemInvalidated:(NSNotification*)a_notification{
 //    NSLog(@"menu button invalidated - removing it...");
@@ -386,13 +386,13 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
     return l_weakReferenceContainer.weakReference;
 }
 
--(UIPopoverController*)ifa_activePopoverController {
-    return objc_getAssociatedObject(self, &c_activePopoverControllerKey);
-}
+//-(UIPopoverController*)ifa_activePopoverController {
+//    return objc_getAssociatedObject(self, &c_activePopoverControllerKey);
+//}
 
--(UIBarButtonItem*)ifa_activePopoverControllerBarButtonItem {
-    return objc_getAssociatedObject(self, &c_activePopoverControllerBarButtonItemKey);
-}
+//-(UIBarButtonItem*)ifa_activePopoverControllerBarButtonItem {
+//    return objc_getAssociatedObject(self, &c_activePopoverControllerBarButtonItemKey);
+//}
 
 -(NSString*)ifa_subTitle {
     return objc_getAssociatedObject(self, &c_subTitleKey);
@@ -679,11 +679,13 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 
 -(BOOL)ifa_presentedAsModal {
     //    NSLog(@"presentingViewController: %@, presentedViewController: %@, self: %@, topViewController: %@, visibleViewController: %@, viewController[0]: %@, navigationController.parentViewController: %@, parentViewController: %@, presentedAsSemiModal: %u", [self.presentingViewController description], [self.presentedViewController description], [self description], self.navigationController.topViewController, self.navigationController.visibleViewController, [self.navigationController.viewControllers objectAtIndex:0], self.navigationController.parentViewController, self.parentViewController, self.presentedAsSemiModal);
-    return c_popoverControllerPresenter.ifa_activePopoverController.contentViewController==self.navigationController
-            || c_popoverControllerPresenter.ifa_activePopoverController.contentViewController==self
-            || ( self.navigationController.presentingViewController!=nil && (self.navigationController.viewControllers)[0] ==self)
-            || self.parentViewController.presentedAsSemiModal
-            || [c_popoverControllerPresenter.ifa_activePopoverController.contentViewController isKindOfClass:[UIActivityViewController class]];
+    return ( self.navigationController.presentingViewController!=nil && (self.navigationController.viewControllers)[0] ==self)
+            || self.parentViewController.presentedAsSemiModal;
+//    return c_popoverControllerPresenter.ifa_activePopoverController.contentViewController==self.navigationController
+//            || c_popoverControllerPresenter.ifa_activePopoverController.contentViewController==self
+//            || ( self.navigationController.presentingViewController!=nil && (self.navigationController.viewControllers)[0] ==self)
+//            || self.parentViewController.presentedAsSemiModal
+//            || [c_popoverControllerPresenter.ifa_activePopoverController.contentViewController isKindOfClass:[UIActivityViewController class]];
 }
 
 - (void)ifa_updateToolbarForEditing:(BOOL)a_editing animated:(BOOL)a_animated {
@@ -720,33 +722,33 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
     return NO;
 }
 
--(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromBarButtonItem:(UIBarButtonItem *)a_fromBarButtonItem{
-    [self IFA_setActivePopoverController:a_popoverController presenter:self barButtonItem:a_fromBarButtonItem];
-    [self IFA_resizePopoverContent];
-    [a_popoverController presentPopoverFromBarButtonItem:a_fromBarButtonItem
-                                permittedArrowDirections:[self ifa_permittedPopoverArrowDirectionForViewController:nil ]
-                                                animated:k_animated];
-    __weak UIViewController *l_weakSelf = self;
-    [IFAUtils dispatchAsyncMainThreadBlock:^{
-        [l_weakSelf ifa_didPresentPopoverController:a_popoverController];
-    }];
-}
+//-(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromBarButtonItem:(UIBarButtonItem *)a_fromBarButtonItem{
+//    [self IFA_setActivePopoverController:a_popoverController presenter:self barButtonItem:a_fromBarButtonItem];
+//    [self IFA_resizePopoverContent];
+//    [a_popoverController presentPopoverFromBarButtonItem:a_fromBarButtonItem
+//                                permittedArrowDirections:[self ifa_permittedPopoverArrowDirectionForViewController:nil ]
+//                                                animated:k_animated];
+//    __weak UIViewController *l_weakSelf = self;
+//    [IFAUtils dispatchAsyncMainThreadBlock:^{
+//        [l_weakSelf ifa_didPresentPopoverController:a_popoverController];
+//    }];
+//}
 
--(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromRect:(CGRect)a_fromRect inView:(UIView *)a_view{
-    [self IFA_setActivePopoverController:a_popoverController presenter:self barButtonItem:nil];
-    [self IFA_resizePopoverContent];
-    [a_popoverController presentPopoverFromRect:a_fromRect inView:a_view
-                       permittedArrowDirections:[self ifa_permittedPopoverArrowDirectionForViewController:nil ] animated:k_animated];
-    __weak UIViewController *l_weakSelf = self;
-    [IFAUtils dispatchAsyncMainThreadBlock:^{
-        [l_weakSelf ifa_didPresentPopoverController:a_popoverController];
-    }];
-}
+//-(void)ifa_presentPopoverController:(UIPopoverController *)a_popoverController fromRect:(CGRect)a_fromRect inView:(UIView *)a_view{
+//    [self IFA_setActivePopoverController:a_popoverController presenter:self barButtonItem:nil];
+//    [self IFA_resizePopoverContent];
+//    [a_popoverController presentPopoverFromRect:a_fromRect inView:a_view
+//                       permittedArrowDirections:[self ifa_permittedPopoverArrowDirectionForViewController:nil ] animated:k_animated];
+//    __weak UIViewController *l_weakSelf = self;
+//    [IFAUtils dispatchAsyncMainThreadBlock:^{
+//        [l_weakSelf ifa_didPresentPopoverController:a_popoverController];
+//    }];
+//}
 
--(void)ifa_didPresentPopoverController:(UIPopoverController*)a_popoverController{
-    // Remove the navigation bar or toolbar that owns the button from the passthrough view list
-    a_popoverController.passthroughViews = nil;
-}
+//-(void)ifa_didPresentPopoverController:(UIPopoverController*)a_popoverController{
+//    // Remove the navigation bar or toolbar that owns the button from the passthrough view list
+//    a_popoverController.passthroughViews = nil;
+//}
 
 -(void)ifa_presentModalFormViewController:(UIViewController*)a_viewController{
     [self ifa_presentModalViewController:a_viewController presentationStyle:UIModalPresentationPageSheet
@@ -858,9 +860,9 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
                 [l_weakSelf didDismissViewController:l_presentedViewController changesMade:a_changesMade data:a_data];
             }
         }];
-    }else if(self.ifa_activePopoverController){
-        [self.ifa_activePopoverController dismissPopoverAnimated:a_animate];
-        [self ifa_resetActivePopoverController];
+//    }else if(self.ifa_activePopoverController){
+//        [self.ifa_activePopoverController dismissPopoverAnimated:a_animate];
+//        [self ifa_resetActivePopoverController];
     }else if(self.presentingSemiModal){
         UIViewController *l_presentedViewController = [IFAUIGlobal sharedInstance].semiModalViewController; // Add retain cycle
         [self dismissSemiModalViewWithCompletionBlock:^{
@@ -886,9 +888,9 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 //    }
 //}
 
--(void)ifa_resetActivePopoverController {
-    [self IFA_setActivePopoverController:nil presenter:nil barButtonItem:nil];
-}
+//-(void)ifa_resetActivePopoverController {
+//    [self IFA_setActivePopoverController:nil presenter:nil barButtonItem:nil];
+//}
 
 -(void)ifa_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 //    [self ifa_dismissMenuPopoverController];
@@ -1232,14 +1234,14 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 
 -(void)ifa_didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
 
-    if (self.ifa_activePopoverController && self.ifa_activePopoverControllerBarButtonItem) {
-        
-        // Present popover controller in the new interface orientation
-        // Also need to reset content size as iOS will attempt to resize it automatically due to the fact the popover was triggered by a bar button item
-        [self ifa_presentPopoverController:self.ifa_activePopoverController
-                         fromBarButtonItem:self.ifa_activePopoverControllerBarButtonItem];
-        
-    }
+//    if (self.ifa_activePopoverController && self.ifa_activePopoverControllerBarButtonItem) {
+//
+//        // Present popover controller in the new interface orientation
+//        // Also need to reset content size as iOS will attempt to resize it automatically due to the fact the popover was triggered by a bar button item
+//        [self ifa_presentPopoverController:self.ifa_activePopoverController
+//                         fromBarButtonItem:self.ifa_activePopoverControllerBarButtonItem];
+//
+//    }
 
 }
 
@@ -1289,11 +1291,11 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
     }
 }
 
--(UIPopoverController*)ifa_newPopoverControllerWithContentViewController:(UIViewController*)a_contentViewController{
-    UIPopoverController *l_popoverController = [[UIPopoverController alloc] initWithContentViewController:a_contentViewController];
-    [[self ifa_appearanceTheme] setAppearanceForPopoverController:l_popoverController];
-    return l_popoverController;
-}
+//-(UIPopoverController*)ifa_newPopoverControllerWithContentViewController:(UIViewController*)a_contentViewController{
+//    UIPopoverController *l_popoverController = [[UIPopoverController alloc] initWithContentViewController:a_contentViewController];
+//    [[self ifa_appearanceTheme] setAppearanceForPopoverController:l_popoverController];
+//    return l_popoverController;
+//}
 
 -(void)ifa_onDoneButtonTap:(UIBarButtonItem*)a_barButtonItem{
     [self ifa_notifySessionCompletion];
@@ -1328,9 +1330,9 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
             );
 }
 
-- (UIPopoverArrowDirection)ifa_permittedPopoverArrowDirectionForViewController:(UIViewController *)a_viewController {
-    return [IFAKeyboardVisibilityManager sharedInstance].keyboardVisible ? k_arrowDirectionWithKeyboard : k_arrowDirectionWithoutKeyboard;
-}
+//- (UIPopoverArrowDirection)ifa_permittedPopoverArrowDirectionForViewController:(UIViewController *)a_viewController {
+//    return [IFAKeyboardVisibilityManager sharedInstance].keyboardVisible ? k_arrowDirectionWithKeyboard : k_arrowDirectionWithoutKeyboard;
+//}
 
 - (void)ifa_addChildViewController:(UIViewController *)a_childViewController parentView:(UIView *)a_parentView {
     [self ifa_addChildViewController:a_childViewController parentView:a_parentView
@@ -1593,9 +1595,9 @@ withAlertPresenterViewController:nil];
                                    completion:nil];
 }
 
-+ (UIViewController *)ifa_popoverControllerPresenter {
-    return c_popoverControllerPresenter;
-}
+//+ (UIViewController *)ifa_popoverControllerPresenter {
+//    return c_popoverControllerPresenter;
+//}
 
 //-(void)m_simulateMemoryWarning{
 //
@@ -1633,10 +1635,10 @@ withAlertPresenterViewController:nil];
     // Subclasses to override
 }
 
-#pragma mark - UIPopoverControllerDelegate
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
-    [self.ifa_presenter sessionDidCompleteForViewController:self changesMade:NO data:nil shouldAnimateDismissal:NO];
-}
+//#pragma mark - UIPopoverControllerDelegate
+//
+//- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
+//    [self.ifa_presenter sessionDidCompleteForViewController:self changesMade:NO data:nil shouldAnimateDismissal:NO];
+//}
 
 @end

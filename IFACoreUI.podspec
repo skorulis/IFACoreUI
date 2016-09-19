@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
     s.requires_arc      = true
     s.source            = { :git => 'https://github.com/marcelo-schroeder/IFACoreUI.git', :tag => 'v' +  s.version.to_s }
     s.source_files      = 'IFACoreUI/IFACoreUI/classes/**/*.{h,m}'
+    s.exclude_files     = 'IFAAppUI/IFAAppUI/classes/**/UIPopoverController+IFACoreUI.{h,m}'
     s.resource          = 'IFACoreUI/IFACoreUI/resources/**/*.*'
     s.dependency 'IFAFoundation'
 end

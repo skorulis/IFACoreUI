@@ -56,7 +56,7 @@ useButtonForDismissal:(BOOL)a_useButtonForDismissal presenter:(id <IFAPresenter>
         self.title = [[IFAPersistenceManager sharedInstance].entityConfig labelForProperty:self.propertyName
                                                                                  inObject:self.object];
         
-        self.modalInPopover = self.useButtonForDismissal;
+//        self.modalInPopover = self.useButtonForDismissal;
         
 	}
     
@@ -109,11 +109,11 @@ useButtonForDismissal:(BOOL)a_useButtonForDismissal presenter:(id <IFAPresenter>
 	}
 }
 
-#pragma mark - UIPopoverControllerDelegate
-
--(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController{
-    [self done];
-}
+//#pragma mark - UIPopoverControllerDelegate
+//
+//-(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController{
+//    [self done];
+//}
 
 #pragma mark - IFASemiModalViewDelegate
 

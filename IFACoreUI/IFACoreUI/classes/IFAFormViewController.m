@@ -24,7 +24,7 @@ static NSString *const k_sectionHeaderFooterReuseId = @"sectionHeaderFooter";
 
 @interface IFAFormViewController ()
 
-@property (nonatomic, strong) NSIndexPath *IFA_indexPathForPopoverController;
+//@property (nonatomic, strong) NSIndexPath *IFA_indexPathForPopoverController;
 @property (nonatomic, strong) UIBarButtonItem *IFA_dismissModalFormBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *cancelBarButtonItem;
 @property (nonatomic) BOOL IFA_textFieldEditing;
@@ -181,20 +181,20 @@ static NSString *const k_sectionHeaderFooterReuseId = @"sectionHeaderFooter";
     return l_dependencyEnabled;
 }
 
--(CGRect)IFA_fromPopoverRectForIndexPath:(NSIndexPath*)a_indexPath{
-    UITableViewCell *l_cell = [self visibleCellForIndexPath:a_indexPath];
-    CGRect l_cellContentRect = l_cell.contentView.bounds;
-//    NSLog(@"l_cellContentRect: %@", NSStringFromCGRect(l_cellContentRect));
-    CGRect l_cellBackgroundRect = l_cell.backgroundView.bounds;
-//    NSLog(@"l_cellBackgroundRect: %@", NSStringFromCGRect(l_cellBackgroundRect));
-    CGRect l_cellRect = [self.tableView rectForRowAtIndexPath:a_indexPath];
-//    NSLog(@"l_cellRect: %@", NSStringFromCGRect(l_cellRect));
-    CGRect l_rect = CGRectMake((((l_cellRect.size.width-l_cellBackgroundRect.size.width)/2) + l_cellContentRect.size.width - l_cell.indentationWidth/2), l_cellRect.origin.y, l_cellBackgroundRect.size.width-l_cellContentRect.size.width, l_cellRect.size.height);
-//    NSLog(@"l_rect: %@", NSStringFromCGRect(l_rect));
-//    static NSUInteger const k_horizontalOffset = 100;
-//    return CGRectMake(l_cellRect.origin.x+l_cellRect.size.width - k_horizontalOffset, l_cellRect.origin.y, k_horizontalOffset, l_cellRect.size.height);
-    return l_rect;
-}
+//-(CGRect)IFA_fromPopoverRectForIndexPath:(NSIndexPath*)a_indexPath{
+//    UITableViewCell *l_cell = [self visibleCellForIndexPath:a_indexPath];
+//    CGRect l_cellContentRect = l_cell.contentView.bounds;
+////    NSLog(@"l_cellContentRect: %@", NSStringFromCGRect(l_cellContentRect));
+//    CGRect l_cellBackgroundRect = l_cell.backgroundView.bounds;
+////    NSLog(@"l_cellBackgroundRect: %@", NSStringFromCGRect(l_cellBackgroundRect));
+//    CGRect l_cellRect = [self.tableView rectForRowAtIndexPath:a_indexPath];
+////    NSLog(@"l_cellRect: %@", NSStringFromCGRect(l_cellRect));
+//    CGRect l_rect = CGRectMake((((l_cellRect.size.width-l_cellBackgroundRect.size.width)/2) + l_cellContentRect.size.width - l_cell.indentationWidth/2), l_cellRect.origin.y, l_cellBackgroundRect.size.width-l_cellContentRect.size.width, l_cellRect.size.height);
+////    NSLog(@"l_rect: %@", NSStringFromCGRect(l_rect));
+////    static NSUInteger const k_horizontalOffset = 100;
+////    return CGRectMake(l_cellRect.origin.x+l_cellRect.size.width - k_horizontalOffset, l_cellRect.origin.y, k_horizontalOffset, l_cellRect.size.height);
+//    return l_rect;
+//}
 
 -(void)IFA_updateLeftBarButtonItemsStates {
     if (self.isSubForm) {
@@ -1557,8 +1557,8 @@ withAlertPresenterViewController:nil];
             UIViewController *l_viewController = [self IFA_editorViewControllerForIndexPath:indexPath];
             l_viewController.ifa_presenter = self;
 
-            self.IFA_indexPathForPopoverController = indexPath;
-            CGRect l_fromPopoverRect = [self IFA_fromPopoverRectForIndexPath:self.IFA_indexPathForPopoverController];
+//            self.IFA_indexPathForPopoverController = indexPath;
+//            CGRect l_fromPopoverRect = [self IFA_fromPopoverRectForIndexPath:self.IFA_indexPathForPopoverController];
 
             if ([self IFA_shouldAdjustContentInsetForPresentedViewController:l_viewController]) {
                 self.contentInsetBeforePresentingSemiModalViewController = tableView.contentInset;
@@ -1580,8 +1580,10 @@ withAlertPresenterViewController:nil];
                                                                           forIndexPath:indexPath
                                                                           propertyName:propertyName];
             }
-            [self ifa_presentModalSelectionViewController:l_viewController fromRect:l_fromPopoverRect
+            [self ifa_presentModalSelectionViewController:l_viewController fromRect:CGRectZero
                                                    inView:self.tableView];
+//            [self ifa_presentModalSelectionViewController:l_viewController fromRect:l_fromPopoverRect
+//                                                   inView:self.tableView];
 
         }
 
@@ -1886,22 +1888,22 @@ withAlertPresenterViewController:nil];
     [self IFA_quitEditingForced:NO];
 }
 
--(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
-
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-
-    if (self.ifa_activePopoverController && !self.ifa_activePopoverControllerBarButtonItem) {
-
-        // Present popover controller in the new interface orientation
-        [self.tableView scrollToRowAtIndexPath:self.IFA_indexPathForPopoverController
-                              atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-        CGRect l_fromPopoverRect = [self IFA_fromPopoverRectForIndexPath:self.IFA_indexPathForPopoverController];
-        [self ifa_presentPopoverController:self.ifa_activePopoverController fromRect:l_fromPopoverRect
-                                    inView:self.tableView];
-
-    }
-
-}
+//-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+//
+//    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+//
+//    if (self.ifa_activePopoverController && !self.ifa_activePopoverControllerBarButtonItem) {
+//
+//        // Present popover controller in the new interface orientation
+//        [self.tableView scrollToRowAtIndexPath:self.IFA_indexPathForPopoverController
+//                              atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+//        CGRect l_fromPopoverRect = [self IFA_fromPopoverRectForIndexPath:self.IFA_indexPathForPopoverController];
+//        [self ifa_presentPopoverController:self.ifa_activePopoverController fromRect:l_fromPopoverRect
+//                                    inView:self.tableView];
+//
+//    }
+//
+//}
 
 -(void)ifa_onKeyboardNotification:(NSNotification*)a_notification{
 
@@ -1920,13 +1922,13 @@ withAlertPresenterViewController:nil];
 
     }else if ([a_notification.name isEqualToString:UIKeyboardDidHideNotification]) {
 
-        if (self.ifa_activePopoverController && !self.ifa_activePopoverControllerBarButtonItem) {
-
-            CGRect l_fromPopoverRect = [self IFA_fromPopoverRectForIndexPath:self.IFA_indexPathForPopoverController];
-            [self ifa_presentPopoverController:self.ifa_activePopoverController fromRect:l_fromPopoverRect
-                                        inView:self.tableView];
-
-        }
+//        if (self.ifa_activePopoverController && !self.ifa_activePopoverControllerBarButtonItem) {
+//
+//            CGRect l_fromPopoverRect = [self IFA_fromPopoverRectForIndexPath:self.IFA_indexPathForPopoverController];
+//            [self ifa_presentPopoverController:self.ifa_activePopoverController fromRect:l_fromPopoverRect
+//                                        inView:self.tableView];
+//
+//        }
 
         [self IFA_handleContentBottomInsetAppleBugIfRequiredForKeyboardShowing:NO];
 

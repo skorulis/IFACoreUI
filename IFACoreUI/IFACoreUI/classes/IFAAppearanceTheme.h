@@ -36,12 +36,12 @@ typedef NS_ENUM(NSUInteger, IFABarButtonItemSpacingBarType) {
 @protocol IFAAppearanceTheme <NSObject>
 
 @property (nonatomic, strong, readonly) UINavigationBar *navigationBarAppearance;
-@property (nonatomic, strong, readonly) UINavigationBar *popoverNavigationBarAppearance;
+//@property (nonatomic, strong, readonly) UINavigationBar *popoverNavigationBarAppearance;
 @property (nonatomic, strong, readonly) UIBarButtonItem *barButtonItemAppearance;
 @property (nonatomic, strong, readonly) UIBarButtonItem *navigationBarButtonItemAppearance;
 @property (nonatomic, strong, readonly) UIBarButtonItem *toolbarButtonItemAppearance;
 @property (nonatomic, strong, readonly) UIToolbar *toolbarAppearance;
-@property (nonatomic, strong, readonly) UIToolbar *popoverToolbarAppearance;
+//@property (nonatomic, strong, readonly) UIToolbar *popoverToolbarAppearance;
 @property (nonatomic, strong, readonly) UITabBar *tabBarAppearance;
 @property (nonatomic, strong, readonly) UITabBarItem *tabBarItemAppearance;
 @property (nonatomic, strong, readonly) UISearchBar *searchBarAppearance;
@@ -59,7 +59,7 @@ typedef NS_ENUM(NSUInteger, IFABarButtonItemSpacingBarType) {
 -(void)setAppearanceForBarButtonItem:(UIBarButtonItem *)a_barButtonItem
                       viewController:(UIViewController *)a_viewController important:(BOOL)a_important;
 -(void)setAppearanceForToolbarButtonItem:(UIBarButtonItem*)a_barButtonItem;
--(void)setAppearanceForPopoverController:(UIPopoverController*)a_popoverController;
+//-(void)setAppearanceForPopoverController:(UIPopoverController*)a_popoverController;
 
 -(void)setTextAppearanceForChildrenOfView:(UIView*)a_view;
 

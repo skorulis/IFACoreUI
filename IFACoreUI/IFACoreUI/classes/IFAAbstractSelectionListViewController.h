@@ -20,7 +20,8 @@
 
 #import "IFAListViewController.h"
 
-@interface IFAAbstractSelectionListViewController : IFAListViewController <UIPopoverControllerDelegate>
+@interface IFAAbstractSelectionListViewController : IFAListViewController
+//@interface IFAAbstractSelectionListViewController : IFAListViewController <UIPopoverControllerDelegate>
 
 @property (nonatomic, strong) UIBarButtonItem *selectNoneButtonItem;
 

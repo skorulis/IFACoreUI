@@ -246,8 +246,6 @@
 		F7650D321BE95BBE00B97932 /* UIColor+IFACoreUI_WatchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C301BE95BBD00B97932 /* UIColor+IFACoreUI_WatchKit.m */; };
 		F7650D331BE95BBE00B97932 /* UIImage+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C311BE95BBD00B97932 /* UIImage+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D341BE95BBE00B97932 /* UIImage+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C321BE95BBD00B97932 /* UIImage+IFACoreUI.m */; };
-		F7650D351BE95BBE00B97932 /* UIPopoverController+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C331BE95BBD00B97932 /* UIPopoverController+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7650D361BE95BBE00B97932 /* UIPopoverController+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C341BE95BBD00B97932 /* UIPopoverController+IFACoreUI.m */; };
 		F7650D371BE95BBE00B97932 /* UIScrollView+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C351BE95BBD00B97932 /* UIScrollView+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650D381BE95BBE00B97932 /* UIScrollView+IFACoreUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650C361BE95BBD00B97932 /* UIScrollView+IFACoreUI.m */; };
 		F7650D391BE95BBE00B97932 /* UIStoryboard+IFACoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650C371BE95BBD00B97932 /* UIStoryboard+IFACoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1448,7 +1446,6 @@
 				F7650C4E1BE95BBD00B97932 /* UIViewController+IFA_KNSemiModal.h in Headers */,
 				F7650D151BE95BBD00B97932 /* IFAViewControllerTransitioningDelegate.h in Headers */,
 				F7650D291BE95BBE00B97932 /* UIButton+IFACoreUI.h in Headers */,
-				F7650D351BE95BBE00B97932 /* UIPopoverController+IFACoreUI.h in Headers */,
 				F7650D2D1BE95BBE00B97932 /* UICollectionView+IFACoreUI.h in Headers */,
 				F7650CBB1BE95BBD00B97932 /* IFAMapViewController.h in Headers */,
 				F7650CCB1BE95BBD00B97932 /* IFAOperation.h in Headers */,
@@ -1825,7 +1822,6 @@
 				F7650D1E1BE95BBE00B97932 /* NSManagedObject+IFACoreUI.m in Sources */,
 				F7650C8F1BE95BBD00B97932 /* IFAFormInputAccessoryView.m in Sources */,
 				F7650C991BE95BBD00B97932 /* IFAFormTextFieldTableViewCell.m in Sources */,
-				F7650D361BE95BBE00B97932 /* UIPopoverController+IFACoreUI.m in Sources */,
 				F7650C4F1BE95BBD00B97932 /* UIViewController+IFA_KNSemiModal.m in Sources */,
 				F7650C9B1BE95BBD00B97932 /* IFAFormViewController.m in Sources */,
 				F7650C6A1BE95BBD00B97932 /* IFACollectionViewFetchedResultsControllerDelegate.m in Sources */,

@@ -18,7 +18,7 @@
 #import <Foundation/Foundation.h>
 
 @interface IFAUIGlobal : NSObject
-@property (nonatomic, readonly) UIViewController *popoverControllerPresenter;
+//@property (nonatomic, readonly) UIViewController *popoverControllerPresenter;
 @property (nonatomic, readonly) UIViewController *semiModalViewController;
 @property (nonatomic, readonly) BOOL semiModalViewPresentedInLandscapeInterfaceOrientation;
 

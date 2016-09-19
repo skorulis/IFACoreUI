@@ -137,10 +137,10 @@
     [self.formViewController onContextSwitchRequestNotification:aNotification];
 }
 
-#pragma mark - UIPopoverControllerDelegate
-
--(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController{
-    [self done];
-}
+//#pragma mark - UIPopoverControllerDelegate
+//
+//-(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController{
+//    [self done];
+//}
 
 @end
