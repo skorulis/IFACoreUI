@@ -1,1 +1,2 @@
-- New optional methods in IFAAppearanceTheme: shouldAutorotateToInterfaceOrientation:forViewController: and supportedInterfaceOrientationsForViewController:
+- [NEW] New optional methods in IFAAppearanceTheme: shouldAutorotateToInterfaceOrientation:forViewController: and supportedInterfaceOrientationsForViewController:. These methods are now called by UIViewController+UICoreUI to provide additional opportunities for appearance customisation.
+- [FIX] Removed build warnings.
