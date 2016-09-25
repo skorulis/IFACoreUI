@@ -6,8 +6,9 @@ use_frameworks!
 
 target :IFACoreUI do
 
-  pod 'IFAFoundation', :git => 'https://github.com/marcelo-schroeder/IFAFoundation.git', :branch => 'development'
+  # pod 'IFAFoundation', :git => 'https://github.com/marcelo-schroeder/IFAFoundation.git', :branch => 'development'
 # pod 'IFAFoundation', :path => '/Users/mschroeder/myfiles/projects/Xcode/IFAFoundation/IFAFoundation_development'
+  pod 'IFAFoundation', '~> 1'
 
   target :IFACoreUITests do
     pod 'IFATestingSupport'

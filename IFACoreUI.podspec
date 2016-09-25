@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
     s.source            = { :git => 'https://github.com/marcelo-schroeder/IFACoreUI.git', :tag => 'v' +  s.version.to_s }
     s.source_files      = 'IFACoreUI/IFACoreUI/classes/**/*.{h,m}'
     s.resource          = 'IFACoreUI/IFACoreUI/resources/**/*.*'
-    s.dependency 'IFAFoundation'
+    s.dependency 'IFAFoundation', '~> 1'
 end
