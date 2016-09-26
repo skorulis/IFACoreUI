@@ -1,1 +1,1 @@
-- [FIX] Fixed podspec issue.
+No code changes. Testing automated release process.
