@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
     s.source_files      = 'IFACoreUI/IFACoreUI/classes/**/*.{h,m}'
     s.exclude_files     = 'IFAAppUI/IFAAppUI/classes/**/UIPopoverController+IFACoreUI.{h,m}'
     s.resource          = 'IFACoreUI/IFACoreUI/resources/**/*.*'
-    s.dependency 'IFAFoundation', '~> 1'
+    s.dependency 'IFAFoundation', '~> 2'
 end
