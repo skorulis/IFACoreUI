@@ -636,8 +636,6 @@
 		F7650C301BE95BBD00B97932 /* UIColor+IFACoreUI_WatchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IFACoreUI_WatchKit.m"; sourceTree = "<group>"; };
 		F7650C311BE95BBD00B97932 /* UIImage+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C321BE95BBD00B97932 /* UIImage+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IFACoreUI.m"; sourceTree = "<group>"; };
-		F7650C331BE95BBD00B97932 /* UIPopoverController+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+IFACoreUI.h"; sourceTree = "<group>"; };
-		F7650C341BE95BBD00B97932 /* UIPopoverController+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650C351BE95BBD00B97932 /* UIScrollView+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+IFACoreUI.h"; sourceTree = "<group>"; };
 		F7650C361BE95BBD00B97932 /* UIScrollView+IFACoreUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+IFACoreUI.m"; sourceTree = "<group>"; };
 		F7650C371BE95BBD00B97932 /* UIStoryboard+IFACoreUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+IFACoreUI.h"; sourceTree = "<group>"; };
@@ -1095,8 +1093,6 @@
 				F7650C301BE95BBD00B97932 /* UIColor+IFACoreUI_WatchKit.m */,
 				F7650C311BE95BBD00B97932 /* UIImage+IFACoreUI.h */,
 				F7650C321BE95BBD00B97932 /* UIImage+IFACoreUI.m */,
-				F7650C331BE95BBD00B97932 /* UIPopoverController+IFACoreUI.h */,
-				F7650C341BE95BBD00B97932 /* UIPopoverController+IFACoreUI.m */,
 				F7650C351BE95BBD00B97932 /* UIScrollView+IFACoreUI.h */,
 				F7650C361BE95BBD00B97932 /* UIScrollView+IFACoreUI.m */,
 				F7650C371BE95BBD00B97932 /* UIStoryboard+IFACoreUI.h */,
