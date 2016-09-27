@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = 'IFACoreUI'
-    s.version           = '1.0.5'
+    s.version           = '1.0.7'
     s.summary           = 'A Cocoa Touch framework to help you develop high quality iOS apps and app extensions faster.'
     s.homepage          = 'https://github.com/marcelo-schroeder/IFACoreUI'
     s.license           = 'Apache-2.0'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
     s.source_files      = 'IFACoreUI/IFACoreUI/classes/**/*.{h,m}'
     s.exclude_files     = 'IFAAppUI/IFAAppUI/classes/**/UIPopoverController+IFACoreUI.{h,m}'
     s.resource          = 'IFACoreUI/IFACoreUI/resources/**/*.*'
-    s.dependency 'IFAFoundation'
+    s.dependency 'IFAFoundation', '~> 1'
 end
