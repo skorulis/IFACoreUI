@@ -339,7 +339,7 @@
 
     // The below prevents a crash when initiliasing IFADefaultAppearanceTheme
     self.barButtonItemMock = [OCMockObject mockForClass:[UIBarButtonItem class]];
-    [[[self.barButtonItemMock stub] andReturn:nil] appearanceWhenContainedIn:[OCMArg any], nil];
+    [[[self.barButtonItemMock stub] andReturn:nil] appearanceWhenContainedInInstancesOfClasses:@[[OCMArg any]]];
 }
 
 - (void)m_configureMockResponder {

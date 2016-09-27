@@ -226,18 +226,6 @@ static UIImage *c_menuBarButtonItemImage = nil;
 	return barButtonItem;
 }
 
-+ (CGPoint)appFrameOrigin{
-	return [self appFrame].origin;
-}
-
-+ (CGSize)appFrameSize{
-	return [self appFrame].size;
-}
-
-+ (CGRect)appFrame{
-	return [[UIScreen mainScreen] applicationFrame];
-}
-
 + (CGRect)convertToCurrentOrientationForFrame:(CGRect)a_frame {
     return [self isDeviceInLandscapeOrientation] && ![IFAUtils isIOS8OrGreater] ? CGRectMake(a_frame.origin.y, a_frame.origin.x, a_frame.size.height, a_frame.size.width) : a_frame;
 }

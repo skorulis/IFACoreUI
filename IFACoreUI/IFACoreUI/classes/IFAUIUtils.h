@@ -40,10 +40,6 @@ static const CGFloat IFAMaximumImageSizeInPixels =  5 * 1024 * 1024;
 
 +(BOOL)isDeviceInLandscapeOrientation;
 
-+ (CGPoint)appFrameOrigin;
-+ (CGSize)appFrameSize;
-+ (CGRect)appFrame;
-
 + (CGRect)convertToCurrentOrientationForFrame:(CGRect)a_frame;
 
 + (CGPoint)screenBoundsOrigin;

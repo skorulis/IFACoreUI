@@ -285,7 +285,7 @@
             l_frame = CGRectZero;
             l_frame.size = self.parentViewController.view.frame.size;
         }else{
-            l_frame = [UIScreen mainScreen].applicationFrame;
+            l_frame = [UIScreen mainScreen].bounds;
         }
         UIView *l_view = [[UIView alloc] initWithFrame:l_frame];
         l_view.autoresizingMask = [IFAUIUtils fullAutoresizingMask];
