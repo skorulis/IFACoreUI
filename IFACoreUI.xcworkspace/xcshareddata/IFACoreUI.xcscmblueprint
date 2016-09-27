@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "741A7C63B7E3F692830C437C97747E56FB74D2F2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "741A7C63B7E3F692830C437C97747E56FB74D2F2" : 9223372036854775807,
+    "8257E221F83DBF6D62CC4484F2CB6D7D7DA5A2DC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B97DC9B7-D1E2-42D6-8A37-D6B57BD86314",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "741A7C63B7E3F692830C437C97747E56FB74D2F2" : "IFACoreUI_development\/",
+    "8257E221F83DBF6D62CC4484F2CB6D7D7DA5A2DC" : "..\/IFAFoundation\/IFAFoundation_development"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IFACoreUI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IFACoreUI.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcelo-schroeder\/IFACoreUI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "741A7C63B7E3F692830C437C97747E56FB74D2F2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcelo-schroeder\/IFAFoundation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8257E221F83DBF6D62CC4484F2CB6D7D7DA5A2DC"
+    }
+  ]
+}
