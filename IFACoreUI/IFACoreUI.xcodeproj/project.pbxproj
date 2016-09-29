@@ -10,7 +10,7 @@
 		1073800C7653514A34D098DF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1073862A6C0B08612C9A2ED0 /* LICENSE */; };
 		107381B24D93FAD7E0298031 /* IFAAlertContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107382B94669F01368812EAA /* IFAAlertContainerViewController.m */; };
 		10738AC52DC25D5BF2E5EDB8 /* IFAAlertContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 107384428BEF6DEBAD7F15B9 /* IFAAlertContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19D65764F4175CFB9F8C4CF9 /* Pods_IFACoreUI_IFACoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499076CC41CC35613D8E1CCF /* Pods_IFACoreUI_IFACoreUITests.framework */; };
+		174362A41F4F17B6E3EAE072 /* Pods_IFACoreUI_IFACoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D66EC50FEB0F337F4814482 /* Pods_IFACoreUI_IFACoreUITests.framework */; };
 		9AEB589B9A361A1AED2FEBF9 /* Pods_IFACoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D268FE50130BD6609DA4C0 /* Pods_IFACoreUI.framework */; };
 		F7650C471BE95BBD00B97932 /* IFA_HPGrowingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7650B441BE95BBD00B97932 /* IFA_HPGrowingTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7650C481BE95BBD00B97932 /* IFA_HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650B451BE95BBD00B97932 /* IFA_HPGrowingTextView.m */; };
@@ -387,14 +387,14 @@
 		107382B94669F01368812EAA /* IFAAlertContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAAlertContainerViewController.m; sourceTree = "<group>"; };
 		107384428BEF6DEBAD7F15B9 /* IFAAlertContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAAlertContainerViewController.h; sourceTree = "<group>"; };
 		1073862A6C0B08612C9A2ED0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		250FB796F942A3C8C62EF5A9 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUI-IFACoreUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUI-IFACoreUITests/Pods-IFACoreUI-IFACoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		499076CC41CC35613D8E1CCF /* Pods_IFACoreUI_IFACoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreUI_IFACoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55ADCDBD7C778CD217F69A50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		588D6BC28A79A07788C7CCBF /* Pods-IFACoreUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUI.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUI/Pods-IFACoreUI.release.xcconfig"; sourceTree = "<group>"; };
 		645A28568BBF910CD6D6C0E2 /* Pods-IFACoreUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUI.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUI/Pods-IFACoreUI.debug.xcconfig"; sourceTree = "<group>"; };
-		7C3BB3B069F172116F68EB9A /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUI-IFACoreUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUI-IFACoreUITests/Pods-IFACoreUI-IFACoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		74E7740D8C7BF41869085850 /* Pods-IFACoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUITests/Pods-IFACoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D66EC50FEB0F337F4814482 /* Pods_IFACoreUI_IFACoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreUI_IFACoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9536A1F056A8973749030585 /* Pods-IFACoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUITests/Pods-IFACoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		974DB572124F3A6F60456FA8 /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUI-IFACoreUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUI-IFACoreUITests/Pods-IFACoreUI-IFACoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2D268FE50130BD6609DA4C0 /* Pods_IFACoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFACoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F314B4F86EBA089726B7C01C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E7FE0EB2F5EC89CF84F818E7 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFACoreUI-IFACoreUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IFACoreUI-IFACoreUITests/Pods-IFACoreUI-IFACoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F70DCCF11C458F180073028E /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../fastlane; sourceTree = "<group>"; };
 		F7156C0A1BE953A30009EFF4 /* IFACoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFACoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7156C0F1BE953A30009EFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -784,7 +784,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D65764F4175CFB9F8C4CF9 /* Pods_IFACoreUI_IFACoreUITests.framework in Frameworks */,
+				174362A41F4F17B6E3EAE072 /* Pods_IFACoreUI_IFACoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,7 +800,7 @@
 				F7650E4D1BEAA95900B97932 /* UIKit.framework */,
 				F7650E4B1BEAA94D00B97932 /* CoreLocation.framework */,
 				B2D268FE50130BD6609DA4C0 /* Pods_IFACoreUI.framework */,
-				499076CC41CC35613D8E1CCF /* Pods_IFACoreUI_IFACoreUITests.framework */,
+				8D66EC50FEB0F337F4814482 /* Pods_IFACoreUI_IFACoreUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -808,12 +808,12 @@
 		EFFCB94C5790AC441CA5C5A2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				55ADCDBD7C778CD217F69A50 /* Pods.debug.xcconfig */,
-				F314B4F86EBA089726B7C01C /* Pods.release.xcconfig */,
 				645A28568BBF910CD6D6C0E2 /* Pods-IFACoreUI.debug.xcconfig */,
 				588D6BC28A79A07788C7CCBF /* Pods-IFACoreUI.release.xcconfig */,
-				250FB796F942A3C8C62EF5A9 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */,
-				7C3BB3B069F172116F68EB9A /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */,
+				74E7740D8C7BF41869085850 /* Pods-IFACoreUITests.debug.xcconfig */,
+				9536A1F056A8973749030585 /* Pods-IFACoreUITests.release.xcconfig */,
+				E7FE0EB2F5EC89CF84F818E7 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */,
+				974DB572124F3A6F60456FA8 /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1457,12 +1457,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7156C1E1BE953A30009EFF4 /* Build configuration list for PBXNativeTarget "IFACoreUI" */;
 			buildPhases = (
-				5FB56232670D3C53005E7F1D /* Check Pods Manifest.lock */,
+				5FB56232670D3C53005E7F1D /* [CP] Check Pods Manifest.lock */,
 				F7156C051BE953A30009EFF4 /* Sources */,
 				F7156C061BE953A30009EFF4 /* Frameworks */,
 				F7156C071BE953A30009EFF4 /* Headers */,
 				F7156C081BE953A30009EFF4 /* Resources */,
-				5578203257DC6782B9B7A98B /* Copy Pods Resources */,
+				5578203257DC6782B9B7A98B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1477,13 +1477,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7156C211BE953A30009EFF4 /* Build configuration list for PBXNativeTarget "IFACoreUITests" */;
 			buildPhases = (
-				250999D8680677BF9278523B /* Check Pods Manifest.lock */,
+				250999D8680677BF9278523B /* [CP] Check Pods Manifest.lock */,
 				F7156C101BE953A30009EFF4 /* Sources */,
 				F7156C111BE953A30009EFF4 /* Frameworks */,
 				F7156C121BE953A30009EFF4 /* Resources */,
 				F7650E5B1BEAAD2000B97932 /* CopyFiles */,
-				8E869961E7ACE0993A742967 /* Embed Pods Frameworks */,
-				E6B29CC1C028F600F280597B /* Copy Pods Resources */,
+				8E869961E7ACE0993A742967 /* [CP] Embed Pods Frameworks */,
+				E6B29CC1C028F600F280597B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1621,14 +1621,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		250999D8680677BF9278523B /* Check Pods Manifest.lock */ = {
+		250999D8680677BF9278523B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1636,14 +1636,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5578203257DC6782B9B7A98B /* Copy Pods Resources */ = {
+		5578203257DC6782B9B7A98B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1651,14 +1651,14 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IFACoreUI/Pods-IFACoreUI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5FB56232670D3C53005E7F1D /* Check Pods Manifest.lock */ = {
+		5FB56232670D3C53005E7F1D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1666,14 +1666,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8E869961E7ACE0993A742967 /* Embed Pods Frameworks */ = {
+		8E869961E7ACE0993A742967 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1681,14 +1681,14 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IFACoreUI-IFACoreUITests/Pods-IFACoreUI-IFACoreUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E6B29CC1C028F600F280597B /* Copy Pods Resources */ = {
+		E6B29CC1C028F600F280597B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1976,7 +1976,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = IFACoreUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1996,7 +1995,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = IFACoreUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2008,9 +2006,8 @@
 		};
 		F7156C221BE953A30009EFF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 250FB796F942A3C8C62EF5A9 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */;
+			baseConfigurationReference = E7FE0EB2F5EC89CF84F818E7 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -2024,9 +2021,8 @@
 		};
 		F7156C231BE953A30009EFF4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C3BB3B069F172116F68EB9A /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */;
+			baseConfigurationReference = 974DB572124F3A6F60456FA8 /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",

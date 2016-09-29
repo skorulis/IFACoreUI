@@ -1,14 +1,13 @@
 platform :ios, '8.0'
 workspace 'IFACoreUI'
-xcodeproj 'IFACoreUI/IFACoreUI.xcodeproj'
-link_with 'IFACoreUI', 'IFACoreUITests'
+project 'IFACoreUI/IFACoreUI.xcodeproj'
 use_frameworks!
 
 target :IFACoreUI do
 
-  # pod 'IFAFoundation', :git => 'https://github.com/marcelo-schroeder/IFAFoundation.git', :branch => 'dev_iOS10'
+  pod 'IFAFoundation', :git => 'https://github.com/marcelo-schroeder/IFAFoundation.git', :branch => 'dev_iOS10_Cocoapods1'
   # pod 'IFAFoundation', :git => 'https://github.com/marcelo-schroeder/IFAFoundation.git', :branch => 'development'
-pod 'IFAFoundation', :path => '/Users/mschroeder/myfiles/projects/Xcode/IFAFoundation/IFAFoundation_development'
+# pod 'IFAFoundation', :path => '/Users/mschroeder/myfiles/projects/Xcode/IFAFoundation/IFAFoundation_development'
 
   target :IFACoreUITests do
     pod 'IFATestingSupport'
