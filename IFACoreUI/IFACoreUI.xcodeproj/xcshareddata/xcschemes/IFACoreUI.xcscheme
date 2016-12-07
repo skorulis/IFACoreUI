@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7156C091BE953A30009EFF4"
-               BuildableName = "IFACoreUI"
+               BuildableName = "IFACoreUI.framework"
                BlueprintName = "IFACoreUI"
                ReferencedContainer = "container:IFACoreUI.xcodeproj">
             </BuildableReference>
