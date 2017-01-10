@@ -1031,7 +1031,7 @@ IFA_tableViewCellSelectedBackgroundStyleForIndexPath:(NSIndexPath *)a_indexPath
 - (id)init{
     self = [super init];
     if (self) {
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 90000
         self.navigationBarAppearance = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.navigationBarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class], [self navigationControllerClass]]];
