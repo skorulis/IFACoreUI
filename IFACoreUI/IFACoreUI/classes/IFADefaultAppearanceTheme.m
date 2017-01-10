@@ -1031,13 +1031,12 @@ IFA_tableViewCellSelectedBackgroundStyleForIndexPath:(NSIndexPath *)a_indexPath
 - (id)init{
     self = [super init];
     if (self) {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
         self.navigationBarAppearance = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
-//        self.popoverNavigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[UIPopoverController class], [self navigationControllerClass], nil];
         self.barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.navigationBarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class], [self navigationControllerClass]]];
         self.toolbarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UIToolbar class], [self navigationControllerClass]]];
         self.toolbarAppearance = [UIToolbar appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
-//        self.popoverToolbarAppearance = [UIToolbar appearanceWhenContainedIn:[UIPopoverController class], [self navigationControllerClass], nil];
         self.tabBarAppearance = [UITabBar appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.tabBarItemAppearance = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.searchBarAppearance = [UISearchBar appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
@@ -1047,6 +1046,22 @@ IFA_tableViewCellSelectedBackgroundStyleForIndexPath:(NSIndexPath *)a_indexPath
         self.sliderAppearance = [UISlider appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.activityIndicatorView = [UIActivityIndicatorView appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
         self.pageControlAppearance = [UIPageControl appearanceWhenContainedInInstancesOfClasses:@[[self navigationControllerClass]]];
+#else
+        self.navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.navigationBarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], [self navigationControllerClass], nil];
+        self.toolbarButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UIToolbar class], [self navigationControllerClass], nil];
+        self.toolbarAppearance = [UIToolbar appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.tabBarAppearance = [UITabBar appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.tabBarItemAppearance = [UITabBarItem appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.searchBarAppearance = [UISearchBar appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.barSegmentedControlAppearance = [UISegmentedControl appearanceWhenContainedIn:[UIToolbar class], [self navigationControllerClass], nil];
+        self.segmentedControlAppearance = [UISegmentedControl appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.switchAppearance = [UISwitch appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.sliderAppearance = [UISlider appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.activityIndicatorView = [UIActivityIndicatorView appearanceWhenContainedIn:[self navigationControllerClass], nil];
+        self.pageControlAppearance = [UIPageControl appearanceWhenContainedIn:[self navigationControllerClass], nil];
+#endif
         self.shadow = [NSShadow new];
     }
     return self;
