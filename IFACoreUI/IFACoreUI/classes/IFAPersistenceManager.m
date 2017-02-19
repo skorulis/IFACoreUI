@@ -1459,6 +1459,14 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
         NSArray *l_systemEntities = [l_systemEntityConfig valueForKey:@"entities"];
         for (NSDictionary *l_systemEntityDictionary in l_systemEntities) {
             NSString *l_entityName = [l_systemEntityDictionary valueForKey:@"name"];
+
+            // Take a snapshot of the system entities' current state (this to prevent Core Data issues when iterating while mutating)
+            NSMutableDictionary <NSNumber *, IFASystemEntity*> *systemEntitiesById = [NSMutableDictionary new];
+            NSArray <IFASystemEntity *> *systemEntities = [IFASystemEntity ifa_findAll];
+            [systemEntities enumerateObjectsUsingBlock:^(IFASystemEntity *obj, NSUInteger idx, BOOL *stop) {
+                systemEntitiesById[obj.systemEntityId] = obj;
+            }];
+
             NSLog(@"System Entity name: %@", l_entityName);
             NSUInteger l_systemTableVersion = [(NSNumber*)[l_systemEntityDictionary valueForKey:@"version"] intValue];
             NSLog(@"System Entity version: %lu", (unsigned long)l_systemTableVersion);
@@ -1469,7 +1477,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
                     NSLog(@"Row: %@", [l_row description]);
                     NSNumber *l_systemEntityId = [l_row valueForKey:@"systemEntityId"];
                     NSLog(@"  Checking if system entity instance with id %lu already exists...", (unsigned long)[l_systemEntityId unsignedIntegerValue]);
-                    IFASystemEntity *l_systemEntity = (IFASystemEntity *)[self findSystemEntityById:[l_systemEntityId unsignedIntegerValue] entity:l_entityName];
+                    IFASystemEntity *l_systemEntity = systemEntitiesById[l_systemEntityId];
                     NSNumber *l_activeIndicator = [l_row objectForKey:@"active"];
                     BOOL l_isActive = l_activeIndicator ? [l_activeIndicator boolValue] : YES;
                     if (l_systemEntity) {
