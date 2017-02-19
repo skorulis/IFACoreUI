@@ -1,1 +1,1 @@
-iOS 10 update.
+[FIX] Fixed bug in [IFAPersistenceManager manageDatabaseVersioningChangeWithSystemEntityConfigBundle:block:] that could cause the following error intermittently: Collection was mutated while being enumerated.
