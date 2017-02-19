@@ -1462,7 +1462,7 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
 
             // Take a snapshot of the system entities' current state (this to prevent Core Data issues when iterating while mutating)
             NSMutableDictionary <NSNumber *, IFASystemEntity*> *systemEntitiesById = [NSMutableDictionary new];
-            NSArray <IFASystemEntity *> *systemEntities = [IFASystemEntity ifa_findAll];
+            NSArray <IFASystemEntity *> *systemEntities = [self findAllForEntity:l_entityName];
             [systemEntities enumerateObjectsUsingBlock:^(IFASystemEntity *obj, NSUInteger idx, BOOL *stop) {
                 systemEntitiesById[obj.systemEntityId] = obj;
             }];
