@@ -332,6 +332,7 @@
 - (void)ifa_viewDidLoad;
 - (void)ifa_viewDidUnload;
 - (UIStatusBarStyle)ifa_preferredStatusBarStyle;
+- (BOOL)ifa_prefersStatusBarHidden;
 - (void)ifa_onApplicationWillEnterForegroundNotification:(NSNotification*)aNotification;
 - (void)ifa_onApplicationDidBecomeActiveNotification:(NSNotification*)aNotification;
 - (void)ifa_onApplicationWillResignActiveNotification:(NSNotification*)aNotification;

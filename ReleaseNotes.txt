@@ -1,1 +1,2 @@
 [FIX] Fixed bug in [IFAPersistenceManager manageDatabaseVersioningChangeWithSystemEntityConfigBundle:block:] that could cause the following error intermittently: Collection was mutated while being enumerated.
+[NEW] New appearance theme protocol method: [IFAAppearanceThemne prefersStatusBarHiddenForViewController:].

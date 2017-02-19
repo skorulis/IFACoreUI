@@ -948,6 +948,14 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
     }
 }
 
+- (BOOL)ifa_prefersStatusBarHidden {
+    if ([self.ifa_appearanceTheme respondsToSelector:@selector(prefersStatusBarHiddenForViewController:)]) {
+        return [self.ifa_appearanceTheme prefersStatusBarHiddenForViewController:self];
+    } else {
+        return NO;
+    }
+}
+
 // To be overriden by subclasses
 - (void)ifa_onApplicationWillEnterForegroundNotification:(NSNotification*)aNotification{
 }

@@ -153,6 +153,7 @@ typedef NS_ENUM(NSUInteger, IFABarButtonItemSpacingBarType) {
 -(void)setAppearanceOnViewDidAppearForViewController:(UIViewController*)a_viewController;
 -(void)setAppearanceOnTintColorDidChangeForView:(UIView*)a_view;
 - (UIStatusBarStyle)preferredStatusBarStyleForViewController:(UIViewController *)viewController;
+- (BOOL)prefersStatusBarHiddenForViewController:(UIViewController *)viewController;
 
 - (void)setAppearanceOnWillDisplayHeaderView:(UIView *)a_headerView
                                   forSection:(NSInteger)a_section

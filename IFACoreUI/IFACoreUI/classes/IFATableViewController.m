@@ -412,6 +412,10 @@
     return [self ifa_preferredStatusBarStyle];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return [self ifa_prefersStatusBarHidden];
+}
+
 #pragma mark - UITableViewDataSource protocol
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
