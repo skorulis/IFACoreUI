@@ -1470,6 +1470,7 @@ withAlertPresenterViewController:nil];
                                                                                                                                            createMode:self.createMode];
             Class l_viewControllerClass = NSClassFromString(l_viewControllerClassName);
             UIViewController *l_viewController = (UIViewController *) [l_viewControllerClass new];
+            l_viewController.ifa_presenter = self;
             if (!l_viewController.title) {
                 l_viewController.title = [l_entityConfig labelForViewControllerFieldTypeAtIndexPath:indexPath
                                                                                            inObject:self.object
