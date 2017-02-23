@@ -670,11 +670,19 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
 }
 
 -(BOOL)ifa_isMasterViewController {
-    return (self.splitViewController.viewControllers)[0] ==self.navigationController && self.navigationController.viewControllers[0]==self;
+    if (self.splitViewController.viewControllers.count == 2) {
+        return (self.splitViewController.viewControllers)[0] ==self.navigationController && self.navigationController.viewControllers[0]==self;
+    } else {
+        return NO;
+    }
 }
 
 -(BOOL)ifa_isDetailViewController {
-    return (self.splitViewController.viewControllers)[1] ==self.navigationController && self.navigationController.viewControllers[0]==self;
+    if (self.splitViewController.viewControllers.count) {
+        return (self.splitViewController.viewControllers)[self.splitViewController.viewControllers.count==1?0:1] ==self.navigationController && self.navigationController.viewControllers[0]==self;
+    } else {
+        return NO;
+    }
 }
 
 -(BOOL)ifa_presentedAsModal {
@@ -937,6 +945,14 @@ typedef NS_ENUM(NSUInteger, IFANavigationBarButtonItemsSide) {
         return [self.ifa_appearanceTheme preferredStatusBarStyleForViewController:self];
     } else {
         return UIStatusBarStyleDefault;
+    }
+}
+
+- (BOOL)ifa_prefersStatusBarHidden {
+    if ([self.ifa_appearanceTheme respondsToSelector:@selector(prefersStatusBarHiddenForViewController:)]) {
+        return [self.ifa_appearanceTheme prefersStatusBarHiddenForViewController:self];
+    } else {
+        return NO;
     }
 }
 

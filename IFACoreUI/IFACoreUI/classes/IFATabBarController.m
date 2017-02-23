@@ -91,6 +91,10 @@
     return [self ifa_preferredStatusBarStyle];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return [self ifa_prefersStatusBarHidden];
+}
+
 #pragma mark - IFAContextSwitchingManagerDelegate
 
 - (void)             contextSwitchingManager:(IFAContextSwitchingManager *)a_contextSwitchingManager
