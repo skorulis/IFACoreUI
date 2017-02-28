@@ -23,7 +23,9 @@
 @class IFAFormViewController;
 
 @interface IFANavigationListViewController : IFAListViewController {
-
 }
+
+@property (nonatomic, readonly) UIBarButtonItem *deleteBarButtonItem;
+@property (nonatomic, readonly) UIBarButtonItem *duplicateBarButtonItem;
 
 @end

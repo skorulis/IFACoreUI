@@ -21,13 +21,29 @@
 #import "IFACoreUI.h"
 
 @interface IFANavigationListViewController ()
-
+@property (nonatomic) UIBarButtonItem *deleteBarButtonItem;
+@property (nonatomic) UIBarButtonItem *duplicateBarButtonItem;
 @end
 
 @implementation IFANavigationListViewController {
     
 }
 
+#pragma mark Public
+
+- (UIBarButtonItem *)deleteBarButtonItem {
+    if (!_deleteBarButtonItem) {
+        _deleteBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain target:self action:@selector(IFA_onDeleteButtonTap)];
+    }
+    return _deleteBarButtonItem;
+}
+
+- (UIBarButtonItem *)duplicateBarButtonItem {
+    if (!_duplicateBarButtonItem) {
+        _duplicateBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Duplicate", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain target:self action:@selector(IFA_onDuplicateButtonTap)];
+    }
+    return _duplicateBarButtonItem;
+}
 
 #pragma mark - Private
 
@@ -45,11 +61,68 @@
     [self showEditFormForManagedObject:(NSManagedObject *) [self objectForIndexPath:a_indexPath]];
 }
 
+- (void)IFA_updateEditingToolbarStateForTableView:(UITableView *)tableView {
+    if (!(_deleteBarButtonItem || _duplicateBarButtonItem)) {
+        return;
+    }
+    if (tableView.indexPathsForSelectedRows.count > 0) {
+        self.deleteBarButtonItem.title = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Delete (%@)", @"IFALocalizable", @"Delete (SELECTED_ITEMS_COUNT)"), @(tableView.indexPathsForSelectedRows.count)];
+        self.deleteBarButtonItem.enabled = YES;
+    } else {
+        self.deleteBarButtonItem.title = NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil);
+        self.deleteBarButtonItem.enabled = NO;
+    }
+    self.duplicateBarButtonItem.enabled = tableView.indexPathsForSelectedRows.count == 1;
+}
+
+- (void)IFA_onDuplicateButtonTap {
+
+}
+
+- (void)IFA_onDeleteButtonTap {
+    void (^destructiveActionBlock)() = ^{
+        __block BOOL success = NO;
+        NSArray<NSIndexPath *> *selectedIndexPaths = self.tableView.indexPathsForSelectedRows;
+        [selectedIndexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
+            NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:indexPath];
+            success = [[IFAPersistenceManager sharedInstance] deleteObject:managedObject validationAlertPresenter:nil];
+            if (!success) {
+                *stop = YES;
+            }
+        }];
+        if (success) {
+            success = [[IFAPersistenceManager sharedInstance] save];
+//            if (success) {
+//                [self.tableView deleteRowsAtIndexPaths:selectedIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+//            }
+        }
+        NSAssert(success == YES, nil);
+    };
+    NSString *message = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Are you sure you want to delete the selected %@ item(s)?", @"IFALocalizable", @"Are you sure you want to delete the selected <SELECTED_ITEMS_COUNT> item(s)?"), @(self.tableView.indexPathsForSelectedRows.count)];
+    NSString *destructiveActionButtonTitle = NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil);
+    [self ifa_presentAlertControllerWithTitle:nil
+                                      message:message
+                 destructiveActionButtonTitle:destructiveActionButtonTitle
+                       destructiveActionBlock:destructiveActionBlock
+                                  cancelBlock:nil];
+}
+
 #pragma mark - UITableViewDelegate Protocol
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.tableView.isEditing) {
+        [self IFA_updateEditingToolbarStateForTableView:tableView];
+        return;
+    }
     if (![[[IFAPersistenceManager sharedInstance] entityConfig] disallowDetailDisclosureForEntity:self.entityName]) {
         [self iFA_handleSelectionForEditingAtIndexPath:indexPath];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.tableView.isEditing) {
+        [self IFA_updateEditingToolbarStateForTableView:tableView];
+        return;
     }
 }
 
@@ -209,6 +282,7 @@
     [self showEmptyListPlaceholder];
 //    UIButton *l_helpButton = (UIButton*)[self.navigationController.view viewWithTag:IFAViewTagHelpButton];
 //    l_helpButton.enabled = !editing;
+    [self IFA_updateEditingToolbarStateForTableView:self.tableView];
 }
 
 -(void)didRefreshAndReloadData {
