@@ -80,11 +80,16 @@
 }
 
 - (void)IFA_onDeleteButtonTap {
+    NSUInteger selectedItemsCount = self.tableView.indexPathsForSelectedRows.count;
+    NSAssert(selectedItemsCount > 0, nil);
     void (^destructiveActionBlock)() = ^{
+        self.shouldIgnoreStaleDataChanges = YES;
         __block BOOL success = NO;
         NSArray<NSIndexPath *> *selectedIndexPaths = self.tableView.indexPathsForSelectedRows;
+        NSMutableArray <NSManagedObject *> *deletedManagedObjects = [NSMutableArray new];
         [selectedIndexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
             NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:indexPath];
+            [deletedManagedObjects addObject:managedObject];
             success = [[IFAPersistenceManager sharedInstance] deleteObject:managedObject validationAlertPresenter:nil];
             if (!success) {
                 *stop = YES;
@@ -92,19 +97,65 @@
         }];
         if (success) {
             success = [[IFAPersistenceManager sharedInstance] save];
-//            if (success) {
-//                [self.tableView deleteRowsAtIndexPaths:selectedIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
-//            }
+            if (success) {
+                [self IFA_updateUiAfterDeletionAtIndexPaths:selectedIndexPaths deletedManagedObjects:deletedManagedObjects];
+                [IFAUIUtils showAndHideUserActionConfirmationHudWithText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ item(s) deleted", @"IFALocalizable", @"<SELECTED_ITEMS_COUNT> item(s) deleted"),
+                                                                                                    @(selectedItemsCount)]];
+            }
+        } else {
+            [[IFAPersistenceManager sharedInstance] rollback];
         }
-        NSAssert(success == YES, nil);
+        self.shouldIgnoreStaleDataChanges = NO;
+        NSAssert(success == YES, nil);  // Deletion should never fail
     };
-    NSString *message = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Are you sure you want to delete the selected %@ item(s)?", @"IFALocalizable", @"Are you sure you want to delete the selected <SELECTED_ITEMS_COUNT> item(s)?"), @(self.tableView.indexPathsForSelectedRows.count)];
+    NSString *message = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Are you sure you want to delete the %@ selected item(s)?", @"IFALocalizable", @"Are you sure you want to delete the <SELECTED_ITEMS_COUNT> selected item(s)?"), @(selectedItemsCount)];
     NSString *destructiveActionButtonTitle = NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil);
     [self ifa_presentAlertControllerWithTitle:nil
                                       message:message
                  destructiveActionButtonTitle:destructiveActionButtonTitle
                        destructiveActionBlock:destructiveActionBlock
                                   cancelBlock:nil];
+}
+
+- (void)IFA_updateUiAfterDeletionAtIndexPaths:(NSArray <NSIndexPath *> *)indexPaths deletedManagedObjects:(NSArray <NSManagedObject *> *)deletedManagedObjects {
+
+    if (!self.fetchedResultsController) {
+
+        // Update the main entities array
+        [self.entities removeObjectsInArray:deletedManagedObjects];
+
+        // Update the "sections with rows" array
+        NSMutableIndexSet *sectionsToDeleteIndexSet = [NSMutableIndexSet new];
+        [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
+            NSMutableArray *sectionRows = (self.sectionsWithRows)[(NSUInteger) indexPath.section];
+            if (self.listGroupedBy) {
+                [sectionRows removeObjectAtIndex:(NSUInteger) indexPath.row];
+                if ([sectionRows count] == 0) {
+                    [self.sectionsWithRows removeObjectAtIndex:(NSUInteger) indexPath.section];
+                    [sectionsToDeleteIndexSet addIndex:indexPath.section];
+                }
+            }
+        }];
+
+        // Update the table view
+        [self.tableView beginUpdates];
+        [self.tableView ifa_deleteRowsAtIndexPaths:indexPaths];
+        [self.tableView deleteSections:sectionsToDeleteIndexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.tableView endUpdates];
+
+    }
+
+    if (self.objects.count == 0) {
+        self.staleData = YES;
+        if (self.editing) {
+            [self setEditing:NO animated:YES];
+        }
+    } else {
+        [self showEmptyListPlaceholder];
+    }
+
+    [self IFA_updateEditingToolbarStateForTableView:self.tableView];
+
 }
 
 #pragma mark - UITableViewDelegate Protocol
@@ -148,38 +199,7 @@
         void (^completionHandler)(BOOL) = ^(BOOL success) {
             self.shouldIgnoreStaleDataChanges = NO;
             if (success) {
-                if (!self.fetchedResultsController) {
-
-                    // Update the main entities array
-                    [self.entities removeObject:mo];
-
-                    // Update the "sections with rows" array
-                    NSMutableArray *l_sectionRows = (self.sectionsWithRows)[(NSUInteger) indexPath.section];
-                    if (self.listGroupedBy) {
-                        [l_sectionRows removeObjectAtIndex:(NSUInteger) indexPath.row];
-                        if ([l_sectionRows count]==0) {
-                            [self.sectionsWithRows removeObjectAtIndex:(NSUInteger) indexPath.section];
-                        }
-                    }
-
-                    // Update the table view
-                    [self.tableView beginUpdates];
-                    [self.tableView ifa_deleteRowsAtIndexPaths:@[indexPath]];
-                    if (self.listGroupedBy && [l_sectionRows count]==0) {
-                        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:(NSUInteger) indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
-                    }
-                    [self.tableView endUpdates];
-
-                }
-
-                if (self.objects.count==0) {
-                    self.staleData = YES;
-                    if (self.editing) {
-                        [self setEditing:NO animated:YES];
-                    }
-                }else{
-                    [self showEmptyListPlaceholder];
-                }
+                [self IFA_updateUiAfterDeletionAtIndexPaths:@[indexPath] deletedManagedObjects:@[mo]];
 
             }
         };
