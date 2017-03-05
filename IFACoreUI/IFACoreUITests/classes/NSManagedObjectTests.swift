@@ -29,6 +29,14 @@ class NSManagedObjectTests: IFACoreUITestCase {
         let relatedManagedObject3 = TestCoreDataEntity5.ifa_instantiate()!
         relatedManagedObject3.attribute1 = "test-related-object-3"
         relatedManagedObject3.attribute2 = true;
+
+        let childManagedObject1 = TestCoreDataEntity4Child.ifa_instantiate()!
+        childManagedObject1.attribute1 = "test-child-object-1"
+        childManagedObject1.attribute2 = true;
+        let childManagedObject2 = TestCoreDataEntity4Child.ifa_instantiate()!
+        childManagedObject2.attribute1 = "test-child-object-2"
+        childManagedObject2.attribute2 = true;
+
         let managedObject = TestCoreDataEntity4.ifa_instantiate()!
         managedObject.name = "Test Name"
         managedObject.attribute1 = "test-attribute1"
@@ -36,6 +44,8 @@ class NSManagedObjectTests: IFACoreUITestCase {
         managedObject.entity5ToOne = relatedManagedObject1
         managedObject.addEntity5(toManyObject: relatedManagedObject2)
         managedObject.addEntity5(toManyObject: relatedManagedObject3)
+        managedObject.addChildrenObject(childManagedObject1)
+        managedObject.addChildrenObject(childManagedObject2)
         XCTAssertTrue(IFAPersistenceManager.sharedInstance().save())
         
         // When
@@ -53,7 +63,8 @@ class NSManagedObjectTests: IFACoreUITestCase {
         XCTAssertEqual(managedObject1.attribute2, managedObject2.attribute2)
         XCTAssertEqual(managedObject1.entity5ToOne, managedObject2.entity5ToOne)
         XCTAssertEqual(managedObject1.entity5ToMany, managedObject2.entity5ToMany)
-        print("allObjects: \(allObjects)")
+//        XCTAssertEqual(managedObject1.children, managedObject2.children)
+//        print("allObjects: \(allObjects)")
 
     }
 

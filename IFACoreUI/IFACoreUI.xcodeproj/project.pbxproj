@@ -367,6 +367,8 @@
 		F7B360FD1E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360F21E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m */; };
 		F7B360FE1E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360F41E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m */; };
 		F7E49F361BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7E49F341BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld */; };
+		F7FF0B051E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF0B021E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.m */; };
+		F7FF0B061E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF0B041E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -793,6 +795,10 @@
 		F7B360F31E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity5+CoreDataProperties.h"; sourceTree = "<group>"; };
 		F7B360F41E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity5+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F7E49F351BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFACoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
+		F7FF0B011E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4Child+CoreDataClass.h"; sourceTree = "<group>"; };
+		F7FF0B021E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4Child+CoreDataClass.m"; sourceTree = "<group>"; };
+		F7FF0B031E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4Child+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7FF0B041E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4Child+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1292,6 +1298,10 @@
 		F7650DED1BEA948900B97932 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F7FF0B011E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.h */,
+				F7FF0B021E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.m */,
+				F7FF0B031E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.h */,
+				F7FF0B041E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.m */,
 				F7B360E11E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.h */,
 				F7B360E21E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.m */,
 				F7B360E31E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.h */,
@@ -1905,8 +1915,10 @@
 				F7B360F91E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.m in Sources */,
 				F7650E861BEBE60700B97932 /* NSStringTests.m in Sources */,
 				F7B360FC1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.m in Sources */,
+				F7FF0B061E6B95090087381E /* TestCoreDataEntity4Child+CoreDataProperties.m in Sources */,
 				F7B360FB1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.m in Sources */,
 				10738196906527DC90BA3E92 /* NSManagedObjectTests.swift in Sources */,
+				F7FF0B051E6B95090087381E /* TestCoreDataEntity4Child+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

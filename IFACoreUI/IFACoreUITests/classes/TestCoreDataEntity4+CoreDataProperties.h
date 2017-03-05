@@ -2,12 +2,13 @@
 //  TestCoreDataEntity4+CoreDataProperties.h
 //  IFACoreUI
 //
-//  Created by Marcelo Schroeder on 4/3/17.
+//  Created by Marcelo Schroeder on 5/3/17.
 //  Copyright © 2017 InfoAccent Pty Ltd. All rights reserved.
 //
 
 #import "TestCoreDataEntity4+CoreDataClass.h"
 
+@class TestCoreDataEntity4Child;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,8 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *attribute1;
 @property (nullable, nonatomic, copy) NSNumber *attribute2;
 @property (nullable, nonatomic, copy) NSString *name;
-@property (nullable, nonatomic, retain) TestCoreDataEntity5 *entity5ToOne;
 @property (nullable, nonatomic, retain) NSSet<TestCoreDataEntity5 *> *entity5ToMany;
+@property (nullable, nonatomic, retain) TestCoreDataEntity5 *entity5ToOne;
+@property (nullable, nonatomic, retain) NSSet<TestCoreDataEntity4Child *> *children;
 
 @end
 
@@ -29,6 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeEntity5ToManyObject:(TestCoreDataEntity5 *)value;
 - (void)addEntity5ToMany:(NSSet<TestCoreDataEntity5 *> *)values;
 - (void)removeEntity5ToMany:(NSSet<TestCoreDataEntity5 *> *)values;
+
+- (void)addChildrenObject:(TestCoreDataEntity4Child *)value;
+- (void)removeChildrenObject:(TestCoreDataEntity4Child *)value;
+- (void)addChildren:(NSSet<TestCoreDataEntity4Child *> *)values;
+- (void)removeChildren:(NSSet<TestCoreDataEntity4Child *> *)values;
 
 @end
 

@@ -98,6 +98,10 @@
 }
 
 - (void)duplicateToTarget:(NSManagedObject *)target {
+    if (![target isMemberOfClass:[self class]]) {
+        return;
+    }
+
     NSEntityDescription *entityDescription = self.objectID.entity;
 
     // Set attributes
@@ -106,9 +110,11 @@
     [target setValuesForKeysWithDictionary:attributeKeysAndValues];
 
     // Set relationships
-    NSArray *relationshipKeys = entityDescription.relationshipsByName.allKeys;
-    NSDictionary *relationshipKeysAndValues = [self dictionaryWithValuesForKeys:relationshipKeys];
-    [target setValuesForKeysWithDictionary:relationshipKeysAndValues];
+    [entityDescription.relationshipsByName enumerateKeysAndObjectsUsingBlock:^(NSString *relationshipName, NSRelationshipDescription *relationshipDescription, BOOL *stop) {
+        if (relationshipDescription.inverseRelationship.isToMany) {
+            [target setValue:[self valueForKey:relationshipName] forKey:relationshipName];
+        }
+    }];
 }
 
 + (instancetype)ifa_instantiate {
