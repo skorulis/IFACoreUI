@@ -63,8 +63,19 @@ class NSManagedObjectTests: IFACoreUITestCase {
         XCTAssertEqual(managedObject1.attribute2, managedObject2.attribute2)
         XCTAssertEqual(managedObject1.entity5ToOne, managedObject2.entity5ToOne)
         XCTAssertEqual(managedObject1.entity5ToMany, managedObject2.entity5ToMany)
-//        XCTAssertEqual(managedObject1.children, managedObject2.children)
+        XCTAssertEqual(managedObject1.children!.count, managedObject2.children!.count)
+        XCTAssertTrue(managedObject1.children!.count > 0)
 //        print("allObjects: \(allObjects)")
+//        print("  managedObject1.children: \(managedObject1.children)")
+//        print("  managedObject2.children: \(managedObject2.children)")
+        for managedObject1Child in managedObject1.children! {
+            let managedObject2Child = managedObject2.children!.filter({ (managedObject2Child: TestCoreDataEntity4Child) -> Bool in
+                return managedObject2Child.attribute1 == managedObject1Child.attribute1
+            }).first!
+            XCTAssertEqual(managedObject1Child.attribute1, managedObject2Child.attribute1)
+            XCTAssertEqual(managedObject1Child.attribute2, managedObject2Child.attribute2)
+            XCTAssertNotEqual(managedObject1Child.parent, managedObject2Child.parent)
+        }
 
     }
 

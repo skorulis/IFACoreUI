@@ -111,9 +111,26 @@
 
     // Set relationships
     [entityDescription.relationshipsByName enumerateKeysAndObjectsUsingBlock:^(NSString *relationshipName, NSRelationshipDescription *relationshipDescription, BOOL *stop) {
-        if (relationshipDescription.inverseRelationship.isToMany) {
-            [target setValue:[self valueForKey:relationshipName] forKey:relationshipName];
+        id value = [self valueForKey:relationshipName];
+        if (!relationshipDescription.inverseRelationship.isToMany) {
+            NSString *destinationEntityName = relationshipDescription.destinationEntity.name;
+            if ([value isKindOfClass:[NSSet class]]) {
+                NSSet <NSManagedObject *> *childManagedObjects = value;
+                NSMutableSet <NSManagedObject *> *childManagedObjectDuplicates = [NSMutableSet new];
+                [childManagedObjects enumerateObjectsUsingBlock:^(NSManagedObject *childManagedObject, BOOL *innerStop) {
+                    NSManagedObject *childManagedObjectDuplicate = [NSClassFromString(destinationEntityName) ifa_instantiate];
+                    [childManagedObject duplicateToTarget:childManagedObjectDuplicate];
+                    [childManagedObjectDuplicates addObject:childManagedObjectDuplicate];
+                }];
+                value = childManagedObjectDuplicates;
+            } else {
+                NSManagedObject *childManagedObject = value;
+                NSManagedObject *childManagedObjectDuplicate = [NSClassFromString(destinationEntityName) ifa_instantiate];
+                [childManagedObject duplicateToTarget:childManagedObjectDuplicate];
+                value = childManagedObjectDuplicate;
+            }
         }
+        [target setValue:value forKey:relationshipName];
     }];
 }
 
