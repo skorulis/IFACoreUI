@@ -31,6 +31,12 @@
 - (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 - (BOOL)ifa_hasValueChangedForKey:(NSString*)a_key;
 
+/**
+ * Duplicate a managed object into a given target.
+ * This method copies all properties. It also copies relatioships with the exception of 1-to-1 relationships.
+ * For many-to-many relationships, it also duplicates the children to a maximum of one hierarchical level.
+ * @param target Managed object instance to duplicate into.
+ */
 - (void)duplicateToTarget:(NSManagedObject *)target;
 
 + (instancetype)ifa_instantiate;

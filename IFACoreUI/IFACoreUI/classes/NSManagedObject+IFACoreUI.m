@@ -127,10 +127,7 @@
                 }];
                 value = childManagedObjectDuplicates;
             } else {
-                NSManagedObject *childManagedObject = value;
-                NSManagedObject *childManagedObjectDuplicate = [NSClassFromString(destinationEntityName) ifa_instantiate];
-                [childManagedObject duplicateToTarget:childManagedObjectDuplicate];
-                value = childManagedObjectDuplicate;
+                return;
             }
         }
         [target setValue:value forKey:relationshipName];

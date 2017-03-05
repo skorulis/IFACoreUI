@@ -36,6 +36,9 @@ class NSManagedObjectTests: IFACoreUITestCase {
         let childManagedObject2 = TestCoreDataEntity4Child.ifa_instantiate()!
         childManagedObject2.attribute1 = "test-child-object-2"
         childManagedObject2.attribute2 = true;
+        let childManagedObject3 = TestCoreDataEntity4Child.ifa_instantiate()!
+        childManagedObject3.attribute1 = "test-child-object-3"
+        childManagedObject3.attribute2 = true;
 
         let managedObject = TestCoreDataEntity4.ifa_instantiate()!
         managedObject.name = "Test Name"
@@ -46,6 +49,7 @@ class NSManagedObjectTests: IFACoreUITestCase {
         managedObject.addEntity5(toManyObject: relatedManagedObject3)
         managedObject.addChildrenObject(childManagedObject1)
         managedObject.addChildrenObject(childManagedObject2)
+        managedObject.child = childManagedObject3
         XCTAssertTrue(IFAPersistenceManager.sharedInstance().save())
         
         // When
@@ -65,9 +69,8 @@ class NSManagedObjectTests: IFACoreUITestCase {
         XCTAssertEqual(managedObject1.entity5ToMany, managedObject2.entity5ToMany)
         XCTAssertEqual(managedObject1.children!.count, managedObject2.children!.count)
         XCTAssertTrue(managedObject1.children!.count > 0)
-        print("allObjects: \(allObjects)")
-        print("  managedObject1.children: \(managedObject1.children)")
-        print("  managedObject2.children: \(managedObject2.children)")
+        XCTAssertNotEqual(managedObject1.children!, managedObject2.children!)
+        XCTAssertEqual(managedObject2.child, nil)
         for managedObject1Child in managedObject1.children! {
             let managedObject2Child = managedObject2.children!.filter({ (managedObject2Child: TestCoreDataEntity4Child) -> Bool in
                 return managedObject2Child.attribute1 == managedObject1Child.attribute1
