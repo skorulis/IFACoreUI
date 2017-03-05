@@ -50,7 +50,7 @@
             [self IFA_refreshAndReloadDataWithFetchedResultsController];
             break;
         case IFAListViewControllerFetchingStrategyFindEntities:
-            [self IFA_refreshAndReloadDataWithFindEntitiesSynchronously];
+            [self refreshDataWithFindEntitiesSynchronously];
             break;
         default:
             NSAssert(NO, @"Unexpected fetching strategy: %lu", (unsigned long)self.fetchingStrategy);
@@ -67,10 +67,6 @@
     if (![self.fetchedResultsController performFetch:&l_error]) {
         [IFAUIUtils handleUnrecoverableError:l_error];
     };
-}
-
-- (void)IFA_refreshAndReloadDataWithFindEntitiesSynchronously {
-    self.entities = [[self findEntities] mutableCopy];
 }
 
 /*
@@ -575,6 +571,10 @@
         }
     }
     return _noDataPlaceholderDescriptionLabel;
+}
+
+- (void)refreshDataWithFindEntitiesSynchronously {
+    self.entities = [[self findEntities] mutableCopy];
 }
 
 #pragma mark - Overrides

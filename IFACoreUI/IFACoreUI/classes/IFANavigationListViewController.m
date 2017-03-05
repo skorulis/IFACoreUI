@@ -77,20 +77,29 @@
 
 - (void)IFA_onDuplicateButtonTap {
     IFAPersistenceManager *persistenceManager = [IFAPersistenceManager sharedInstance];
-    NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:self.tableView.indexPathForSelectedRow];
+    NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
+    NSManagedObject *managedObjectOriginal = (NSManagedObject *) [self objectForIndexPath:selectedIndexPath];
     NSManagedObject *managedObjectDuplicate = [NSClassFromString(self.entityName) ifa_instantiate];
     NSMutableSet <NSString *> *ignoredKeys = [NSMutableSet new];
     if ([persistenceManager.entityConfig listReorderAllowedForObject:managedObjectDuplicate] && [managedObjectDuplicate respondsToSelector:NSSelectorFromString(@"seq")]) {
         [ignoredKeys addObject:@"seq"];
     }
-    [managedObject duplicateToTarget:managedObjectDuplicate ignoringKeys:ignoredKeys];
+    [managedObjectOriginal duplicateToTarget:managedObjectDuplicate ignoringKeys:ignoredKeys];
     if ([managedObjectDuplicate conformsToProtocol:@protocol(IFADuplication)]) {
         id<IFADuplication> duplicate = (id <IFADuplication>) managedObjectDuplicate;
         duplicate.uniqueNameForDuplication = [IFADuplicationUtils nameForDuplicateOf:duplicate inItems:self.objects];
     }
     [persistenceManager saveObject:managedObjectDuplicate validationAlertPresenter:nil];
-    if (!self.fetchedResultsController) {
-        [self refreshAndReloadData];
+    if (!self.fetchedResultsController && self.fetchingStrategy == IFAListViewControllerFetchingStrategyFindEntities) {
+        [self refreshDataWithFindEntitiesSynchronously];
+        [self refreshSectionsWithRows];
+        NSUInteger managedObjectDuplicateIndex = [self.entities indexOfObject:managedObjectDuplicate];
+        NSIndexPath *indexPathToInsert = [NSIndexPath indexPathForItem:managedObjectDuplicateIndex inSection:0];
+        NSArray *indexPathsToInsert = @[indexPathToInsert];
+        [self.tableView insertRowsAtIndexPaths:indexPathsToInsert withRowAnimation:UITableViewRowAnimationAutomatic];
+        NSUInteger managedObjectOriginalIndex = [self.entities indexOfObject:managedObjectOriginal];
+        NSIndexPath *indexPathToDeselect = [NSIndexPath indexPathForItem:managedObjectOriginalIndex inSection:0];
+        [self.tableView deselectRowAtIndexPath:indexPathToDeselect animated:YES];
     }
 }
 

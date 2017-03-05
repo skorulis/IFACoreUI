@@ -148,6 +148,12 @@ typedef NS_ENUM(NSUInteger, IFAListViewControllerFetchingStrategy){
 
 - (void)showEmptyListPlaceholder;
 
+/**
+ * Sets the entities properties with the latest state from the database, synchronously.
+ * This method is to be used when a data refresh is required outside the control of the framework and it only makes sense when the fetchingStrategy property is set to IFAListViewControllerFetchingStrategyFindEntities.
+ */
+- (void)refreshDataWithFindEntitiesSynchronously;
+
 - (IFAFormViewController *)formViewControllerForManagedObject:(NSManagedObject *)aManagedObject createMode:(BOOL)aCreateMode;
 - (NSManagedObject*)newManagedobject;
 
