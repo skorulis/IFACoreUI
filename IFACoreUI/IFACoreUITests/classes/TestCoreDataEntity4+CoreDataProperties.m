@@ -17,8 +17,9 @@
 @dynamic attribute1;
 @dynamic attribute2;
 @dynamic name;
+@dynamic children;
 @dynamic entity5ToMany;
 @dynamic entity5ToOne;
-@dynamic children;
+@dynamic child;
 
 @end

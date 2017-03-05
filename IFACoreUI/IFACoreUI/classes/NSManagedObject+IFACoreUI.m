@@ -112,6 +112,9 @@
     // Set relationships
     [entityDescription.relationshipsByName enumerateKeysAndObjectsUsingBlock:^(NSString *relationshipName, NSRelationshipDescription *relationshipDescription, BOOL *stop) {
         id value = [self valueForKey:relationshipName];
+        if (!value) {
+            return;
+        }
         if (!relationshipDescription.inverseRelationship.isToMany) {
             NSString *destinationEntityName = relationshipDescription.destinationEntity.name;
             if ([value isKindOfClass:[NSSet class]]) {

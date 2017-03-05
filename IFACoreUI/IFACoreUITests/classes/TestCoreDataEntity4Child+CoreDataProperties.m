@@ -16,6 +16,7 @@
 
 @dynamic attribute1;
 @dynamic attribute2;
-@dynamic parent;
+@dynamic childrenParent;
+@dynamic childParent;
 
 @end

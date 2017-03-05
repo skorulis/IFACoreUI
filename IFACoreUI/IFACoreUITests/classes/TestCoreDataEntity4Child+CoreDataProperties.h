@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, copy) NSString *attribute1;
 @property (nullable, nonatomic, copy) NSNumber *attribute2;
-@property (nullable, nonatomic, retain) TestCoreDataEntity4 *parent;
+@property (nullable, nonatomic, retain) TestCoreDataEntity4 *childrenParent;
+@property (nullable, nonatomic, retain) TestCoreDataEntity4 *childParent;
 
 @end
 
