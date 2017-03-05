@@ -76,9 +76,14 @@
 }
 
 - (void)IFA_onDuplicateButtonTap {
-//    id<IFADuplication> test1 = nil;
-//    NSArray <id<IFADuplication>> *test2 = nil;
-//    [IFADuplicationUtils nameForDuplicateOf:test1 existingItems:test2];
+    NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:self.tableView.indexPathForSelectedRow];
+    NSManagedObject *managedObjectDuplicate = [NSClassFromString(self.entityName) ifa_instantiate];
+    [managedObject duplicateToTarget:managedObjectDuplicate];
+    if ([managedObjectDuplicate conformsToProtocol:@protocol(IFADuplication)]) {
+        id<IFADuplication> duplicate = (id <IFADuplication>) managedObjectDuplicate;
+        duplicate.uniqueNameForDuplication = [IFADuplicationUtils nameForDuplicateOf:duplicate inItems:self.objects];
+    }
+    [[IFAPersistenceManager sharedInstance] saveObject:managedObjectDuplicate validationAlertPresenter:nil];
 }
 
 - (void)IFA_onDeleteButtonTap {
