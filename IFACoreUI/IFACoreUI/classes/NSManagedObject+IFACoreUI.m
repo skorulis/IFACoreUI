@@ -97,7 +97,7 @@
     return [self validationPredicateParameterProperty:a_propertyName string:@"SELF <= "];
 }
 
-- (void)duplicateToTarget:(NSManagedObject *)target {
+- (void)duplicateToTarget:(NSManagedObject *)target ignoringKeys:(NSSet <NSString *> *_Nullable)ignoredKeys {
     if (![target isMemberOfClass:[self class]]) {
         return;
     }
@@ -106,7 +106,10 @@
 
     // Set attributes
     NSArray *attributeKeys = entityDescription.attributesByName.allKeys;
-    NSDictionary *attributeKeysAndValues = [self dictionaryWithValuesForKeys:attributeKeys];
+    NSMutableDictionary *attributeKeysAndValues = [[self dictionaryWithValuesForKeys:attributeKeys] mutableCopy];
+    if (ignoredKeys) {
+        [attributeKeysAndValues removeObjectsForKeys:ignoredKeys.allObjects];
+    }
     [target setValuesForKeysWithDictionary:attributeKeysAndValues];
 
     // Set relationships
@@ -122,7 +125,7 @@
                 NSMutableSet <NSManagedObject *> *childManagedObjectDuplicates = [NSMutableSet new];
                 [childManagedObjects enumerateObjectsUsingBlock:^(NSManagedObject *childManagedObject, BOOL *innerStop) {
                     NSManagedObject *childManagedObjectDuplicate = [NSClassFromString(destinationEntityName) ifa_instantiate];
-                    [childManagedObject duplicateToTarget:childManagedObjectDuplicate];
+                    [childManagedObject duplicateToTarget:childManagedObjectDuplicate ignoringKeys:nil];
                     [childManagedObjectDuplicates addObject:childManagedObjectDuplicate];
                 }];
                 value = childManagedObjectDuplicates;

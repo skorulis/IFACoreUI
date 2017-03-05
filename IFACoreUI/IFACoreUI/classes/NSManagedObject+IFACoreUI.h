@@ -18,6 +18,8 @@
 //  limitations under the License.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSManagedObject (IFACoreUI)
 
 @property (nonatomic, readonly) NSString *ifa_stringId;
@@ -27,8 +29,8 @@
 - (BOOL)ifa_validateForSave:(NSError**)anError;
 - (void)ifa_willDelete;
 - (void)ifa_didDelete;
-- (BOOL)ifa_deleteWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
-- (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
+- (BOOL)ifa_deleteWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
+- (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
 - (BOOL)ifa_hasValueChangedForKey:(NSString*)a_key;
 
 /**
@@ -37,12 +39,14 @@
  * For many-to-many relationships, it also duplicates the children to a maximum of one hierarchical level.
  * @param target Managed object instance to duplicate into.
  */
-- (void)duplicateToTarget:(NSManagedObject *)target;
+- (void)duplicateToTarget:(NSManagedObject *)target ignoringKeys:(NSSet <NSString *> *_Nullable)ignoredKeys;
 
 + (instancetype)ifa_instantiate;
 + (NSMutableArray *)ifa_findAll;
 + (NSMutableArray *)ifa_findAllIncludingPendingChanges:(BOOL)a_includePendingChanges;
-+ (void)ifa_deleteAllWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
-+ (void)ifa_deleteAllAndSaveWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
++ (void)ifa_deleteAllWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
++ (void)ifa_deleteAllAndSaveWithValidationAlertPresenter:(UIViewController * _Nullable)a_validationAlertPresenter;
 
 @end
+
+NS_ASSUME_NONNULL_END

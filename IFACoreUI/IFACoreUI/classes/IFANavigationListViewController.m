@@ -76,14 +76,22 @@
 }
 
 - (void)IFA_onDuplicateButtonTap {
+    IFAPersistenceManager *persistenceManager = [IFAPersistenceManager sharedInstance];
     NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:self.tableView.indexPathForSelectedRow];
     NSManagedObject *managedObjectDuplicate = [NSClassFromString(self.entityName) ifa_instantiate];
-    [managedObject duplicateToTarget:managedObjectDuplicate];
+    NSMutableSet <NSString *> *ignoredKeys = [NSMutableSet new];
+    if ([persistenceManager.entityConfig listReorderAllowedForObject:managedObjectDuplicate] && [managedObjectDuplicate respondsToSelector:NSSelectorFromString(@"seq")]) {
+        [ignoredKeys addObject:@"seq"];
+    }
+    [managedObject duplicateToTarget:managedObjectDuplicate ignoringKeys:ignoredKeys];
     if ([managedObjectDuplicate conformsToProtocol:@protocol(IFADuplication)]) {
         id<IFADuplication> duplicate = (id <IFADuplication>) managedObjectDuplicate;
         duplicate.uniqueNameForDuplication = [IFADuplicationUtils nameForDuplicateOf:duplicate inItems:self.objects];
     }
-    [[IFAPersistenceManager sharedInstance] saveObject:managedObjectDuplicate validationAlertPresenter:nil];
+    [persistenceManager saveObject:managedObjectDuplicate validationAlertPresenter:nil];
+    if (!self.fetchedResultsController) {
+        [self refreshAndReloadData];
+    }
 }
 
 - (void)IFA_onDeleteButtonTap {

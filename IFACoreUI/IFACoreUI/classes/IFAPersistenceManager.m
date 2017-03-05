@@ -667,7 +667,9 @@ IFA_sqlStoreUrlForDatabaseResourceName:(NSString *)a_databaseResourceName
             NSArray* all = [self findAllForEntity:entityName
                             includePendingChanges:YES];
 			for (int i = 0; i < [all count]; i++) {
-				[[all objectAtIndex:i] setValue:[NSNumber numberWithUnsignedInt:((i+1)*2)] forKey:@"seq"];
+                id managedObject = all[i];
+                NSNumber *seq = [NSNumber numberWithUnsignedInt:((i+1)*2)];
+                [managedObject setValue:seq forKey:@"seq"];
 			}
 		}
 
