@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import "IFACommonTests.h"
+@import XCTest;
 
 @class IFAPersistenceManager;
 

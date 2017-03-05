@@ -76,7 +76,9 @@
 }
 
 - (void)IFA_onDuplicateButtonTap {
-
+//    id<IFADuplication> test1 = nil;
+//    NSArray <id<IFADuplication>> *test2 = nil;
+//    [IFADuplicationUtils nameForDuplicateOf:test1 existingItems:test2];
 }
 
 - (void)IFA_onDeleteButtonTap {

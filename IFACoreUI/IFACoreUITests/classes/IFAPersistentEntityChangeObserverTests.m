@@ -7,12 +7,15 @@
 
 #import <IFATestingSupport/IFACommonTests.h>
 #import "IFACoreUITestCase.h"
-#import "TestCoreDataEntity1.h"
+#import "TestCoreDataEntity1+CoreDataClass.h"
+#import "TestCoreDataEntity1+CoreDataProperties.h"
 #import "NSManagedObject+IFACoreUI.h"
 #import "IFAPersistenceManager.h"
-#import "TestCoreDataEntity2.h"
+#import "TestCoreDataEntity2+CoreDataClass.h"
+#import "TestCoreDataEntity2+CoreDataProperties.h"
 #import "IFAPersistentEntityChangeObserver.h"
-#import "TestCoreDataEntity3.h"
+#import "TestCoreDataEntity3+CoreDataClass.h"
+#import "TestCoreDataEntity3+CoreDataProperties.h"
 
 @interface IFAPersistentEntityChangeObserverTests : IFACoreUITestCase <IFAPersistentEntityChangeObserverDelegate>
 @property (nonatomic, strong) NSMutableDictionary *delegateCallbacksByClass;

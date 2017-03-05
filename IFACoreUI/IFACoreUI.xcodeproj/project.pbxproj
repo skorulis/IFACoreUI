@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1073800C7653514A34D098DF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1073862A6C0B08612C9A2ED0 /* LICENSE */; };
+		10738196906527DC90BA3E92 /* NSManagedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B360CD1E6A6B4A00CDCC47 /* NSManagedObjectTests.swift */; };
 		107381B24D93FAD7E0298031 /* IFAAlertContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107382B94669F01368812EAA /* IFAAlertContainerViewController.m */; };
 		10738AC52DC25D5BF2E5EDB8 /* IFAAlertContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 107384428BEF6DEBAD7F15B9 /* IFAAlertContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		174362A41F4F17B6E3EAE072 /* Pods_IFACoreUI_IFACoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D66EC50FEB0F337F4814482 /* Pods_IFACoreUI_IFACoreUITests.framework */; };
@@ -355,9 +356,16 @@
 		F7650E851BEBE60700B97932 /* NSNumberFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E021BEA948900B97932 /* NSNumberFormatterTests.m */; };
 		F7650E861BEBE60700B97932 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E031BEA948900B97932 /* NSStringTests.m */; };
 		F7650E871BEBE60700B97932 /* TempTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E051BEA948900B97932 /* TempTest.m */; };
-		F7650E881BEBE60700B97932 /* TestCoreDataEntity1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */; };
-		F7650E891BEBE60700B97932 /* TestCoreDataEntity2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */; };
-		F7650E8A1BEBE60700B97932 /* TestCoreDataEntity3.m in Sources */ = {isa = PBXBuildFile; fileRef = F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */; };
+		F7B360F51E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360E21E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.m */; };
+		F7B360F61E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360E41E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.m */; };
+		F7B360F71E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360E61E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.m */; };
+		F7B360F81E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360E81E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.m */; };
+		F7B360F91E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360EA1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.m */; };
+		F7B360FA1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360EC1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.m */; };
+		F7B360FB1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360EE1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.m */; };
+		F7B360FC1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360F01E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.m */; };
+		F7B360FD1E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360F21E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m */; };
+		F7B360FE1E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B360F41E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m */; };
 		F7E49F361BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7E49F341BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -756,18 +764,34 @@
 		F7650E031BEA948900B97932 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		F7650E041BEA948900B97932 /* TempTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempTest.h; sourceTree = "<group>"; };
 		F7650E051BEA948900B97932 /* TempTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempTest.m; sourceTree = "<group>"; };
-		F7650E061BEA948900B97932 /* TestCoreDataEntity1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity1.h; sourceTree = "<group>"; };
-		F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity1.m; sourceTree = "<group>"; };
-		F7650E081BEA948900B97932 /* TestCoreDataEntity2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity2.h; sourceTree = "<group>"; };
-		F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity2.m; sourceTree = "<group>"; };
-		F7650E0A1BEA948900B97932 /* TestCoreDataEntity3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreDataEntity3.h; sourceTree = "<group>"; };
-		F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataEntity3.m; sourceTree = "<group>"; };
 		F7650E4B1BEAA94D00B97932 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F7650E4D1BEAA95900B97932 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7650E4F1BEAA95F00B97932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7650E511BEAA96400B97932 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F7650E551BEAABB800B97932 /* IFAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IFAFoundation.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/IFAFoundation-bluqfceadfhxvgfwqxjrqmypubcx/Build/Products/Debug-iphoneos/IFAFoundation.framework"; sourceTree = "<group>"; };
 		F77FF8221C4ED6D900343884 /* ReleaseNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ReleaseNotes.txt; path = ../ReleaseNotes.txt; sourceTree = "<group>"; };
+		F7B360CC1E6A6B4A00CDCC47 /* IFACoreUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IFACoreUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7B360CD1E6A6B4A00CDCC47 /* NSManagedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectTests.swift; sourceTree = "<group>"; };
+		F7B360E11E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity2+CoreDataClass.h"; sourceTree = "<group>"; };
+		F7B360E21E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity2+CoreDataClass.m"; sourceTree = "<group>"; };
+		F7B360E31E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity2+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7B360E41E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity2+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7B360E51E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity1+CoreDataClass.h"; sourceTree = "<group>"; };
+		F7B360E61E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity1+CoreDataClass.m"; sourceTree = "<group>"; };
+		F7B360E71E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity1+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7B360E81E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity1+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7B360E91E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity3+CoreDataClass.h"; sourceTree = "<group>"; };
+		F7B360EA1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity3+CoreDataClass.m"; sourceTree = "<group>"; };
+		F7B360EB1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity3+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7B360EC1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity3+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7B360ED1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4+CoreDataClass.h"; sourceTree = "<group>"; };
+		F7B360EE1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4+CoreDataClass.m"; sourceTree = "<group>"; };
+		F7B360EF1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity4+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7B360F01E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity4+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F7B360F11E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity5+CoreDataClass.h"; sourceTree = "<group>"; };
+		F7B360F21E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity5+CoreDataClass.m"; sourceTree = "<group>"; };
+		F7B360F31E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreDataEntity5+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F7B360F41E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreDataEntity5+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F7E49F351BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFACoreUITestsModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1268,6 +1292,26 @@
 		F7650DED1BEA948900B97932 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F7B360E11E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.h */,
+				F7B360E21E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.m */,
+				F7B360E31E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.h */,
+				F7B360E41E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.m */,
+				F7B360E51E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.h */,
+				F7B360E61E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.m */,
+				F7B360E71E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.h */,
+				F7B360E81E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.m */,
+				F7B360E91E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.h */,
+				F7B360EA1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.m */,
+				F7B360EB1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.h */,
+				F7B360EC1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.m */,
+				F7B360ED1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.h */,
+				F7B360EE1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.m */,
+				F7B360EF1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.h */,
+				F7B360F01E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.m */,
+				F7B360F11E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.h */,
+				F7B360F21E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m */,
+				F7B360F31E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.h */,
+				F7B360F41E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m */,
 				F7650DEE1BEA948900B97932 /* IFAColorSchemeTest.h */,
 				F7650DEF1BEA948900B97932 /* IFAColorSchemeTest.m */,
 				F7650DF01BEA948900B97932 /* IFACoreUITestCase.h */,
@@ -1292,12 +1336,8 @@
 				F7650E031BEA948900B97932 /* NSStringTests.m */,
 				F7650E041BEA948900B97932 /* TempTest.h */,
 				F7650E051BEA948900B97932 /* TempTest.m */,
-				F7650E061BEA948900B97932 /* TestCoreDataEntity1.h */,
-				F7650E071BEA948900B97932 /* TestCoreDataEntity1.m */,
-				F7650E081BEA948900B97932 /* TestCoreDataEntity2.h */,
-				F7650E091BEA948900B97932 /* TestCoreDataEntity2.m */,
-				F7650E0A1BEA948900B97932 /* TestCoreDataEntity3.h */,
-				F7650E0B1BEA948900B97932 /* TestCoreDataEntity3.m */,
+				F7B360CD1E6A6B4A00CDCC47 /* NSManagedObjectTests.swift */,
+				F7B360CC1E6A6B4A00CDCC47 /* IFACoreUITests-Bridging-Header.h */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -1506,9 +1546,11 @@
 				TargetAttributes = {
 					F7156C091BE953A30009EFF4 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0820;
 					};
 					F7156C131BE953A30009EFF4 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -1836,27 +1878,35 @@
 			files = (
 				F7650E841BEBE60700B97932 /* NSMutableArrayTests.m in Sources */,
 				F7650E801BEBE60700B97932 /* IFASingleSelectionManagerTests.m in Sources */,
-				F7650E8A1BEBE60700B97932 /* TestCoreDataEntity3.m in Sources */,
 				F7650E7A1BEBE60700B97932 /* IFAFormInputAccessoryViewTests.m in Sources */,
 				F7650E7C1BEBE60700B97932 /* IFAPagingStateManagerTests.m in Sources */,
 				F7E49F361BF28A5000569C9A /* IFACoreUITestsModel.xcdatamodeld in Sources */,
 				F7650E731BEAAE0A00B97932 /* IFACoreUITestCase.m in Sources */,
+				F7B360FE1E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataProperties.m in Sources */,
 				F7650E7B1BEBE60700B97932 /* IFALocationManagerTests.m in Sources */,
+				F7B360FA1E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataProperties.m in Sources */,
 				F7650E871BEBE60700B97932 /* TempTest.m in Sources */,
+				F7B360F51E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataClass.m in Sources */,
 				F7650E831BEBE60700B97932 /* NSIndexPathTests.m in Sources */,
 				F7650E741BEAAE3B00B97932 /* IFASelectionManagerTests.m in Sources */,
+				F7B360F71E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataClass.m in Sources */,
 				F7650E7F1BEBE60700B97932 /* IFAPersistentEntityChangeObserverTests.m in Sources */,
+				F7B360F61E6AD1A800CDCC47 /* TestCoreDataEntity2+CoreDataProperties.m in Sources */,
 				F7650E7D1BEBE60700B97932 /* IFAPersistenceChangeDetectorTests.m in Sources */,
+				F7B360F81E6AD1A800CDCC47 /* TestCoreDataEntity1+CoreDataProperties.m in Sources */,
 				F7650E7E1BEBE60700B97932 /* IFAPersistenceManagerTests.m in Sources */,
 				F7650E821BEBE60700B97932 /* NSDictionaryTests.m in Sources */,
-				F7650E891BEBE60700B97932 /* TestCoreDataEntity2.m in Sources */,
 				F7650E771BEBE60700B97932 /* IFAColorSchemeTest.m in Sources */,
 				F7650E851BEBE60700B97932 /* NSNumberFormatterTests.m in Sources */,
+				F7B360FD1E6AD1A800CDCC47 /* TestCoreDataEntity5+CoreDataClass.m in Sources */,
 				F7650E791BEBE60700B97932 /* IFADateRangeTest.m in Sources */,
 				F7650E811BEBE60700B97932 /* NSDateTest.m in Sources */,
 				F7650E781BEBE60700B97932 /* IFACurrentLocationManagerTests.m in Sources */,
-				F7650E881BEBE60700B97932 /* TestCoreDataEntity1.m in Sources */,
+				F7B360F91E6AD1A800CDCC47 /* TestCoreDataEntity3+CoreDataClass.m in Sources */,
 				F7650E861BEBE60700B97932 /* NSStringTests.m in Sources */,
+				F7B360FC1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataProperties.m in Sources */,
+				F7B360FB1E6AD1A800CDCC47 /* TestCoreDataEntity4+CoreDataClass.m in Sources */,
+				10738196906527DC90BA3E92 /* NSManagedObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1982,6 +2032,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2001,6 +2052,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2008,6 +2060,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7FE0EB2F5EC89CF84F818E7 /* Pods-IFACoreUI-IFACoreUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -2016,6 +2069,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IFACoreUITests/classes/IFACoreUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2023,6 +2079,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 974DB572124F3A6F60456FA8 /* Pods-IFACoreUI-IFACoreUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -2031,6 +2088,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infoaccent.IFACoreUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IFACoreUITests/classes/IFACoreUITests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

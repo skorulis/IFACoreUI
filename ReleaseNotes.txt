@@ -1,1 +1,1 @@
-[NEW] IFAListViewController can now handle delete and duplicate functions for multiple selection.
+[NEW] IFAListViewController can now handle delete and duplicate functions with multiple selection.

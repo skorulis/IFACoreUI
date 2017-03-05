@@ -31,6 +31,8 @@
 - (BOOL)ifa_deleteAndSaveWithValidationAlertPresenter:(UIViewController *)a_validationAlertPresenter;
 - (BOOL)ifa_hasValueChangedForKey:(NSString*)a_key;
 
+- (void)duplicateToTarget:(NSManagedObject *)target;
+
 + (instancetype)ifa_instantiate;
 + (NSMutableArray *)ifa_findAll;
 + (NSMutableArray *)ifa_findAllIncludingPendingChanges:(BOOL)a_includePendingChanges;

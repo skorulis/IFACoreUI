@@ -7,8 +7,12 @@
 
 #import "IFACoreUITestCase.h"
 @import IFACoreUI;
-#import "TestCoreDataEntity1.h"
-#import "TestCoreDataEntity2.h"
+#import "TestCoreDataEntity1+CoreDataClass.h"
+#import "TestCoreDataEntity1+CoreDataProperties.h"
+#import "TestCoreDataEntity2+CoreDataClass.h"
+#import "TestCoreDataEntity2+CoreDataProperties.h"
+@import OCHamcrest;
+@import OCMock;
 
 @interface IFAPersistenceManagerTests : IFACoreUITestCase
 @property(nonatomic, strong) IFAPersistenceManager *persistenceManager;

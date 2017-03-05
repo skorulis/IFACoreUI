@@ -97,6 +97,20 @@
     return [self validationPredicateParameterProperty:a_propertyName string:@"SELF <= "];
 }
 
+- (void)duplicateToTarget:(NSManagedObject *)target {
+    NSEntityDescription *entityDescription = self.objectID.entity;
+
+    // Set attributes
+    NSArray *attributeKeys = entityDescription.attributesByName.allKeys;
+    NSDictionary *attributeKeysAndValues = [self dictionaryWithValuesForKeys:attributeKeys];
+    [target setValuesForKeysWithDictionary:attributeKeysAndValues];
+
+    // Set relationships
+    NSArray *relationshipKeys = entityDescription.relationshipsByName.allKeys;
+    NSDictionary *relationshipKeysAndValues = [self dictionaryWithValuesForKeys:relationshipKeys];
+    [target setValuesForKeysWithDictionary:relationshipKeysAndValues];
+}
+
 + (instancetype)ifa_instantiate {
 	return [[IFAPersistenceManager sharedInstance] instantiate:[self description]];
 }
