@@ -23,6 +23,8 @@
 @interface IFANavigationListViewController ()
 @property (nonatomic) UIBarButtonItem *deleteBarButtonItem;
 @property (nonatomic) UIBarButtonItem *duplicateBarButtonItem;
+@property (nonatomic) UITableViewRowAction *deleteTableViewRowAction;
+@property (nonatomic) UITableViewRowAction *duplicateTableViewRowAction;
 @end
 
 @implementation IFANavigationListViewController {
@@ -43,6 +45,32 @@
         _duplicateBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Duplicate", @"IFALocalizable", nil) style:UIBarButtonItemStylePlain target:self action:@selector(IFA_onDuplicateButtonTap)];
     }
     return _duplicateBarButtonItem;
+}
+
+- (UITableViewRowAction *)deleteTableViewRowAction {
+    if (!_deleteTableViewRowAction) {
+        __weak typeof(self) weakSelf = self;
+        void (^actionHandler)(UITableViewRowAction *, NSIndexPath *) = ^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+            [weakSelf IFA_deleteManagedObjectsAtIndexPaths:@[indexPath]];
+        };
+        _deleteTableViewRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive
+                                                                       title:NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil)
+                                                                     handler:actionHandler];
+    }
+    return _deleteTableViewRowAction;
+}
+
+- (UITableViewRowAction *)duplicateTableViewRowAction {
+    if (!_duplicateTableViewRowAction) {
+        __weak typeof(self) weakSelf = self;
+        void (^actionHandler)(UITableViewRowAction *, NSIndexPath *) = ^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+            [weakSelf IFA_duplicateManagedObjectAtIndexPath:indexPath];
+        };
+        _duplicateTableViewRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal
+                                                                       title:NSLocalizedStringFromTable(@"Duplicate", @"IFALocalizable", nil)
+                                                                     handler:actionHandler];
+    }
+    return _duplicateTableViewRowAction;
 }
 
 #pragma mark - Private
@@ -76,9 +104,12 @@
 }
 
 - (void)IFA_onDuplicateButtonTap {
+    [self IFA_duplicateManagedObjectAtIndexPath:self.tableView.indexPathForSelectedRow];
+}
+
+- (void)IFA_duplicateManagedObjectAtIndexPath:(NSIndexPath *)indexPath {
     IFAPersistenceManager *persistenceManager = [IFAPersistenceManager sharedInstance];
-    NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
-    NSManagedObject *managedObjectOriginal = (NSManagedObject *) [self objectForIndexPath:selectedIndexPath];
+    NSManagedObject *managedObjectOriginal = (NSManagedObject *) [self objectForIndexPath:indexPath];
     NSManagedObject *managedObjectDuplicate = [NSClassFromString(self.entityName) ifa_instantiate];
     NSMutableSet <NSString *> *ignoredKeys = [NSMutableSet new];
     if ([persistenceManager.entityConfig listReorderAllowedForObject:managedObjectDuplicate] && [managedObjectDuplicate respondsToSelector:NSSelectorFromString(@"seq")]) {
@@ -108,31 +139,7 @@
     NSUInteger selectedItemsCount = self.tableView.indexPathsForSelectedRows.count;
     NSAssert(selectedItemsCount > 0, nil);
     void (^destructiveActionBlock)() = ^{
-        self.shouldIgnoreStaleDataChanges = YES;
-        __block BOOL success = NO;
-        NSArray<NSIndexPath *> *selectedIndexPaths = self.tableView.indexPathsForSelectedRows;
-        NSMutableArray <NSManagedObject *> *deletedManagedObjects = [NSMutableArray new];
-        [selectedIndexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
-            NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:indexPath];
-            [deletedManagedObjects addObject:managedObject];
-            success = [[IFAPersistenceManager sharedInstance] deleteObject:managedObject validationAlertPresenter:nil];
-            if (!success) {
-                *stop = YES;
-            }
-        }];
-        if (success) {
-            success = [[IFAPersistenceManager sharedInstance] save];
-            if (success) {
-                [self IFA_updateUiAfterDeletionAtIndexPaths:selectedIndexPaths deletedManagedObjects:deletedManagedObjects];
-                [IFAUIUtils showAndHideUserActionConfirmationHudWithText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ item(s) deleted", @"IFALocalizable", @"<SELECTED_ITEMS_COUNT> item(s) deleted"),
-                                                                                                    @(selectedItemsCount)]];
-                self.editing = NO;
-            }
-        } else {
-            [[IFAPersistenceManager sharedInstance] rollback];
-        }
-        self.shouldIgnoreStaleDataChanges = NO;
-        NSAssert(success == YES, nil);  // Deletion should never fail
+        [self IFA_deleteManagedObjectsAtIndexPaths:self.tableView.indexPathsForSelectedRows];
     };
     NSString *message = [NSString stringWithFormat:NSLocalizedStringFromTable(@"Are you sure you want to delete the %@ selected item(s)?", @"IFALocalizable", @"Are you sure you want to delete the <SELECTED_ITEMS_COUNT> selected item(s)?"), @(selectedItemsCount)];
     NSString *destructiveActionButtonTitle = NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil);
@@ -141,6 +148,32 @@
                  destructiveActionButtonTitle:destructiveActionButtonTitle
                        destructiveActionBlock:destructiveActionBlock
                                   cancelBlock:nil];
+}
+
+- (void)IFA_deleteManagedObjectsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    self.shouldIgnoreStaleDataChanges = YES;
+    __block BOOL success = NO;
+    NSArray<NSIndexPath *> *selectedIndexPaths = indexPaths;
+    NSMutableArray <NSManagedObject *> *deletedManagedObjects = [NSMutableArray new];
+    [selectedIndexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
+            NSManagedObject *managedObject = (NSManagedObject *) [self objectForIndexPath:indexPath];
+            [deletedManagedObjects addObject:managedObject];
+            success = [[IFAPersistenceManager sharedInstance] deleteObject:managedObject validationAlertPresenter:nil];
+            if (!success) {
+                *stop = YES;
+            }
+        }];
+    if (success) {
+            success = [[IFAPersistenceManager sharedInstance] save];
+            if (success) {
+                [self IFA_updateUiAfterDeletionAtIndexPaths:selectedIndexPaths deletedManagedObjects:deletedManagedObjects];
+                self.editing = NO;
+            }
+        } else {
+            [[IFAPersistenceManager sharedInstance] rollback];
+        }
+    self.shouldIgnoreStaleDataChanges = NO;
+    NSAssert(success == YES, nil);  // Deletion should never fail
 }
 
 - (void)IFA_updateUiAfterDeletionAtIndexPaths:(NSArray <NSIndexPath *> *)indexPaths deletedManagedObjects:(NSArray <NSManagedObject *> *)deletedManagedObjects {

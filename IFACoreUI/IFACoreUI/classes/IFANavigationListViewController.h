@@ -27,5 +27,7 @@
 
 @property (nonatomic, readonly) UIBarButtonItem *deleteBarButtonItem;
 @property (nonatomic, readonly) UIBarButtonItem *duplicateBarButtonItem;
+@property (nonatomic, readonly) UITableViewRowAction *deleteTableViewRowAction;
+@property (nonatomic, readonly) UITableViewRowAction *duplicateTableViewRowAction;
 
 @end
