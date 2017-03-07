@@ -101,6 +101,7 @@
         NSIndexPath *indexPathToDeselect = [NSIndexPath indexPathForItem:managedObjectOriginalIndex inSection:0];
         [self.tableView deselectRowAtIndexPath:indexPathToDeselect animated:YES];
     }
+    self.editing = NO;
 }
 
 - (void)IFA_onDeleteButtonTap {
@@ -125,6 +126,7 @@
                 [self IFA_updateUiAfterDeletionAtIndexPaths:selectedIndexPaths deletedManagedObjects:deletedManagedObjects];
                 [IFAUIUtils showAndHideUserActionConfirmationHudWithText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ item(s) deleted", @"IFALocalizable", @"<SELECTED_ITEMS_COUNT> item(s) deleted"),
                                                                                                     @(selectedItemsCount)]];
+                self.editing = NO;
             }
         } else {
             [[IFAPersistenceManager sharedInstance] rollback];
