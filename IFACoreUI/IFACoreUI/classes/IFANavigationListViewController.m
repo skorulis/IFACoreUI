@@ -51,7 +51,7 @@
     if (!_deleteTableViewRowAction) {
         __weak typeof(self) weakSelf = self;
         void (^actionHandler)(UITableViewRowAction *, NSIndexPath *) = ^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-            [weakSelf IFA_deleteManagedObjectsAtIndexPaths:@[indexPath]];
+            [weakSelf IFA_deleteManagedObjectAtIndexPath:indexPath shouldAskForUserConfirmation:YES];
         };
         _deleteTableViewRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive
                                                                        title:NSLocalizedStringFromTable(@"Delete", @"IFALocalizable", nil)
@@ -217,6 +217,24 @@
 
 }
 
+- (void)IFA_deleteManagedObjectAtIndexPath:(NSIndexPath *)indexPath shouldAskForUserConfirmation:(BOOL)shouldAskForUserConfirmation {
+    NSManagedObject	*mo = (NSManagedObject*) [self objectForIndexPath:indexPath];
+    void (^completionHandler)(BOOL) = ^(BOOL success) {
+        self.shouldIgnoreStaleDataChanges = NO;
+        if (success) {
+            [self IFA_updateUiAfterDeletionAtIndexPaths:@[indexPath] deletedManagedObjects:@[mo]];
+
+        }
+    };
+    self.shouldIgnoreStaleDataChanges = YES;
+    [IFAUIUtils handleDeletionRequestForManagedObject:mo
+                    withAlertPresentingViewController:self
+                         shouldAskForUserConfirmation:shouldAskForUserConfirmation
+          shouldShowSuccessfulDeletionHudConfirmation:NO
+                                    willDeleteHandler:nil
+                                    completionHandler:completionHandler];
+}
+
 #pragma mark - UITableViewDelegate Protocol
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -251,25 +269,8 @@
 #pragma mark - UITableViewDataSource Protocol
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-
-        NSManagedObject	*mo = (NSManagedObject*) [self objectForIndexPath:indexPath];
-        void (^completionHandler)(BOOL) = ^(BOOL success) {
-            self.shouldIgnoreStaleDataChanges = NO;
-            if (success) {
-                [self IFA_updateUiAfterDeletionAtIndexPaths:@[indexPath] deletedManagedObjects:@[mo]];
-
-            }
-        };
-        self.shouldIgnoreStaleDataChanges = YES;
-        [IFAUIUtils handleDeletionRequestForManagedObject:mo
-                        withAlertPresentingViewController:self
-                             shouldAskForUserConfirmation:NO
-              shouldShowSuccessfulDeletionHudConfirmation:NO
-                                        willDeleteHandler:nil
-                                        completionHandler:completionHandler];
-
+        [self IFA_deleteManagedObjectAtIndexPath:indexPath shouldAskForUserConfirmation:NO];
     }
 }
 
