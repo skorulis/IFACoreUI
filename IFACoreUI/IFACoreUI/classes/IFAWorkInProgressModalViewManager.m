@@ -78,7 +78,9 @@
             weakSelf.hasBeenCancelled = YES;
             weakSelf.hudViewController.visualIndicatorMode = IFAHudViewVisualIndicatorModeProgressIndeterminate;
             weakSelf.hudViewController.detailText = NSLocalizedStringFromTable(@"Cancelling...", @"IFALocalizable", nil);
-            weakSelf.cancellationCompletionBlock();
+            if (weakSelf.cancellationCompletionBlock) {
+                weakSelf.cancellationCompletionBlock();
+            }
         };
     } else {
         self.hudViewController.detailText = nil;
